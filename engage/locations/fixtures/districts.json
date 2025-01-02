@@ -1,0 +1,642 @@
+[
+    {
+        "model": "locations.district",
+        "pk": 1,
+        "division_id": 1,
+        "fields": [
+            {
+                "name": "কুমিল্লা"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 2,
+        "division_id": 1,
+        "fields": [
+            {
+                "name": "ফেনী"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 3,
+        "division_id": 1,
+        "fields": [
+            {
+                "name": "ব্রাহ্মণবাড়িয়া"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 4,
+        "division_id": 1,
+        "fields": [
+            {
+                "name": "রাঙ্গামাটি"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 5,
+        "division_id": 1,
+        "fields": [
+            {
+                "name": "নোয়াখালী"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 6,
+        "division_id": 1,
+        "fields": [
+            {
+                "name": "চাঁদপুর"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 7,
+        "division_id": 1,
+        "fields": [
+            {
+                "name": "লক্ষ্মীপুর"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 8,
+        "division_id": 1,
+        "fields": [
+            {
+                "name": "চট্টগ্রাম"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 9,
+        "division_id": 1,
+        "fields": [
+            {
+                "name": "কক্সবাজার"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 10,
+        "division_id": 1,
+        "fields": [
+            {
+                "name": "খাগড়াছড়ি"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 11,
+        "division_id": 1,
+        "fields": [
+            {
+                "name": "বান্দরবান"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 12,
+        "division_id": 2,
+        "fields": [
+            {
+                "name": "সিরাজগঞ্জ"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 13,
+        "division_id": 2,
+        "fields": [
+            {
+                "name": "পাবনা"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 14,
+        "division_id": 2,
+        "fields": [
+            {
+                "name": "বগুড়া"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 15,
+        "division_id": 2,
+        "fields": [
+            {
+                "name": "রাজশাহী"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 16,
+        "division_id": 2,
+        "fields": [
+            {
+                "name": "নাটোর"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 17,
+        "division_id": 2,
+        "fields": [
+            {
+                "name": "জয়পুরহাট"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 18,
+        "division_id": 2,
+        "fields": [
+            {
+                "name": "চাঁপাইনবাবগঞ্জ"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 19,
+        "division_id": 2,
+        "fields": [
+            {
+                "name": "নওগাঁ"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 20,
+        "division_id": 3,
+        "fields": [
+            {
+                "name": "যশোর"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 21,
+        "division_id": 3,
+        "fields": [
+            {
+                "name": "সাতক্ষীরা"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 22,
+        "division_id": 3,
+        "fields": [
+            {
+                "name": "মেহেরপুর"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 23,
+        "division_id": 3,
+        "fields": [
+            {
+                "name": "নড়াইল"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 24,
+        "division_id": 3,
+        "fields": [
+            {
+                "name": "চুয়াডাঙ্গা"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 25,
+        "division_id": 3,
+        "fields": [
+            {
+                "name": "কুষ্টিয়া"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 26,
+        "division_id": 3,
+        "fields": [
+            {
+                "name": "মাগুরা"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 27,
+        "division_id": 3,
+        "fields": [
+            {
+                "name": "খুলনা"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 28,
+        "division_id": 3,
+        "fields": [
+            {
+                "name": "বাগেরহাট"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 29,
+        "division_id": 3,
+        "fields": [
+            {
+                "name": "ঝিনাইদহ"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 30,
+        "division_id": 4,
+        "fields": [
+            {
+                "name": "ঝালকাঠি"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 31,
+        "division_id": 4,
+        "fields": [
+            {
+                "name": "পটুয়াখালী"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 32,
+        "division_id": 4,
+        "fields": [
+            {
+                "name": "পিরোজপুর"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 33,
+        "division_id": 4,
+        "fields": [
+            {
+                "name": "বরিশাল"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 34,
+        "division_id": 4,
+        "fields": [
+            {
+                "name": "ভোলা"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 35,
+        "division_id": 4,
+        "fields": [
+            {
+                "name": "বরগুনা"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 36,
+        "division_id": 5,
+        "fields": [
+            {
+                "name": "সিলেট"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 37,
+        "division_id": 5,
+        "fields": [
+            {
+                "name": "মৌলভীবাজার"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 38,
+        "division_id": 5,
+        "fields": [
+            {
+                "name": "হবিগঞ্জ"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 39,
+        "division_id": 5,
+        "fields": [
+            {
+                "name": "সুনামগঞ্জ"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 40,
+        "division_id": 6,
+        "fields": [
+            {
+                "name": "নরসিংদী"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 41,
+        "division_id": 6,
+        "fields": [
+            {
+                "name": "গাজীপুর"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 42,
+        "division_id": 6,
+        "fields": [
+            {
+                "name": "শরীয়তপুর"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 43,
+        "division_id": 6,
+        "fields": [
+            {
+                "name": "নারায়ণগঞ্জ"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 44,
+        "division_id": 6,
+        "fields": [
+            {
+                "name": "টাঙ্গাইল"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 45,
+        "division_id": 6,
+        "fields": [
+            {
+                "name": "কিশোরগঞ্জ"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 46,
+        "division_id": 6,
+        "fields": [
+            {
+                "name": "মানিকগঞ্জ"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 47,
+        "division_id": 6,
+        "fields": [
+            {
+                "name": "ঢাকা"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 48,
+        "division_id": 6,
+        "fields": [
+            {
+                "name": "মুন্সিগঞ্জ"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 49,
+        "division_id": 6,
+        "fields": [
+            {
+                "name": "রাজবাড়ী"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 50,
+        "division_id": 6,
+        "fields": [
+            {
+                "name": "মাদারীপুর"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 51,
+        "division_id": 6,
+        "fields": [
+            {
+                "name": "গোপালগঞ্জ"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 52,
+        "division_id": 6,
+        "fields": [
+            {
+                "name": "ফরিদপুর"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 53,
+        "division_id": 7,
+        "fields": [
+            {
+                "name": "পঞ্চগড়"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 54,
+        "division_id": 7,
+        "fields": [
+            {
+                "name": "দিনাজপুর"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 55,
+        "division_id": 7,
+        "fields": [
+            {
+                "name": "লালমনিরহাট"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 56,
+        "division_id": 7,
+        "fields": [
+            {
+                "name": "নীলফামারী"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 57,
+        "division_id": 7,
+        "fields": [
+            {
+                "name": "গাইবান্ধা"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 58,
+        "division_id": 7,
+        "fields": [
+            {
+                "name": "ঠাকুরগাঁও"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 59,
+        "division_id": 7,
+        "fields": [
+            {
+                "name": "রংপুর"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 60,
+        "division_id": 7,
+        "fields": [
+            {
+                "name": "কুড়িগ্রাম"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 61,
+        "division_id": 8,
+        "fields": [
+            {
+                "name": "শেরপুর"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 62,
+        "division_id": 8,
+        "fields": [
+            {
+                "name": "ময়মনসিংহ"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 63,
+        "division_id": 8,
+        "fields": [
+            {
+                "name": "জামালপুর"
+            }
+        ]
+    },
+    {
+        "model": "locations.district",
+        "pk": 64,
+        "division_id": 8,
+        "fields": [
+            {
+                "name": "নেত্রকোণা"
+            }
+        ]
+    }
+]
