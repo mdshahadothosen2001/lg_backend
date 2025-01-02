@@ -1,6 +1,7 @@
 import json 
 
 from rest_framework.views import APIView
+from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework import status
 
@@ -9,6 +10,7 @@ from engage.locations.models import Division, District, Upazila, Union
 
 
 class DivisionCreateView(APIView):
+    permission_classes = [AllowAny]
     serializer_class = DivisionCreateSerializer
 
     def post(self, request):
@@ -41,6 +43,8 @@ class DivisionCreateView(APIView):
 
 
 class DivisionListView(APIView):
+    permission_classes = [AllowAny]
+
     def get(self, request):
         divisions = Division.objects.all()
         serializer = DivisionCreateSerializer(divisions, many=True)
@@ -54,6 +58,7 @@ class DivisionListView(APIView):
 
 
 class DistrictCreateView(APIView):
+    permission_classes = [AllowAny]
     serializer_class = DistrictCreateSerializer
 
     def post(self, request):
@@ -87,6 +92,8 @@ class DistrictCreateView(APIView):
 
 
 class DistrictListView(APIView):
+    permission_classes = [AllowAny]
+
     def get(self, request):
         division_id = request.query_params.get('division_id')
         if division_id:
@@ -109,6 +116,7 @@ class DistrictListView(APIView):
 
 
 class UpazilaCreateView(APIView):
+    permission_classes = [AllowAny]
     serializer_class = UpazilaCreateSerializer
 
     def post(self, request):
@@ -142,6 +150,8 @@ class UpazilaCreateView(APIView):
 
 
 class UpazilaListView(APIView):
+    permission_classes = [AllowAny]
+
     def get(self, request):
         district_id = request.query_params.get('district_id')
         if district_id:
@@ -164,6 +174,7 @@ class UpazilaListView(APIView):
 
 
 class UnionCreateView(APIView):
+    permission_classes = [AllowAny]
     serializer_class = UnionCreateSerializer
 
     def post(self, request):
@@ -197,6 +208,8 @@ class UnionCreateView(APIView):
 
 
 class UnionListView(APIView):
+    permission_classes = [AllowAny]
+    
     def get(self, request):
         upazila_id = request.query_params.get('upazila_id')
         if upazila_id:

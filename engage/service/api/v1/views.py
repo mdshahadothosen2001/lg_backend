@@ -1,6 +1,7 @@
 from django.shortcuts import get_list_or_404
 
 from rest_framework.views import APIView
+from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
 from engage.service.api.v1.serializers import ServiceSerializer
@@ -8,6 +9,8 @@ from engage.service.models import Service
 
 
 class ServiceListView(APIView):
+    permission_classes = [AllowAny]
+    
     def get(self, request):
         localgovt_id = request.query_params.get('localgovt_id')
         if localgovt_id:
