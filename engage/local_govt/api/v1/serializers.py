@@ -3,7 +3,7 @@ from engage.local_govt.models import Member
 
 
 class MemberSerializer(serializers.ModelSerializer):
-    picture = serializers.ImageField(source='user.picture')
+    picture = serializers.SerializerMethodField()
     name = serializers.SerializerMethodField()
 
     class Meta:
@@ -18,3 +18,6 @@ class MemberSerializer(serializers.ModelSerializer):
 
     def get_name(self, obj):
         return f"{obj.user.first_name} {obj.user.last_name}"
+    
+    def get_picture(self, obj):
+        return f"{obj.user.picture} {obj.user.picture}"
