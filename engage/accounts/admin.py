@@ -19,6 +19,7 @@ class UserAdmin(BaseUserAdmin):
         (None, {'fields': ['username', 'password']}),
         (_('Personal info'), {
             'fields': [
+                'picture',
                 'first_name',
                 'last_name',
                 'date_of_birth',
