@@ -30,13 +30,13 @@ class Localgovt(TimestampModel):
         verbose_name_plural = _('localgovts')
 
     def __str__(self):
-        localgovt = 'LocalGovt:' + self.division.name
+        localgovt = self.type + ' : ' + self.division.name + '-'
         if self.district:
-            localgovt += self.district.name
+            localgovt += '-'+ self.district.name
         if self.upazila:
-            localgovt += self.upazila.name
+            localgovt += '-'+ self.upazila.name
         if self.union:
-            localgovt += self.district.name
+            localgovt += '-'+ self.union.name
 
         return localgovt
 
