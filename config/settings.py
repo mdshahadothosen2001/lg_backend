@@ -35,6 +35,7 @@ LOCAL_APPS = [
     "engage.request",
     "engage.vote",
     "engage.service",
+    "engage.notification",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
