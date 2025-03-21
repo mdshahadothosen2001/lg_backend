@@ -57,3 +57,22 @@ class Member(models.Model):
 
     def __str__(self):
         return f"{self.position}: {self.user.first_name} {self.user.last_name}"
+
+
+class Contribution(models.Model):
+    project_title = models.CharField(max_length=100)
+    Contributor = models.ManyToManyField(User, verbose_name=_('user'), related_name='+')
+    localgovt = models.ForeignKey(Localgovt, on_delete=models.PROTECT, verbose_name=_('local govt'), related_name='+')
+    areas = models.CharField(max_length=200, verbose_name=_('working areas'), null=True, blank=True)
+    start_at = models.DateField(verbose_name=_('working start date'))
+    end_at = models.DateField(verbose_name=_('working end date'))
+    is_active = models.BooleanField(verbose_name=_('active status'), default=True)
+    
+    
+    class Meta:
+        verbose_name = _('contribution')
+        verbose_name_plural = _('contributions')
+
+    def __str__(self):
+        return self.project_title
+
