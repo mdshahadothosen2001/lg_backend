@@ -76,3 +76,38 @@ class Contribution(models.Model):
     def __str__(self):
         return self.project_title
 
+
+class VoteBooth(models.Model):
+    vote_title = models.CharField(max_length=100)
+    candidates = models.ManyToManyField(User, verbose_name=_('candidate'), related_name='+')
+    voters = models.ManyToManyField(User, verbose_name=_('voters'), related_name='+')
+    localgovt = models.ForeignKey(Localgovt, on_delete=models.PROTECT, verbose_name=_('local govt'), related_name='+')
+    description = models.TextField(null=True, blank=True)
+    start_at = models.DateField(verbose_name=_('vote start date'))
+    end_at = models.DateField(verbose_name=_('vote end date'))
+    is_active = models.BooleanField(verbose_name=_('active status'), default=True)
+    
+    
+    class Meta:
+        verbose_name = _('vote_booth')
+        verbose_name_plural = _('vote_booths')
+
+    def __str__(self):
+        return self.vote_title
+
+
+class Vote(models.Model):
+    vote_booth = models.ForeignKey(VoteBooth, on_delete=models.CASCADE)
+    voter = models.ForeignKey(User, on_delete=models.DO_NOTHING)
+    vote = models.BooleanField(default=True)
+    description = models.TextField(null=True, blank=True)
+    time = models.DateTimeField(auto_now_add=True)
+    is_active = models.BooleanField(default=True)
+    
+    
+    class Meta:
+        verbose_name = _('vote')
+        verbose_name_plural = _('votes')
+
+    def __str__(self):
+        return f"{self.voter} : {self.vote_booth} - {self.vote}"

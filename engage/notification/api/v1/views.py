@@ -1,12 +1,9 @@
-import json 
-
 from rest_framework.views import APIView
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
-from rest_framework import status
 
 from engage.notification.api.v1.serializers import NoticeSerializer, EvenSerializer
-from engage.notification.models import Notice, Even
+from engage.notification.models import Notice, Event
 
 
 class NoticeListView(APIView):
@@ -27,7 +24,7 @@ class EvenListView(APIView):
     permission_classes = [AllowAny]
     
     def get(self, request):
-        evens = Even.objects.filter(is_active=True)
+        evens = Event.objects.filter(is_active=True)
         serializer = EvenSerializer(evens, many=True)
 
         data = {

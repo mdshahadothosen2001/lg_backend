@@ -25,13 +25,15 @@ class MemberSerializer(serializers.ModelSerializer):
 
 class ContributionSerializer(serializers.ModelSerializer):
     contributors = serializers.SerializerMethodField()
+    local_govt = serializers.SerializerMethodField()
+
     class Meta:
         model = Contribution
         fields = [
             'id',
             'project_title',
             'contributors',
-            'localgovt',
+            'local_govt',
             'areas',
             'start_at',
             'end_at',
@@ -40,3 +42,14 @@ class ContributionSerializer(serializers.ModelSerializer):
     
     def get_contributors(self, obj):
         return [user.username for user in obj.Contributor.all()]
+    
+    def get_local_govt(self, obj):
+        localgovt = obj.localgovt.division.name
+        if obj.localgovt.district:
+            localgovt += '-'+ obj.localgovt.district.name
+        if obj.localgovt.upazila:
+            localgovt += '-'+ obj.localgovt.upazila.name
+        if obj.localgovt.union:
+            localgovt += '-'+ obj.localgovt.union.name
+
+        return localgovt

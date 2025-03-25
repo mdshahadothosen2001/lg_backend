@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer
 
-from engage.notification.models import Notice, Even
+from engage.notification.models import Notice, Event
 
 
 class NoticeSerializer(ModelSerializer):
@@ -9,16 +9,19 @@ class NoticeSerializer(ModelSerializer):
         fields = [
             'id', 
             'title',
+            'date',
             'file',
         ]
 
 
 class EvenSerializer(ModelSerializer):
     class Meta:
-        model = Even
+        model = Event
         fields = [
             'id', 
             'title',
+            'description',
             'start',
+            'duration',
             'link',
         ]
