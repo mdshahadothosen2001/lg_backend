@@ -20,6 +20,7 @@ class UserAdmin(BaseUserAdmin):
         (_('Personal info'), {
             'fields': [
                 'picture',
+                'name',
                 'first_name',
                 'last_name',
                 'date_of_birth',

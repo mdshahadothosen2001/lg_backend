@@ -12,7 +12,7 @@ class LocalgovtAdmin(admin.ModelAdmin):
 
 @admin.register(Member)
 class MemberAdmin(admin.ModelAdmin):
-    list_display = ['id', 'position', 'user', 'localgovt', 'areas', 'start_at', 'end_at', 'is_active']
+    list_display = ['id', 'position', 'user', 'union_id', 'union_name', 'is_verified', 'localgovt', 'areas', 'start_at', 'end_at', 'is_active']
     search_fields = ['position']
     ordering = ['position']
 

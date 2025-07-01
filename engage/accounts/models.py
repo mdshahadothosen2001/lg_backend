@@ -15,6 +15,9 @@ class User(AbstractUser):
     father_nid_no = models.CharField(max_length=200, verbose_name=_('father nid no'), blank=True, null=True)
     mother_name = models.CharField(max_length=200, verbose_name=_('mother name'), blank=True, null=True)
     mother_nid_no = models.CharField(max_length=200, verbose_name=_('mother nid no'), blank=True, null=True)
+    name = models.CharField(
+        max_length=200, verbose_name=_('name'), blank=True, null=True
+    )
     class Gender(models.TextChoices):
         male = "male"
         female = "female"
