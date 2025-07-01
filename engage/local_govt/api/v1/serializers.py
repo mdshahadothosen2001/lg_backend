@@ -24,17 +24,9 @@ class MemberSerializer(serializers.ModelSerializer):
     
     def to_representation(self, instance):
         representation = super().to_representation(instance)
-        representation['union_name'] = self.get_union_name(instance)
+        representation['union_name'] = instance.localgovt.union.name if instance.localgovt.union else None
+        representation['union_id'] = instance.localgovt.union.id if instance.localgovt.union else None
         return representation
-    
-    def get_union_name(self, obj):
-        localgovt = obj.localgovt.division.name
-        if obj.localgovt.district:
-            localgovt += '-'+ obj.localgovt.district.name
-        if obj.localgovt.union:
-            localgovt += '-'+ obj.localgovt.union.name
-
-        return localgovt
 
 
 class ContributionSerializer(serializers.ModelSerializer):

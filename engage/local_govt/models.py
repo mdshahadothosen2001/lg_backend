@@ -49,6 +49,10 @@ class Member(models.Model):
     start_at = models.DateField(verbose_name=_('working start date'))
     end_at = models.DateField(verbose_name=_('working end date'))
     is_active = models.BooleanField(verbose_name=_('active status'), default=True)
+    union_id = models.IntegerField(verbose_name=_('union id'), null=True, blank=True)
+    union_name = models.CharField(verbose_name=_('union'), max_length=50, null=True, blank=True)
+    is_verified = models.BooleanField(verbose_name=_('verified status'), default=False)
+
     
     
     class Meta:

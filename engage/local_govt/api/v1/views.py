@@ -14,10 +14,12 @@ class MemberListAPIView(APIView):
     permission_classes = [AllowAny]
 
     def get(self, request):
-        local_govt_id = find_local_govt(request)
+        union_id = request.query_params.get('union_id')
         members = Member.objects.all()
-        if local_govt_id:
-            members = members.filter(localgovt__id=local_govt_id)
+
+        if union_id:
+            members = members.filter(union_id=union_id)
+
         serializer = MemberSerializer(members, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
