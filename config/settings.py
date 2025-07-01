@@ -132,8 +132,8 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "http://ceds-bd.vercel.app",
-    "https://ceds-bd.vercel.app",
+    "http://ces-bd.vercel.app",
+    "https://ces-bd.vercel.app",
 ]
 
 CORS_ALLOW_HEADERS = [
