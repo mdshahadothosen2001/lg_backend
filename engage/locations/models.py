@@ -63,7 +63,7 @@ class Union(models.Model):
         verbose_name_plural = _('unions')
 
     def __str__(self):
-        return self.name
+        return f"{self.name} ({self.id})"
 
 
 class AbstractAddress(TimestampModel):

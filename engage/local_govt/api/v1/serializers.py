@@ -17,7 +17,7 @@ class MemberSerializer(serializers.ModelSerializer):
         ]
 
     def get_name(self, obj):
-        return f"{obj.user.first_name} {obj.user.last_name}"
+        return obj.user.name if obj.user else None
     
     def get_picture(self, obj):
         return f"{obj.user.picture} {obj.user.picture}"

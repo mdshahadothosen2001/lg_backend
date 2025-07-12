@@ -9,7 +9,7 @@ class RespondListSerializer(serializers.ModelSerializer):
     member_name = serializers.SerializerMethodField()
     member_picture = serializers.SerializerMethodField()
     member_id = serializers.SerializerMethodField()
-    localgovt = serializers.SerializerMethodField()
+
 
     class Meta:
         model = Request
@@ -20,7 +20,7 @@ class RespondListSerializer(serializers.ModelSerializer):
             'member_name',
             'member_picture',
             'member_id',
-            "localgovt",
+
             'title',
             'description',
             'file',
@@ -46,9 +46,6 @@ class RespondListSerializer(serializers.ModelSerializer):
     
     def get_member_id(self, obj):
         return f"{obj.taken_member.id}" if obj.taken_member else None
-    
-    def get_localgovt(self, obj):
-        return f"{obj.localgovt.division} {obj.localgovt.district} {obj.localgovt.upazila} {obj.localgovt.union}"
 
 
 class RespondCreateSerializer(serializers.ModelSerializer):
@@ -56,9 +53,9 @@ class RespondCreateSerializer(serializers.ModelSerializer):
         model = Request
         fields = [
             'requested_citizen',
-            'localgovt',
             'taken_member',
             'title',
+            'union',
             'description',
             'file',
             'status',

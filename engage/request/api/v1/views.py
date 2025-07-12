@@ -14,39 +14,32 @@ class RespondAPIView(APIView):
     permission_classes = [AllowAny]
 
     def get(self, request):
-        local_govt_id = find_local_govt(request)
-        responds = Request.objects.all()
-        if local_govt_id:
-            responds = responds.filter(localgovt__id=local_govt_id)
-        serializer = RespondListSerializer(responds, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
+        print("RespondAPIView get method called")
+        union = request.query_params.get('union')
+        data = []
+        print(f"Union ID: {union}")
+        print(f"Data: {data}")
+        if union:
+            responds = Request.objects.filter(union__id=union)
+            data = RespondListSerializer(responds, many=True).data
+
+        return Response(data, status=status.HTTP_200_OK)
     
     def post(self, request):
-        local_govt_id = find_local_govt(request)
-        if local_govt_id:
-            if not request.body:
-                return Response(
-                    {
-                        "success":False,
-                        "message": "Full fill the required fields",
-                    },
-                    status=status.HTTP_400_BAD_REQUEST,
-                )
-            
-            data = json.loads(request.body)
-            data['localgovt'] = local_govt_id
-            serializer = RespondCreateSerializer(data=data)
+        union = request.data.get('union')
+        if union:
+            serializer = RespondCreateSerializer(data=request.data)
             if serializer.is_valid():
                 serializer.save()
                 return Response(
                     {
                         "success": True,
                         "message": "Respond created successfully",
-                        "data":serializer.data,
+                        "data": serializer.data,
                     },
                     status=status.HTTP_201_CREATED
                 )
-    
+
         return Response(
             {
                 "success": False,
@@ -54,6 +47,4 @@ class RespondAPIView(APIView):
             },
             status=status.HTTP_400_BAD_REQUEST,
         )
-    
-    def patch(self, request):
-        return Response(status=status.HTTP_200_OK)
+
