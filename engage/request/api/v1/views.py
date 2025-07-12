@@ -23,7 +23,13 @@ class RespondAPIView(APIView):
             paginator = StandardResultsSetPagination()
             paginated_data = paginator.paginate_queryset(responds, request)
             serialized_data = RespondListSerializer(paginated_data, many=True)
-            return paginator.get_paginated_response(serialized_data.data)
+            response = paginator.get_paginated_response(serialized_data.data)
+            # Add total_page to the response
+            total_count = paginator.page.paginator.count
+            page_size = paginator.get_page_size(request)
+            total_page = (total_count + page_size - 1) // page_size if page_size else 1
+            response.data['total_page'] = total_page
+            return response
 
         return Response(data, status=status.HTTP_200_OK)
     
