@@ -9,7 +9,9 @@ class RespondListSerializer(serializers.ModelSerializer):
     member_name = serializers.SerializerMethodField()
     member_picture = serializers.SerializerMethodField()
     member_id = serializers.SerializerMethodField()
-
+    member_email = serializers.SerializerMethodField()
+    union_id = serializers.SerializerMethodField()
+    union_name = serializers.SerializerMethodField()
 
     class Meta:
         model = Request
@@ -20,7 +22,10 @@ class RespondListSerializer(serializers.ModelSerializer):
             'member_name',
             'member_picture',
             'member_id',
-
+            'member_email',
+            'union',
+            'union_id',
+            'union_name',
             'title',
             'description',
             'file',
@@ -46,6 +51,15 @@ class RespondListSerializer(serializers.ModelSerializer):
     
     def get_member_id(self, obj):
         return f"{obj.taken_member.id}" if obj.taken_member else None
+    
+    def get_member_email(self, obj):
+        return f"{obj.taken_member.email}" if obj.taken_member else None
+    
+    def get_union_id(self, obj):
+        return f"{obj.union.id}" if obj.union else None
+    
+    def get_union_name(self, obj):
+        return f"{obj.union.name}" if obj.union else None
 
 
 class RespondCreateSerializer(serializers.ModelSerializer):
