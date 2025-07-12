@@ -60,7 +60,7 @@ class Member(models.Model):
         verbose_name_plural = _('members')
 
     def __str__(self):
-        return f"{self.position}: {self.user.first_name} {self.user.last_name}"
+        return self.name if self.user else "Member without user"
 
 
 class Contribution(models.Model):

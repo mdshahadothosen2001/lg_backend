@@ -16,6 +16,7 @@ class RespondListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Request
         fields = [
+            'id',
             'responder_name',
             'responder_picture',
             'responder_id',
@@ -35,7 +36,7 @@ class RespondListSerializer(serializers.ModelSerializer):
         ]
 
     def get_responder_name(self, obj):
-        return f"{obj.requested_citizen.first_name} {obj.requested_citizen.last_name}"
+        return obj.requested_citizen.name if obj.requested_citizen and obj.requested_citizen else None
     
     def get_responder_picture(self, obj):
         return f"{obj.requested_citizen.picture} {obj.requested_citizen.picture}"

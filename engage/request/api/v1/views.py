@@ -56,3 +56,20 @@ class RespondAPIView(APIView):
             status=status.HTTP_400_BAD_REQUEST,
         )
 
+
+class RespondDetailAPIView(APIView):
+    permission_classes = [AllowAny]
+
+    def get(self, request, pk):
+        try:
+            respond = Request.objects.get(pk=pk)
+        except Request.DoesNotExist:
+            return Response(
+                {"success": False, "message": "Respond not found"},
+                status=status.HTTP_404_NOT_FOUND
+            )
+        serializer = RespondListSerializer(respond)
+        return Response(
+            {"success": True, "data": serializer.data},
+            status=status.HTTP_200_OK
+        )
