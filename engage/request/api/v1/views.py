@@ -7,7 +7,7 @@ from rest_framework import status
 
 from engage.request.api.v1.serializers import RespondCreateSerializer, RespondListSerializer
 from engage.request.models import Request
-from engage.utils.local_govt_utils import find_local_govt
+from engage.utils.custom_pagination import StandardResultsSetPagination
 
 
 class RespondAPIView(APIView):
@@ -18,10 +18,12 @@ class RespondAPIView(APIView):
         union = request.query_params.get('union')
         data = []
         print(f"Union ID: {union}")
-        print(f"Data: {data}")
         if union:
             responds = Request.objects.filter(union__id=union)
-            data = RespondListSerializer(responds, many=True).data
+            paginator = StandardResultsSetPagination()
+            paginated_data = paginator.paginate_queryset(responds, request)
+            serialized_data = RespondListSerializer(paginated_data, many=True)
+            return paginator.get_paginated_response(serialized_data.data)
 
         return Response(data, status=status.HTTP_200_OK)
     
