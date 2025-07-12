@@ -45,7 +45,7 @@ class RespondListSerializer(serializers.ModelSerializer):
         return f"{obj.requested_citizen.id}"
     
     def get_member_name(self, obj):
-        return f"{obj.taken_member.first_name} {obj.taken_member.last_name}" if obj.taken_member else None
+        return obj.taken_member.name if obj.taken_member else None
     
     def get_member_picture(self, obj):
         return f"{obj.taken_member.picture}" if obj.taken_member else None
