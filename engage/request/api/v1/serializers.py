@@ -45,16 +45,16 @@ class RespondListSerializer(serializers.ModelSerializer):
         return f"{obj.requested_citizen.id}"
     
     def get_member_name(self, obj):
-        return obj.taken_member.name if obj.taken_member else None
+        return obj.taken_member.user.name if obj.taken_member else None
     
     def get_member_picture(self, obj):
-        return f"{obj.taken_member.picture}" if obj.taken_member else None
+        return f"{obj.taken_member.user.picture}" if obj.taken_member else None
     
     def get_member_id(self, obj):
-        return f"{obj.taken_member.id}" if obj.taken_member else None
+        return f"{obj.taken_member.user.id}" if obj.taken_member else None
     
     def get_member_email(self, obj):
-        return f"{obj.taken_member.email}" if obj.taken_member else None
+        return f"{obj.taken_member.user.email}" if obj.taken_member else None
     
     def get_union_id(self, obj):
         return f"{obj.union.id}" if obj.union else None

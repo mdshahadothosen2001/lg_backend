@@ -1,0 +1,156 @@
+[
+  {
+    "model": "local_govt.member",
+    "pk": 1,
+    "fields": {
+      "position": "Chairman",
+      "user": 101,
+      "union": 1165,
+      "areas": "Ward 1-3",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 2,
+    "fields": {
+      "position": "Member",
+      "user": 102,
+      "union": 1165,
+      "areas": "Ward 4-6",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 3,
+    "fields": {
+      "position": "Member",
+      "user": 103,
+      "union": 1165,
+      "areas": "Ward 7-9",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 4,
+    "fields": {
+      "position": "Member",
+      "user": 104,
+      "union": 1165,
+      "areas": "Ward 10-12",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 5,
+    "fields": {
+      "position": "Secretary",
+      "user": 105,
+      "union": 1165,
+      "areas": "Ward 1-3",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 6,
+    "fields": {
+      "position": "Treasurer",
+      "user": 106,
+      "union": 1165,
+      "areas": "Ward 4-6",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 7,
+    "fields": {
+      "position": "Member",
+      "user": 107,
+      "union": 1165,
+      "areas": "Ward 7-9",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 8,
+    "fields": {
+      "position": "Member",
+      "user": 108,
+      "union": 1165,
+      "areas": "Ward 10-12",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 9,
+    "fields": {
+      "position": "Advisor",
+      "user": 109,
+      "union": 1165,
+      "areas": "Ward 1-3",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 10,
+    "fields": {
+      "position": "Vice Chairman",
+      "user": 110,
+      "union": 1165,
+      "areas": "Ward 4-6",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 11,
+    "fields": {
+      "position": "Member",
+      "user": 111,
+      "union": 1165,
+      "areas": "Ward 7-9",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  }
+]

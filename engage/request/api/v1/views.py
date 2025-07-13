@@ -17,7 +17,6 @@ class RespondAPIView(APIView):
         print("RespondAPIView get method called")
         union = request.query_params.get('union')
         data = []
-        print(f"Union ID: {union}")
         if union:
             responds = Request.objects.filter(union__id=union)
             paginator = StandardResultsSetPagination()

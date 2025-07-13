@@ -1,13 +1,12 @@
 from django.db import models
-
-from engage.local_govt.models import Localgovt
-
+from django.utils.translation import gettext_lazy as _
+from engage.locations.models import  Union
 
 class Notice(models.Model):
     title = models.CharField(max_length=50)
     date = models.DateField(null=True, blank=True)
     file = models.FileField(upload_to='uploads/', null=True, blank=True)
-    localgovt = models.ForeignKey(Localgovt, on_delete=models.PROTECT, verbose_name='local goverment', related_name='+', null=True, blank=True)
+    union = models.ForeignKey(Union, on_delete=models.PROTECT, verbose_name=_('union'), related_name='+', null=True, blank=True)
     is_active = models.BooleanField(default=True)
 
     class Meta:
@@ -26,7 +25,7 @@ class Event(models.Model):
     start = models.TimeField(null=True, blank=True)
     duration = models.SmallIntegerField(null=True, blank=True)
     link = models.URLField()
-    localgovt = models.ForeignKey(Localgovt, on_delete=models.PROTECT, verbose_name='local goverment', related_name='+', null=True, blank=True)
+    union = models.ForeignKey(Union, on_delete=models.PROTECT, verbose_name=_('union'), related_name='+', null=True, blank=True)
     is_active = models.BooleanField(default=True)
 
     class Meta:

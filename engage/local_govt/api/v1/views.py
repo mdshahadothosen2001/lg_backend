@@ -7,23 +7,25 @@ from rest_framework import status
 
 from engage.local_govt.api.v1.serializers import MemberSerializer, ContributionSerializer
 from engage.local_govt.models import Member, Contribution
-from engage.utils.local_govt_utils import find_local_govt
 
 
 class MemberListAPIView(APIView):
     permission_classes = [AllowAny]
 
     def get(self, request):
-        union_id = request.query_params.get('union_id')
-        member_name = request.query_params.get('member_name')
+        union = request.query_params.get('union')
+        member_name = request.query_params.get('name')
         members = Member.objects.all()
 
-        if union_id:
-            members = members.filter(union_id=union_id)
-        if member_name:
+        if union:
+            members = members.filter(union__id=union)
+        elif member_name:
             members = members.filter(
                 user__name__icontains=member_name
             )
+        else:
+            members = members.none()
+
 
         # If you want to match at least 60% similarity, you can use TrigramSimilarity (requires PostgreSQL)
         # Uncomment the following if using PostgreSQL and django.contrib.postgres
@@ -45,9 +47,11 @@ class ContributionListAPIView(APIView):
     permission_classes = [AllowAny]
 
     def get(self, request):
-        local_govt_id = find_local_govt(request)
+        union = request.query_params.get('union')
         contributions = Contribution.objects.all()
-        if local_govt_id:
-            contributions = contributions.filter(localgovt__id=local_govt_id)
+        if union:
+            contributions = contributions.filter(union__id=union)
+        else:
+            contributions = contributions.none()
         serializer = ContributionSerializer(contributions, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)

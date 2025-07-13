@@ -3,12 +3,12 @@ from django.utils.translation import gettext_lazy as _
 
 from engage.utils.models import TimestampModel
 from engage.accounts.models import User
-from engage.local_govt.models import Localgovt
+from engage.locations.models import  Union
 
 
 class VotingPoll(TimestampModel):
     created_by = models.ForeignKey(User, on_delete=models.PROTECT, verbose_name=_('created member'), related_name='+')
-    localgovt = models.ForeignKey(Localgovt, on_delete=models.PROTECT, verbose_name=_('local goverment'), related_name='+')
+    union = models.ForeignKey(Union, on_delete=models.PROTECT, verbose_name=_('union'), related_name='+', null=True, blank=True)
     title = models.CharField(max_length=50, verbose_name=_('title'))
     description = models.TextField(verbose_name=_('description'), null=True, blank=True)
     total_voter = models.PositiveSmallIntegerField(default=0)

@@ -10,6 +10,7 @@ class MemberSerializer(serializers.ModelSerializer):
         model = Member
         fields = [
             'name',
+            'id',
             'picture',
             'position',
             'start_at',
@@ -24,14 +25,15 @@ class MemberSerializer(serializers.ModelSerializer):
     
     def to_representation(self, instance):
         representation = super().to_representation(instance)
-        representation['union_name'] = instance.localgovt.union.name if instance.localgovt.union else None
-        representation['union_id'] = instance.localgovt.union.id if instance.localgovt.union else None
+        representation['union_name'] = instance.union.name if instance.union else None
+        representation['union_id'] = instance.union.id if instance.union else None
         return representation
 
 
 class ContributionSerializer(serializers.ModelSerializer):
     contributors = serializers.SerializerMethodField()
-    local_govt = serializers.SerializerMethodField()
+    union_id = serializers.IntegerField(source='union.id', read_only=True)
+    union_name = serializers.CharField(source='union.name', read_only=True)
 
     class Meta:
         model = Contribution
@@ -39,7 +41,8 @@ class ContributionSerializer(serializers.ModelSerializer):
             'id',
             'project_title',
             'contributors',
-            'local_govt',
+            'union_id',
+            'union_name',
             'areas',
             'start_at',
             'end_at',
@@ -49,13 +52,9 @@ class ContributionSerializer(serializers.ModelSerializer):
     def get_contributors(self, obj):
         return [user.username for user in obj.Contributor.all()]
     
-    def get_local_govt(self, obj):
-        localgovt = obj.localgovt.division.name
-        if obj.localgovt.district:
-            localgovt += '-'+ obj.localgovt.district.name
-        if obj.localgovt.upazila:
-            localgovt += '-'+ obj.localgovt.upazila.name
-        if obj.localgovt.union:
-            localgovt += '-'+ obj.localgovt.union.name
-
-        return localgovt
+    def get_union_id(self, obj):
+        return obj.union.id if obj.union else None
+    
+    def get_union_name(self, obj):
+        return obj.union.name if obj.union else None
+    

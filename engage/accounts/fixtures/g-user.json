@@ -1,0 +1,102 @@
+[
+    {
+        "model": "accounts.user",
+        "pk": 301,
+        "fields": {
+            "name": "Md. Shahadot Hosen",
+            "email": "shahadot@ces.com",
+            "password": "12345",
+            "username": "shahadot@ces.com",
+            "is_active": true,
+            "is_staff": true,
+            "is_superuser": true,
+            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+        }
+    },
+    {
+        "model": "accounts.user",
+        "pk": 302,
+        "fields": {
+            "name": "Zisan Islam",
+            "email": "zisan@ces.com",
+            "password": "12345",
+            "username": "zisan@ces.com",
+            "is_active": true,
+            "is_staff": true,
+            "is_superuser": true,
+            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+        }
+    },
+    {
+        "model": "accounts.user",
+        "pk": 303,
+        "fields": {
+            "name": "Md. Mahmudul Hasan",
+            "email": "mahmudul@ces.com",
+            "password": "12345",
+            "username": "mahmudul@ces.com",
+            "is_active": true,
+            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+        }
+    },
+    {
+        "model": "accounts.user",
+        "pk": 304,
+        "fields": {
+            "name": "Hasan",
+            "email": "hasan@ces.com",
+            "password": "12345",
+            "username": "hasan@ces.com",
+            "is_active": true,
+            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+        }
+    },
+    {
+        "model": "accounts.user",
+        "pk": 305,
+        "fields": {
+            "name": "Ridoy",
+            "email": "ridoy@ces.com",
+            "password": "12345",
+            "username": "ridoy@ces.com",
+            "is_active": true,
+            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+        }
+    },
+    {
+        "model": "accounts.user",
+        "pk": 306,
+        "fields": {
+            "name": "Imtiaz",
+            "email": "imtiaz@ces.com",
+            "password": "12345",
+            "username": "imtiaz@ces.com",
+            "is_active": true,
+            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+        }
+    },
+    {
+        "model": "accounts.user",
+        "pk": 307,
+        "fields": {
+            "name": "Sifat",
+            "email": "sifat@ces.com",
+            "password": "12345",
+            "username": "sifat@ces.com",
+            "is_active": true,
+            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+        }
+    },
+    {
+        "model": "accounts.user",
+        "pk": 308,
+        "fields": {
+            "name": "Sakib",
+            "email": "sakib@ces.com",
+            "password": "12345",
+            "username": "sakib@ces.com",
+            "is_active": true,
+            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+        }
+    }
+]

@@ -3,13 +3,14 @@ from django.utils.translation import gettext_lazy as _
 
 from engage.utils.models import TimestampModel
 from engage.accounts.models import User
-from engage.local_govt.models import Localgovt, Union
+from engage.local_govt.models import Member
+from engage.locations.models import  Union
 
 
 class Request(TimestampModel):
     requested_citizen = models.ForeignKey(User, on_delete=models.PROTECT, verbose_name=_('request'), related_name='+', help_text=_('Who sent the request to solve the issue'))
     union = models.ForeignKey(Union, on_delete=models.PROTECT, verbose_name=_('union'), related_name='+', null=True, blank=True)
-    taken_member = models.ForeignKey(User, on_delete=models.PROTECT, verbose_name=_('taken member'), related_name='+', null=True, blank=True,  help_text=_('Who is taking the responsibility to solve the issue'))
+    taken_member = models.ForeignKey(Member, on_delete=models.PROTECT, verbose_name=_('taken member'), related_name='+', null=True, blank=True,  help_text=_('Who is taking the responsibility to solve the issue'))
     title = models.CharField(max_length=50, verbose_name=_('title'))
     description = models.TextField(verbose_name=_('description'), null=True, blank=True)
     file = models.URLField(null=True, blank=True)

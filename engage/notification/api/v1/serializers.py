@@ -9,6 +9,7 @@ class NoticeSerializer(ModelSerializer):
         fields = [
             'id', 
             'title',
+            'union',
             'date',
             'file',
         ]
@@ -21,6 +22,7 @@ class EvenSerializer(ModelSerializer):
             'id', 
             'title',
             'description',
+            'union',
             'start',
             'duration',
             'link',

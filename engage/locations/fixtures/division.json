@@ -2,73 +2,57 @@
     {
         "model": "locations.division",
         "pk": 1,
-        "fields": [
-            {
+        "fields":{
                 "name": "চট্টগ্রাম"
             }
-        ]
     },
     {
         "model": "locations.division",
         "pk": 2,
-        "fields": [
-            {
+        "fields":{
                 "name": "রাজশাহী"
             }
-        ]
     },
     {
         "model": "locations.division",
         "pk": 3,
-        "fields": [
-            {
+        "fields":{
                 "name": "খুলনা"
             }
-        ]
     },
     {
         "model": "locations.division",
         "pk": 4,
-        "fields": [
-            {
+        "fields":{
                 "name": "বরিশাল"
             }
-        ]
     },
     {
         "model": "locations.division",
         "pk": 5,
-        "fields": [
-            {
+        "fields":{
                 "name": "সিলেট"
             }
-        ]
     },
     {
         "model": "locations.division",
         "pk": 6,
-        "fields": [
-            {
+        "fields":{
                 "name": "ঢাকা"
             }
-        ]
     },
     {
         "model": "locations.division",
         "pk": 7,
-        "fields": [
-            {
+        "fields":{
                 "name": "রংপুর"
             }
-        ]
     },
     {
         "model": "locations.division",
         "pk": 8,
-        "fields": [
-            {
+        "fields":{
                 "name": "ময়মনসিংহ"
             }
-        ]
     }
 ]

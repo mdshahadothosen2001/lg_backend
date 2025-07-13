@@ -1,0 +1,41 @@
+[
+  {
+    "model": "local_govt.contribution",
+    "pk": 1,
+    "fields": {
+      "project_title": "ড্রেনেজ উন্নয়ন প্রকল্প",
+      "union": 1165,
+      "areas": "Ward 1-3",
+      "start_at": "2024-01-01",
+      "end_at": "2024-06-01",
+      "is_active": true,
+      "member": 1
+    }
+  },
+  {
+    "model": "local_govt.contribution",
+    "pk": 2,
+    "fields": {
+      "project_title": "স্কুল সংস্কার প্রকল্প",
+      "union": 1165,
+      "areas": "Ward 4-6",
+      "start_at": "2024-03-01",
+      "end_at": "2024-09-01",
+      "is_active": true,
+      "member": 2
+    }
+  },
+  {
+    "model": "local_govt.contribution",
+    "pk": 3,
+    "fields": {
+      "project_title": "পানির লাইনের উন্নয়ন",
+      "union": 1165,
+      "areas": "Ward 7-9",
+      "start_at": "2024-05-01",
+      "end_at": "2024-12-01",
+      "is_active": true,
+      "member": 3
+    }
+  }
+]
