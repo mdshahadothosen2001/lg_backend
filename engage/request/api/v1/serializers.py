@@ -6,6 +6,7 @@ class RespondListSerializer(serializers.ModelSerializer):
     responder_picture = serializers.SerializerMethodField()
     responder_name = serializers.SerializerMethodField()
     responder_id = serializers.SerializerMethodField()
+    responder_email = serializers.SerializerMethodField()
     member_name = serializers.SerializerMethodField()
     member_picture = serializers.SerializerMethodField()
     member_id = serializers.SerializerMethodField()
@@ -20,6 +21,7 @@ class RespondListSerializer(serializers.ModelSerializer):
             'responder_name',
             'responder_picture',
             'responder_id',
+            'responder_email',
             'member_name',
             'member_picture',
             'member_id',
@@ -43,6 +45,9 @@ class RespondListSerializer(serializers.ModelSerializer):
     
     def get_responder_id(self, obj):
         return f"{obj.requested_citizen.id}"
+    
+    def get_responder_email(self, obj):
+        return f"{obj.requested_citizen.email}" if obj.requested_citizen else None
     
     def get_member_name(self, obj):
         return obj.taken_member.user.name if obj.taken_member else None
