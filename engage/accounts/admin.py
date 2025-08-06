@@ -51,7 +51,7 @@ class UserAdmin(BaseUserAdmin):
             'fields': ['username', 'password1', 'password2'],
         })
     ]
-    list_display = ['username', 'mobile_number', 'email', 'first_name', 'last_name', 'is_staff']
+    list_display = ['username', 'mobile_number', 'email', 'name', 'is_staff']
     list_filter = [
         'is_active',
         'email_verified',
@@ -59,7 +59,7 @@ class UserAdmin(BaseUserAdmin):
         'is_staff',
         'is_superuser',
     ]
-    search_fields = ['email', 'mobile_number', 'first_name', 'last_name']
+    search_fields = ['email', 'mobile_number', 'name']
     filter_horizontal = ['groups', 'user_permissions']
     ordering = ['-id']
     inlines = [UserPermanentAddressInline]

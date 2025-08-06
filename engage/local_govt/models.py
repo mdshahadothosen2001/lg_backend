@@ -23,7 +23,7 @@ class Member(models.Model):
         verbose_name_plural = _('members')
 
     def __str__(self):
-        return self.name if self.user else "Member without user"
+        return self.user.name if self.user else "Member without user"
 
 
 class Contribution(models.Model):

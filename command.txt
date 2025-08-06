@@ -1,4 +1,4 @@
-python manage.py loaddata engage/accounts/fixtures/m.json
+python manage.py loaddata engage/accounts/fixtures/m-user.json
 python manage.py loaddata engage/accounts/fixtures/g-user.json
 
 python manage.py loaddata engage/locations/fixtures/division.json
