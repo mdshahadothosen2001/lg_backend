@@ -73,12 +73,12 @@
     },
     {
         "model": "accounts.user",
-        "pk": 2002,
+        "pk": 2007,
         "fields": {
             "name": "Shakil Ahmed",
             "email": "shakil@ces.com",
-            "password": "2002",
-            "username": "2002",
+            "password": "2007",
+            "username": "2007",
             "is_active": true,
             "picture": "https://cdn-icons-png.flaticon.com/512/209/209699.png"
         }
