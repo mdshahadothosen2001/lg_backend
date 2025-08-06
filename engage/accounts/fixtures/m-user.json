@@ -1,134 +1,134 @@
 [
     {
         "model": "accounts.user",
-        "pk": 101,
+        "pk": 7001,
         "fields": {
             "name": "Razzak Ponchayet",
             "email": "raz@ces.com",
-            "password": "12345",     
-            "username": "raz@ces.com",
+            "password": "7001",
+            "username": "7001",
             "is_active": true,
             "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 102,
+        "pk": 7002,
         "fields": {
             "name": "Yousuf Ali",
             "email": "yousuf@ces.com",
-            "password": "12345",
-            "username": "yousuf@ces.com",
+            "password": "7002",
+            "username": "7002",
             "is_active": true,
-            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+            "picture": "https://cdn-icons-png.flaticon.com/512/219/219988.png"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 103,
+        "pk": 7003,
         "fields": {
             "name": "Zohorul Islam",
             "email": "zohorul@ces.com",
-            "password": "12345",
-            "username": "zohorul@ces.com",
+            "password": "7003",
+            "username": "7003",
             "is_active": true,
-            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+            "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9lRck6miglY0SZF_BZ_sK829yiNskgYRUg&s"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 104,
+        "pk": 7004,
         "fields": {
             "name": "Zakir Naik",
             "email": "zakir@ces.com",
-            "password": "12345",
-            "username": "zakir@ces.com",
+            "password": "7004",
+            "username": "7004",
             "is_active": true,
-            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+            "picture": "https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/man-user-circle-icon.png"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 105,
+        "pk": 7005,
         "fields": {
             "name": "Ripon Ponchayet",
             "email": "ripon@ces.com",
-            "password": "12345",
-            "username": "ripon@ces.com",
+            "password": "7005",
+            "username": "7005",
             "is_active": true,
-            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+            "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLU5_eUUGBfxfxRd4IquPiEwLbt4E_6RYMw&s"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 106,
+        "pk": 7006,
         "fields": {
             "name": "Sairot Jaman",
             "email": "sairot@ces.com",
-            "password": "12345",
-            "username": "sairot@ces.com",
+            "password": "7006",
+            "username": "7006",
             "is_active": true,
-            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+            "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 107,
+        "pk": 7007,
         "fields": {
             "name": "Shakil Ahmed",
             "email": "shakil@ces.com",
-            "password": "12345",
-            "username": "shakil@ces.com",
+            "password": "7007",
+            "username": "7007",
             "is_active": true,
-            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+            "picture": "https://cdn-icons-png.flaticon.com/512/709/709699.png"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 108,
+        "pk": 7008,
         "fields": {
             "name": "Mizanur Rahman",
             "email": "mizanur@ces.com",
-            "password": "12345",
-            "username": "mizanur@ces.com",
+            "password": "7008",
+            "username": "7008",
             "is_active": true,
-            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+            "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwnYnwftDUSjsQmLQvMBZ2pwDXhAJiIdfKvg&s"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 109,
+        "pk": 7009,
         "fields": {
             "name": "Faruk Hossain",
             "email": "faruk@ces.com",
-            "password": "12345",
-            "username": "faruk@ces.com",
+            "password": "7009",
+            "username": "7009",
             "is_active": true,
-            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+            "picture": "https://png.pngtree.com/png-vector/20190501/ourmid/pngtree-users-icon-design-png-image_1014936.jpg"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 110,
+        "pk": 7010,
         "fields": {
             "name": "Sabbir Khan",
             "email": "sabbir@ces.com",
-            "password": "12345",
-            "username": "sabbir@ces.com",
+            "password": "7010",
+            "username": "7010",
             "is_active": true,
-            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+            "picture": "https://cdn-icons-png.flaticon.com/512/219/219988.png"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 111,
+        "pk": 7011,
         "fields": {
             "name": "Rifat Chowdhury",
             "email": "rifat@ces.com",
-            "password": "12345",
-            "username": "rifat@ces.com",
+            "password": "7011",
+            "username": "7011",
             "is_active": true,
-            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+            "picture": "https://i.pinimg.com/1200x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
         }
     }
 ]
