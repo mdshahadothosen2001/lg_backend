@@ -5,7 +5,7 @@ from engage.vote.models import VotingPoll, Voting
 
 @admin.register(VotingPoll)
 class VotingPollAdmin(admin.ModelAdmin):
-    list_display = ['id', 'title', 'created_by', 'description', 'total_voter', 'is_active', 'created_at', 'modified_at']
+    list_display = ['id', 'title', 'created_by', 'description', 'total_voter', 'start_date', 'end_date', 'is_public', 'is_voting', 'is_result_published', 'is_active', 'created_at', 'modified_at']
     search_fields = ['title', ]
     ordering = ['is_active']
     list_filter = ['is_active']

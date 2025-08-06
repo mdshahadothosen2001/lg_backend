@@ -12,6 +12,13 @@ class VotingPoll(TimestampModel):
     title = models.CharField(max_length=50, verbose_name=_('title'))
     description = models.TextField(verbose_name=_('description'), null=True, blank=True)
     total_voter = models.PositiveSmallIntegerField(default=0)
+    file = models.FileField(upload_to='voting_polls/', null=True, blank=True, verbose_name=_('file'))
+    link = models.URLField(max_length=200, null=True, blank=True, verbose_name=_('link'))
+    start_date = models.DateTimeField(verbose_name=_('start date'), null=True, blank=True)
+    end_date = models.DateTimeField(verbose_name=_('end date'), null=True, blank=True)
+    is_public = models.BooleanField(default=True, verbose_name=_('is public'))
+    is_voting = models.BooleanField(default=False, verbose_name=_('is voting'))
+    is_result_published = models.BooleanField(default=False, verbose_name=_('is result published'))
     is_active = models.BooleanField(default=True)
 
 
