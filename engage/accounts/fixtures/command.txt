@@ -1,2 +1,0 @@
-python manage.py loaddata engage/accounts/fixtures/member.json
-python manage.py loaddata engage/accounts/fixtures/g-user.json
