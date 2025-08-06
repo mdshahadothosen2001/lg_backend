@@ -1,134 +1,134 @@
 [
     {
         "model": "accounts.user",
-        "pk": 7001,
+        "pk": 2001,
         "fields": {
             "name": "Razzak Ponchayet",
             "email": "raz@ces.com",
-            "password": "7001",
-            "username": "7001",
+            "password": "2001",
+            "username": "2001",
             "is_active": true,
-            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88756468.jpg"
+            "picture": "https://thumbs.dreamstime.com/b/red-admin-sign-pc-laptop-vector-illustration-administrator-icon-screen-controller-man-system-box-88256468.jpg"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 7002,
+        "pk": 2002,
         "fields": {
             "name": "Yousuf Ali",
             "email": "yousuf@ces.com",
-            "password": "7002",
-            "username": "7002",
+            "password": "2002",
+            "username": "2002",
             "is_active": true,
             "picture": "https://cdn-icons-png.flaticon.com/512/219/219988.png"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 7003,
+        "pk": 2003,
         "fields": {
             "name": "Zohorul Islam",
             "email": "zohorul@ces.com",
-            "password": "7003",
-            "username": "7003",
+            "password": "2003",
+            "username": "2003",
             "is_active": true,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9lRck6miglY0SZF_BZ_sK829yiNskgYRUg&s"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 7004,
+        "pk": 2004,
         "fields": {
             "name": "Zakir Naik",
             "email": "zakir@ces.com",
-            "password": "7004",
-            "username": "7004",
+            "password": "2004",
+            "username": "2004",
             "is_active": true,
             "picture": "https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/man-user-circle-icon.png"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 7005,
+        "pk": 2005,
         "fields": {
             "name": "Ripon Ponchayet",
             "email": "ripon@ces.com",
-            "password": "7005",
-            "username": "7005",
+            "password": "2005",
+            "username": "2005",
             "is_active": true,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLU5_eUUGBfxfxRd4IquPiEwLbt4E_6RYMw&s"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 7006,
+        "pk": 2006,
         "fields": {
             "name": "Sairot Jaman",
             "email": "sairot@ces.com",
-            "password": "7006",
-            "username": "7006",
+            "password": "2006",
+            "username": "2006",
             "is_active": true,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 7007,
+        "pk": 2002,
         "fields": {
             "name": "Shakil Ahmed",
             "email": "shakil@ces.com",
-            "password": "7007",
-            "username": "7007",
+            "password": "2002",
+            "username": "2002",
             "is_active": true,
-            "picture": "https://cdn-icons-png.flaticon.com/512/709/709699.png"
+            "picture": "https://cdn-icons-png.flaticon.com/512/209/209699.png"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 7008,
+        "pk": 2008,
         "fields": {
             "name": "Mizanur Rahman",
             "email": "mizanur@ces.com",
-            "password": "7008",
-            "username": "7008",
+            "password": "2008",
+            "username": "2008",
             "is_active": true,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwnYnwftDUSjsQmLQvMBZ2pwDXhAJiIdfKvg&s"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 7009,
+        "pk": 2009,
         "fields": {
             "name": "Faruk Hossain",
             "email": "faruk@ces.com",
-            "password": "7009",
-            "username": "7009",
+            "password": "2009",
+            "username": "2009",
             "is_active": true,
             "picture": "https://png.pngtree.com/png-vector/20190501/ourmid/pngtree-users-icon-design-png-image_1014936.jpg"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 7010,
+        "pk": 2010,
         "fields": {
             "name": "Sabbir Khan",
             "email": "sabbir@ces.com",
-            "password": "7010",
-            "username": "7010",
+            "password": "2010",
+            "username": "2010",
             "is_active": true,
             "picture": "https://cdn-icons-png.flaticon.com/512/219/219988.png"
         }
     },
     {
         "model": "accounts.user",
-        "pk": 7011,
+        "pk": 2011,
         "fields": {
             "name": "Rifat Chowdhury",
             "email": "rifat@ces.com",
-            "password": "7011",
-            "username": "7011",
+            "password": "2011",
+            "username": "2011",
             "is_active": true,
-            "picture": "https://i.pinimg.com/1200x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+            "picture": "https://i.pinimg.com/1200x/8b/16/2a/8b162af653c2399dd93b952a48240620.jpg"
         }
     }
 ]
