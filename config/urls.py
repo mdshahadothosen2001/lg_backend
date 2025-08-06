@@ -7,7 +7,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('locations/api/', include('engage.locations.api.urls')),
     path('local-govt/api/', include('engage.local_govt.urls')),
-    path('respond/api/', include('engage.request.api.urls')),
+    path('respond/api/', include('engage.request.urls')),
     path('notice/api/', include('engage.notification.api.urls')),
 ]
 
