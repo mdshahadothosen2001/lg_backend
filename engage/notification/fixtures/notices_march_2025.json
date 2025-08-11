@@ -3,9 +3,9 @@
     "model": "notification.notice",
     "pk": 1,
     "fields": {
-      "title": "নোটিশ 1",
+      "title": "আগামী ৫ মার্চ পরিষদ সভার তারিখ ঘোষণা",
       "date": "2025-03-01",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
+      "file": "uploads/union_meeting_announcement.pdf",
       "union": 1165,
       "is_active": true
     }
@@ -14,9 +14,9 @@
     "model": "notification.notice",
     "pk": 2,
     "fields": {
-      "title": "নোটিশ 2",
+      "title": "ভিজিএফ চাল বিতরণের সময়সূচী",
       "date": "2025-03-02",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
+      "file": "uploads/vgf_distribution.pdf",
       "union": 1165,
       "is_active": true
     }
@@ -25,9 +25,9 @@
     "model": "notification.notice",
     "pk": 3,
     "fields": {
-      "title": "নোটিশ 3",
+      "title": "বাজার উন্নয়ন প্রকল্পের কাজ শুরুর বিজ্ঞপ্তি",
       "date": "2025-03-03",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
+      "file": "uploads/market_development_notice.pdf",
       "union": 1165,
       "is_active": true
     }
@@ -36,9 +36,9 @@
     "model": "notification.notice",
     "pk": 4,
     "fields": {
-      "title": "নোটিশ 4",
+      "title": "নবীন কৃষকদের প্রশিক্ষণ কর্মসূচি",
       "date": "2025-03-04",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
+      "file": "uploads/farmer_training.pdf",
       "union": 1165,
       "is_active": true
     }
@@ -47,9 +47,9 @@
     "model": "notification.notice",
     "pk": 5,
     "fields": {
-      "title": "নোটিশ 5",
+      "title": "মৌসুমি বন্যা প্রতিরোধ কার্যক্রম পরিকল্পনা",
       "date": "2025-03-05",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
+      "file": "uploads/flood_prevention_plan.pdf",
       "union": 1165,
       "is_active": true
     }
@@ -58,9 +58,9 @@
     "model": "notification.notice",
     "pk": 6,
     "fields": {
-      "title": "নোটিশ 6",
+      "title": "জাতীয় পরিচয়পত্র সংশোধন ও বিতরণ বিজ্ঞপ্তি",
       "date": "2025-03-06",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
+      "file": "uploads/nid_update_notice.pdf",
       "union": 1165,
       "is_active": true
     }
@@ -69,262 +69,9 @@
     "model": "notification.notice",
     "pk": 7,
     "fields": {
-      "title": "নোটিশ 7",
+      "title": "ইউনিয়ন স্বাস্থ্যকেন্দ্রে বিনামূল্যে চিকিৎসা শিবির",
       "date": "2025-03-07",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 8,
-    "fields": {
-      "title": "নোটিশ 8",
-      "date": "2025-03-08",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 9,
-    "fields": {
-      "title": "নোটিশ 9",
-      "date": "2025-03-09",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 10,
-    "fields": {
-      "title": "নোটিশ 10",
-      "date": "2025-03-10",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 11,
-    "fields": {
-      "title": "নোটিশ 11",
-      "date": "2025-03-11",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 12,
-    "fields": {
-      "title": "নোটিশ 12",
-      "date": "2025-03-12",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 13,
-    "fields": {
-      "title": "নোটিশ 13",
-      "date": "2025-03-13",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 14,
-    "fields": {
-      "title": "নোটিশ 14",
-      "date": "2025-03-14",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 15,
-    "fields": {
-      "title": "নোটিশ 15",
-      "date": "2025-03-15",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 16,
-    "fields": {
-      "title": "নোটিশ 16",
-      "date": "2025-03-16",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 17,
-    "fields": {
-      "title": "নোটিশ 17",
-      "date": "2025-03-17",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 18,
-    "fields": {
-      "title": "নোটিশ 18",
-      "date": "2025-03-18",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 19,
-    "fields": {
-      "title": "নোটিশ 19",
-      "date": "2025-03-19",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 20,
-    "fields": {
-      "title": "নোটিশ 20",
-      "date": "2025-03-20",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 21,
-    "fields": {
-      "title": "নোটিশ 21",
-      "date": "2025-03-21",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 22,
-    "fields": {
-      "title": "নোটিশ 22",
-      "date": "2025-03-22",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 23,
-    "fields": {
-      "title": "নোটিশ 23",
-      "date": "2025-03-23",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 24,
-    "fields": {
-      "title": "নোটিশ 24",
-      "date": "2025-03-24",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 25,
-    "fields": {
-      "title": "নোটিশ 25",
-      "date": "2025-03-25",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 26,
-    "fields": {
-      "title": "নোটিশ 26",
-      "date": "2025-03-26",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 27,
-    "fields": {
-      "title": "নোটিশ 27",
-      "date": "2025-03-27",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 28,
-    "fields": {
-      "title": "নোটিশ 28",
-      "date": "2025-03-28",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 29,
-    "fields": {
-      "title": "নোটিশ 29",
-      "date": "2025-03-29",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
-      "union": 1165,
-      "is_active": true
-    }
-  },
-  {
-    "model": "notification.notice",
-    "pk": 30,
-    "fields": {
-      "title": "নোটিশ 30",
-      "date": "2025-03-30",
-      "file": "uploads/বস_বরদদর_নটশ_4c4EtTb.pdf",
+      "file": "uploads/free_medical_camp.pdf",
       "union": 1165,
       "is_active": true
     }
