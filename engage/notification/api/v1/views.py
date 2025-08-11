@@ -10,7 +10,7 @@ class NoticeListView(APIView):
     permission_classes = [AllowAny]
     
     def get(self, request):
-        union = request.query_params.get('union')
+        union = request.query_params.get('union_id')
         if union:
             notices = Notice.objects.filter(is_active=True, union__id=union)
             serializer = NoticeSerializer(notices, many=True)
