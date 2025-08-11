@@ -31,7 +31,7 @@ class EvenListView(APIView):
     permission_classes = [AllowAny]
     
     def get(self, request):
-        union = request.query_params.get('union')
+        union = request.query_params.get('union_id')
         if union:
             evens = Event.objects.filter(is_active=True, union__id=union)
             serializer = EvenSerializer(evens, many=True)

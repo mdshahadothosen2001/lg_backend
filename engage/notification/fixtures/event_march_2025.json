@@ -1,0 +1,122 @@
+[
+  {
+    "model": "notification.event",
+    "pk": 1,
+    "fields": {
+      "title": "গ্রামীণ উন্নয়ন বিষয়ক সচেতনতামূলক সভা",
+      "description": "স্থানীয় উন্নয়ন পরিকল্পনা ও নাগরিক সেবার মানোন্নয়ন নিয়ে আলোচনা সভা।",
+      "union": 1165,
+      "start": "10:00:00",
+      "duration": 120,
+      "link": "https://example.com/event/1"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 2,
+    "fields": {
+      "title": "বিনামূল্যে স্বাস্থ্য পরীক্ষা ক্যাম্প",
+      "description": "ইউনিয়ন স্বাস্থ্যকেন্দ্রে স্থানীয় বাসিন্দাদের জন্য বিনামূল্যে স্বাস্থ্য পরীক্ষা ও ঔষধ বিতরণ।",
+      "union": 1165,
+      "start": "09:30:00",
+      "duration": 180,
+      "link": "https://example.com/event/2"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 3,
+    "fields": {
+      "title": "কৃষি প্রযুক্তি প্রশিক্ষণ কর্মশালা",
+      "description": "নতুন কৃষি প্রযুক্তি, সার ব্যবহারের নিয়ম ও সেচ ব্যবস্থাপনা নিয়ে প্রশিক্ষণ।",
+      "union": 1165,
+      "start": "11:00:00",
+      "duration": 150,
+      "link": "https://example.com/event/3"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 4,
+    "fields": {
+      "title": "মৌসুমি বন্যা প্রস্তুতি আলোচনা",
+      "description": "বন্যা মোকাবিলা ও ত্রাণ বিতরণের পরিকল্পনা নিয়ে স্থানীয় প্রশাসনের সাথে আলোচনা।",
+      "union": 1165,
+      "start": "14:00:00",
+      "duration": 90,
+      "link": "https://example.com/event/4"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 5,
+    "fields": {
+      "title": "শিক্ষার্থী বৃত্তি প্রদান অনুষ্ঠান",
+      "description": "মেধাবী শিক্ষার্থীদের মধ্যে বৃত্তি ও শিক্ষা উপকরণ বিতরণ।",
+      "union": 1165,
+      "start": "10:30:00",
+      "duration": 120,
+      "link": "https://example.com/event/5"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 6,
+    "fields": {
+      "title": "পরিষ্কার-পরিচ্ছন্নতা অভিযান",
+      "description": "ইউনিয়ন পরিষদ এলাকায় পরিচ্ছন্নতা বজায় রাখার উদ্দেশ্যে স্বেচ্ছাসেবী কার্যক্রম।",
+      "union": 1165,
+      "start": "08:00:00",
+      "duration": 240,
+      "link": "https://example.com/event/6"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 7,
+    "fields": {
+      "title": "নারী উদ্যোক্তা সম্মেলন",
+      "description": "স্থানীয় নারী উদ্যোক্তাদের উন্নয়ন, প্রশিক্ষণ ও সহায়তা কর্মসূচি।",
+      "union": 1165,
+      "start": "15:00:00",
+      "duration": 180,
+      "link": "https://example.com/event/7"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 8,
+    "fields": {
+      "title": "টিকাদান কর্মসূচি",
+      "description": "৫ বছরের নিচের শিশুদের জন্য বিনামূল্যে টিকা প্রদান।",
+      "union": 1165,
+      "start": "09:00:00",
+      "duration": 300,
+      "link": "https://example.com/event/8"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 9,
+    "fields": {
+      "title": "গ্রাম আদালত সচেতনতা সভা",
+      "description": "গ্রাম আদালতের ভূমিকা ও সুবিধা সম্পর্কে জনগণকে অবহিতকরণ।",
+      "union": 1165,
+      "start": "13:00:00",
+      "duration": 90,
+      "link": "https://example.com/event/9"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 10,
+    "fields": {
+      "title": "পরিবার পরিকল্পনা বিষয়ক সেমিনার",
+      "description": "পরিবার পরিকল্পনা ও স্বাস্থ্যসেবা বিষয়ে আলোচনা ও পরামর্শ।",
+      "union": 1165,
+      "start": "10:00:00",
+      "duration": 120,
+      "link": "https://example.com/event/10"
+    }
+  }
+]
