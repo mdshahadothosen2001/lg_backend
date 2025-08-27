@@ -50,7 +50,7 @@ class ContributionSerializer(serializers.ModelSerializer):
         ]
     
     def get_contributors(self, obj):
-        return [user.username for user in obj.Contributor.all()]
+        return [user.name for user in obj.Contributor.all()]
     
     def get_union_id(self, obj):
         return obj.union.id if obj.union else None

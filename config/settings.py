@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from config.jwt_settings import JWT_SETTINGS
+from datetime import timedelta
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,7 +23,6 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = [
     "rest_framework",
-    "rest_framework_simplejwt",
     "corsheaders",
 ]
 
@@ -40,17 +39,7 @@ LOCAL_APPS = [
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
-SIMPLE_JWT = JWT_SETTINGS
 
-REST_FRAMEWORK = {
-    "DEFAULT_AUTHENTICATION_CLASSES": [
-        "rest_framework_simplejwt.authentication.JWTStatelessUserAuthentication",
-    ],
-    "DEFAULT_RENDERER_CLASSES": ["rest_framework.renderers.JSONRenderer"],
-    "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.IsAuthenticated",
-    ],
-}
 
 DJANGO_MIDDLEWARES = [
     'django.middleware.security.SecurityMiddleware',
@@ -151,3 +140,8 @@ CORS_ALLOW_METHODS = [
 ]
 
 CORS_ALLOW_CREDENTIALS = True
+
+
+JWT_SECRET = "ces"
+JWT_ALGORITHM = "HS256"
+JWT_EXP_DELTA_SECONDS = timedelta(days=30).total_seconds()

@@ -7,6 +7,7 @@
             "email": "raz@ces.com",
             "password": "2001",
             "username": "2001",
+            "nid_no": "2001",
             "is_active": true,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
         }
@@ -19,6 +20,7 @@
             "email": "yousuf@ces.com",
             "password": "2002",
             "username": "2002",
+            "nid_no": "2002",
             "is_active": true,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
         }
@@ -31,6 +33,7 @@
             "email": "zohorul@ces.com",
             "password": "2003",
             "username": "2003",
+            "nid_no": "2003",
             "is_active": true,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9lRck6miglY0SZF_BZ_sK829yiNskgYRUg&s"
         }
@@ -43,6 +46,7 @@
             "email": "zakir@ces.com",
             "password": "2004",
             "username": "2004",
+            "nid_no": "2004",
             "is_active": true,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
         }
@@ -55,6 +59,7 @@
             "email": "ripon@ces.com",
             "password": "2005",
             "username": "2005",
+            "nid_no": "2005",
             "is_active": true,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLU5_eUUGBfxfxRd4IquPiEwLbt4E_6RYMw&s"
         }
@@ -67,6 +72,7 @@
             "email": "sairot@ces.com",
             "password": "2006",
             "username": "2006",
+            "nid_no": "2006",
             "is_active": true,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
         }
@@ -79,6 +85,7 @@
             "email": "shakil@ces.com",
             "password": "2007",
             "username": "2007",
+            "nid_no": "2007",
             "is_active": true,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
         }
@@ -91,6 +98,7 @@
             "email": "mizanur@ces.com",
             "password": "2008",
             "username": "2008",
+            "nid_no": "2008",
             "is_active": true,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwnYnwftDUSjsQmLQvMBZ2pwDXhAJiIdfKvg&s"
         }
@@ -103,6 +111,7 @@
             "email": "faruk@ces.com",
             "password": "2009",
             "username": "2009",
+            "nid_no": "2009",
             "is_active": true,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLU5_eUUGBfxfxRd4IquPiEwLbt4E_6RYMw&s"
         }
@@ -115,6 +124,7 @@
             "email": "sabbir@ces.com",
             "password": "2010",
             "username": "2010",
+            "nid_no": "2010",
             "is_active": true,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
         }
@@ -127,6 +137,7 @@
             "email": "rifat@ces.com",
             "password": "2011",
             "username": "2011",
+            "nid_no": "2011",
             "is_active": true,
             "picture": "https://us.123rf.com/450wm/tuktukdesign/tuktukdesign1703/tuktukdesign170300058/73533499-man-user-icon-person-profile-avatar-glyph-vector-illustration.jpg?ver=6"
         }
