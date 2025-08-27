@@ -10,6 +10,7 @@ urlpatterns = [
     path('respond/api/', include('engage.request.urls')),
     path('notice/api/', include('engage.notification.api.urls')),
     path('api/user/', include('engage.accounts.urls')),
+    path('api/service/', include('engage.service.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
