@@ -10,7 +10,6 @@ class MemberSerializer(serializers.ModelSerializer):
         model = Member
         fields = [
             'name',
-            'id',
             'picture',
             'position',
             'start_at',
@@ -25,6 +24,7 @@ class MemberSerializer(serializers.ModelSerializer):
     
     def to_representation(self, instance):
         representation = super().to_representation(instance)
+        representation["id"] = instance.user.nid_no if instance.user.nid_no else instance.user.id
         representation['union_name'] = instance.union.name if instance.union else None
         representation['union_id'] = instance.union.id if instance.union else None
         return representation
