@@ -12,6 +12,7 @@ class Service(models.Model):
     title = models.CharField(max_length=50, verbose_name=_('title'))
     description = models.TextField(verbose_name=_('description'), null=True, blank=True)
     link = models.URLField(null=True, blank=True)
+    icon = models.ImageField(null=True, blank=True)
     
     is_active = models.BooleanField(default=True)
 
