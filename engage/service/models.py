@@ -7,7 +7,7 @@ from engage.local_govt.models import Member
 from engage.locations.models import  Union
 
 
-class Service(TimestampModel):
+class Service(models.Model):
     union = models.ForeignKey(Union, on_delete=models.PROTECT, verbose_name=_('union'), related_name='+', null=True, blank=True)
     title = models.CharField(max_length=50, verbose_name=_('title'))
     description = models.TextField(verbose_name=_('description'), null=True, blank=True)
