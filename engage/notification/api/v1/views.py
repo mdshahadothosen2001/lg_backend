@@ -36,7 +36,7 @@ class EvenListView(APIView):
         if union:
             events = Event.objects.filter(is_active=True, union__id=union)
             if member_id:
-                events = events.objects.filter(members__regex=fr'(^|,){member_id}(,|$)')
+                events = events.filter(members__regex=fr'(^|,){member_id}(,|$)')
             serializer = EvenSerializer(events, many=True)
 
             data = {
