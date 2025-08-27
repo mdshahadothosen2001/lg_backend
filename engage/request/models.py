@@ -14,6 +14,10 @@ class Request(TimestampModel):
     title = models.CharField(max_length=50, verbose_name=_('title'))
     description = models.TextField(verbose_name=_('description'), null=True, blank=True)
     file = models.URLField(null=True, blank=True)
+
+    requested_to = models.CharField(max_length=100, null=True, blank=True)
+    category = models.CharField(max_length=100, null=True, blank=True)
+    is_best = models.BooleanField(default=False)
     
     class Status(models.TextChoices):
         pending = "pending"

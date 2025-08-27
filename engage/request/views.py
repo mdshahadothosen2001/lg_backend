@@ -16,9 +16,12 @@ class RespondAPIView(APIView):
     def get(self, request):
         print("RespondAPIView get method called")
         union = request.query_params.get('union')
+        is_best = request.query_params.get('f', None)
         data = []
         if union and union.isdigit():
             responds = Request.objects.filter(union__id=union)
+            if is_best == "love":
+                responds = responds.filter(is_best=True)
             paginator = StandardResultsSetPagination()
             paginated_data = paginator.paginate_queryset(responds, request)
             serialized_data = RespondListSerializer(paginated_data, many=True)
