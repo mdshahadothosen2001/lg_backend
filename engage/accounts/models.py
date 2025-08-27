@@ -34,6 +34,7 @@ class User(AbstractUser):
     # Status fields
     email_verified = models.BooleanField(verbose_name=_('email verified'), default=False)
     mobile_verified = models.BooleanField(verbose_name=_('mobile verified'), default=False)
+    name = models.CharField(max_length=100, null=True, blank=True)
 
     class Meta:
         verbose_name = _('user')

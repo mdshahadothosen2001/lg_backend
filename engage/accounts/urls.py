@@ -1,8 +1,9 @@
 from django.urls import path
 
-from engage.accounts.views import LoginView
+from engage.accounts.views import LoginView, ProfileView
 
 
 urlpatterns = [
     path('login/', LoginView.as_view(), name='login'),
+    path('profile/', ProfileView.as_view(), name='profile'),
 ]

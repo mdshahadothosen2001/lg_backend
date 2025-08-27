@@ -8,6 +8,7 @@
             "password": "1001",
             "username": "1001",
             "nid_no": "1001",
+            "gender": "male",
             "is_active": true,
             "is_staff": true,
             "is_superuser": true,
@@ -23,6 +24,7 @@
             "password": "1002",
             "username": "1002",
             "nid_no": "1002",
+            "gender": "male",
             "is_active": true,
             "is_staff": true,
             "is_superuser": true,
@@ -37,6 +39,7 @@
             "email": "mahmudul@ces.com",
             "password": "1003",
             "username": "1003",
+            "gender": "male",
             "nid_no": "1003",
             "is_active": true,
             "is_staff": false,
@@ -53,6 +56,7 @@
             "password": "1004",
             "username": "1004",
             "nid_no": "1004",
+            "gender": "male",
             "is_active": true,
             "is_staff": false,
             "is_superuser": false,
@@ -69,6 +73,7 @@
             "username": "1005",
             "nid_no": "1005",
             "is_active": true,
+            "gender": "male",
             "is_staff": false,
             "is_superuser": false,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLU5_eUUGBfxfxRd4IquPiEwLbt4E_6RYMw&s"
@@ -84,6 +89,7 @@
             "username": "1006",
             "nid_no": "1006",
             "is_active": true,
+            "gender": "male",
             "is_staff": false,
             "is_superuser": false,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
@@ -99,6 +105,7 @@
             "username": "1007",
             "nid_no": "1007",
             "is_active": true,
+            "gender": "male",
             "is_staff": false,
             "is_superuser": false,
             "picture": "https://cdn-icons-png.flaticon.com/512/709/709699.png"
@@ -114,6 +121,7 @@
             "username": "1008",
             "nid_no": "1008",
             "is_active": true,
+            "gender": "male",
             "is_staff": false,
             "is_superuser": false,
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwnYnwftDUSjsQmLQvMBZ2pwDXhAJiIdfKvg&s"
@@ -129,6 +137,7 @@
             "username": "1009",
             "nid_no": "1009",
             "is_active": true,
+            "gender": "male",
             "is_staff": false,
             "is_superuser": false,
             "picture": "https://png.pngtree.com/png-vector/20190501/ourmid/pngtree-users-icon-design-png-image_1014936.jpg"
@@ -144,6 +153,7 @@
             "username": "1010",
             "nid_no": "1010",
             "is_active": true,
+            "gender": "male",
             "is_staff": false,
             "is_superuser": false,
             "picture": "https://i.pinimg.com/1200x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"

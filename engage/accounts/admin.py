@@ -51,7 +51,7 @@ class UserAdmin(BaseUserAdmin):
             'fields': ['username', 'password1', 'password2'],
         })
     ]
-    list_display = ['username', 'mobile_number', 'email', 'name', 'is_staff']
+    list_display = ['username', 'nid_no', 'mobile_number', 'email', 'name', 'is_staff']
     list_filter = [
         'is_active',
         'email_verified',

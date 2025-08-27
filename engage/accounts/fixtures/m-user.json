@@ -9,6 +9,7 @@
             "username": "2001",
             "nid_no": "2001",
             "is_active": true,
+            "gender": "male",
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
         }
     },
@@ -22,6 +23,7 @@
             "username": "2002",
             "nid_no": "2002",
             "is_active": true,
+            "gender": "male",
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
         }
     },
@@ -35,6 +37,7 @@
             "username": "2003",
             "nid_no": "2003",
             "is_active": true,
+            "gender": "male",
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9lRck6miglY0SZF_BZ_sK829yiNskgYRUg&s"
         }
     },
@@ -48,6 +51,7 @@
             "username": "2004",
             "nid_no": "2004",
             "is_active": true,
+            "gender": "male",
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
         }
     },
@@ -61,6 +65,7 @@
             "username": "2005",
             "nid_no": "2005",
             "is_active": true,
+            "gender": "male",
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLU5_eUUGBfxfxRd4IquPiEwLbt4E_6RYMw&s"
         }
     },
@@ -74,6 +79,7 @@
             "username": "2006",
             "nid_no": "2006",
             "is_active": true,
+            "gender": "male",
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
         }
     },
@@ -87,6 +93,7 @@
             "username": "2007",
             "nid_no": "2007",
             "is_active": true,
+            "gender": "male",
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
         }
     },
@@ -100,6 +107,7 @@
             "username": "2008",
             "nid_no": "2008",
             "is_active": true,
+            "gender": "male",
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwnYnwftDUSjsQmLQvMBZ2pwDXhAJiIdfKvg&s"
         }
     },
@@ -113,6 +121,7 @@
             "username": "2009",
             "nid_no": "2009",
             "is_active": true,
+            "gender": "male",
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLU5_eUUGBfxfxRd4IquPiEwLbt4E_6RYMw&s"
         }
     },
@@ -126,6 +135,7 @@
             "username": "2010",
             "nid_no": "2010",
             "is_active": true,
+            "gender": "male",
             "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
         }
     },
@@ -139,6 +149,7 @@
             "username": "2011",
             "nid_no": "2011",
             "is_active": true,
+            "gender": "male",
             "picture": "https://us.123rf.com/450wm/tuktukdesign/tuktukdesign1703/tuktukdesign170300058/73533499-man-user-icon-person-profile-avatar-glyph-vector-illustration.jpg?ver=6"
         }
     }
