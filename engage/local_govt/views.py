@@ -15,7 +15,7 @@ class MemberListAPIView(APIView):
     def get(self, request):
         union = request.query_params.get('union_id')
         member_name = request.query_params.get('name')
-        members = Member.objects.all()
+        members = Member.objects.all().order_by("user__nid_no")
 
         if union:
             members = members.filter(union__id=union)
