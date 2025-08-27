@@ -5,11 +5,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework import status
 
-from django.template.loader import render_to_string
-from xhtml2pdf import pisa
-from django.http import HttpResponse
-
-from engage.request.serializers import RespondCreateSerializer, RespondListSerializer, RespondImageSerializer, RequestReportSerializer
+from engage.request.serializers import RespondCreateSerializer, RespondListSerializer, RespondImageSerializer
 from engage.request.models import Request, RespondImage
 from engage.utils.custom_pagination import StandardResultsSetPagination
 
