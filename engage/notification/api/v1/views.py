@@ -32,9 +32,12 @@ class EvenListView(APIView):
     
     def get(self, request):
         union = request.query_params.get('union_id')
+        member_id = request.query_params.get('member_id')
         if union:
-            evens = Event.objects.filter(is_active=True, union__id=union)
-            serializer = EvenSerializer(evens, many=True)
+            events = Event.objects.filter(is_active=True, union__id=union)
+            if member_id:
+                events = events.objects.filter(members__regex=fr'(^|,){member_id}(,|$)')
+            serializer = EvenSerializer(events, many=True)
 
             data = {
                 "result": True,

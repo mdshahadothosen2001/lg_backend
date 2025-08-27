@@ -26,6 +26,7 @@ class Event(models.Model):
     duration = models.SmallIntegerField(null=True, blank=True)
     link = models.URLField()
     union = models.ForeignKey(Union, on_delete=models.PROTECT, verbose_name=_('union'), related_name='+', null=True, blank=True)
+    members = models.CharField(max_length=500, null=True, blank=True)
     is_active = models.BooleanField(default=True)
 
     class Meta:
