@@ -1,5 +1,7 @@
 import json 
 
+from datetime import datetime, timedelta
+
 from rest_framework.views import APIView
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
@@ -83,3 +85,20 @@ class RespondImageListView(APIView):
         serializer = RespondImageSerializer(images, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
+
+
+class ActivityListView(APIView):
+    """
+    API to return a list of dummy activities
+    """
+    def get(self, request):
+        # Dummy activity data
+        dummy_activities = [
+            {"id": 1002, "user": "Zisan Islam", "action": "Created a request", "timestamp": datetime.now()},
+            {"id": 1002, "user": "Zisan Islam", "action": "Uploaded a image", "timestamp": datetime.now() - timedelta(hours=1)},
+            {"id": 2001, "user": "Razzak", "action": "The member Accepted this respond", "timestamp": datetime.now() - timedelta(days=1)},
+            {"id": 2001, "user": "Razzak", "action": "On going to find best solution", "timestamp": datetime.now() - timedelta(days=1)},
+            {"id": 1001, "user": "Shahadot Hosen", "action": "Given a solution", "timestamp": datetime.now() - timedelta(days=1)},
+            {"id": 2001, "user": "Razzak", "action": "Analyzis this solution", "timestamp": datetime.now() - timedelta(days=1)},
+        ]
+        return Response(dummy_activities, status=status.HTTP_200_OK)
