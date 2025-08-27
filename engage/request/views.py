@@ -16,7 +16,7 @@ class RespondAPIView(APIView):
     def get(self, request):
         print("RespondAPIView get method called")
         union = request.query_params.get('union')
-        is_best = request.query_params.get('f', None)
+        is_best = request.query_params.get('filter', None)
         data = []
         if union and union.isdigit():
             responds = Request.objects.filter(union__id=union)
