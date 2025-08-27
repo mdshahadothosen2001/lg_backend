@@ -20,3 +20,4 @@ venv.bak/
 # static files
 **/images/**
 **/migrations/** 
+media/**

@@ -1,6 +1,8 @@
 from rest_framework import serializers
 from engage.request.models import Request
 
+from engage.request.models import RespondImage
+
 
 class RespondListSerializer(serializers.ModelSerializer):
     responder_picture = serializers.SerializerMethodField()
@@ -82,3 +84,11 @@ class RespondCreateSerializer(serializers.ModelSerializer):
             'possibility_amount',
             'possibility_time_required',
         ]
+
+
+
+class RespondImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = RespondImage
+        fields = ['id', 'respond', 'image']
+

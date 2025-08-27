@@ -39,3 +39,21 @@ class Request(TimestampModel):
 
     def __str__(self):
         return self.title
+
+
+class RespondImage(models.Model):
+    respond = models.ForeignKey(
+        Request, 
+        on_delete=models.PROTECT, 
+        verbose_name=_('image'), 
+        related_name='respond_images',
+        help_text=_('respond images')
+    )
+    image = models.ImageField(upload_to='respond_images/')
+
+    class Meta:
+        verbose_name = _('respond_img')
+        verbose_name_plural = _('respond_imgs')
+
+    def __str__(self):
+        return self.respond.title
