@@ -10,6 +10,7 @@ from rest_framework import status
 from engage.request.serializers import RespondCreateSerializer, RespondListSerializer, RespondImageSerializer
 from engage.request.models import Request, RespondImage
 from engage.utils.custom_pagination import StandardResultsSetPagination
+from pytz import timezone
 
 
 class RespondAPIView(APIView):
@@ -89,10 +90,10 @@ class RespondImageListView(APIView):
 
 class ActivityListView(APIView):
     """
-    API to return a list of dummy activities
+    API to return a list of dummy activities with separate date and time in BD time (12-hour format with AM/PM)
     """
     def get(self, request, respond_id):
-        # Dummy activity data
+        bd_tz = timezone('Asia/Dhaka')
         dummy_activities = [
             {"id": 1002, "user": "Zisan Islam", "action": "Created a request", "timestamp": datetime.now()},
             {"id": 1002, "user": "Zisan Islam", "action": "Uploaded a image", "timestamp": datetime.now() - timedelta(hours=1)},
@@ -101,4 +102,14 @@ class ActivityListView(APIView):
             {"id": 1001, "user": "Shahadot Hosen", "action": "Given a solution", "timestamp": datetime.now() - timedelta(days=1)},
             {"id": 2001, "user": "Razzak", "action": "Analyzis this solution", "timestamp": datetime.now() - timedelta(days=1)},
         ]
-        return Response(dummy_activities, status=status.HTTP_200_OK)
+        activities = []
+        for activity in dummy_activities:
+            bd_time = activity["timestamp"].astimezone(bd_tz)
+            activities.append({
+                "id": activity["id"],
+                "user": activity["user"],
+                "action": activity["action"],
+                "date": bd_time.strftime("%Y-%m-%d"),
+                "time": bd_time.strftime("%I:%M %p"),
+            })
+        return Response(activities, status=status.HTTP_200_OK)

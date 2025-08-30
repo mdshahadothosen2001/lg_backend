@@ -14,3 +14,4 @@ djangorestframework-jwt
 PyJWT
 django-filter
 pillow
+pytz
