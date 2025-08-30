@@ -57,3 +57,58 @@ class RespondImage(models.Model):
 
     def __str__(self):
         return self.respond.title
+
+
+
+class Solution(TimestampModel):
+    request = models.ForeignKey(
+        Request,
+        on_delete=models.CASCADE,
+        related_name="solutions",
+        verbose_name=_("request")
+    )
+    suggested_by = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name="solutions",
+        verbose_name=_("suggested by")
+    )
+    description = models.TextField(verbose_name=_("solution description"))
+    file = models.URLField(null=True, blank=True)
+
+    is_best = models.BooleanField(default=False, help_text=_("Marked as best by admin"))
+    is_open_for_vote = models.BooleanField(default=False, help_text=_("Admin opened voting for this solution"))
+
+    class Meta:
+        verbose_name = _("solution")
+        verbose_name_plural = _("solutions")
+
+    def __str__(self):
+        return f"Solution by {self.suggested_by} for {self.request}"
+
+
+class SolutionVote(TimestampModel):
+    solution = models.ForeignKey(
+        Solution,
+        on_delete=models.CASCADE,
+        related_name="votes",
+        verbose_name=_("solution")
+    )
+    voted_by = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name="solution_votes",
+        verbose_name=_("voted by")
+    )
+    value = models.BooleanField(
+        default=True,
+        help_text=_("True = upvote, False = downvote")
+    )
+
+    class Meta:
+        verbose_name = _("solution vote")
+        verbose_name_plural = _("solution votes")
+        unique_together = ("solution", "voted_by")  # prevent duplicate vote
+
+    def __str__(self):
+        return f"{'Upvote' if self.value else 'Downvote'} by {self.voted_by}"

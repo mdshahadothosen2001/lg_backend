@@ -92,3 +92,51 @@ class RespondImageSerializer(serializers.ModelSerializer):
         model = RespondImage
         fields = ['id', 'respond', 'image']
 
+
+
+
+# Solution and Vote Serializers
+
+from .models import Solution, SolutionVote
+
+
+class SolutionSerializer(serializers.ModelSerializer):
+    votes_count = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Solution
+        fields = ['id', 'request', 'suggested_by', 'description', 'file',
+                  'is_best', 'is_open_for_vote', 'created_at', 'votes_count']
+
+    def get_votes_count(self, obj):
+        upvotes = obj.votes.filter(value=True).count()
+        downvotes = obj.votes.filter(value=False).count()
+        return {"upvotes": upvotes, "downvotes": downvotes}
+
+
+class SolutionCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Solution
+        fields = ['request', 'description', 'file']
+
+
+class SolutionVoteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SolutionVote
+        fields = ['id', 'solution', 'voted_by', 'value', 'created_at']
+        read_only_fields = ['voted_by', 'solution']
+
+
+
+class SolutionSerializer(serializers.ModelSerializer):
+    votes_count = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Solution
+        fields = ['id', 'request', 'suggested_by', 'description', 'file',
+                  'is_best', 'is_open_for_vote', 'created_at', 'votes_count']
+
+    def get_votes_count(self, obj):
+        upvotes = obj.votes.filter(value=True).count()
+        downvotes = obj.votes.filter(value=False).count()
+        return {"upvotes": upvotes, "downvotes": downvotes}
