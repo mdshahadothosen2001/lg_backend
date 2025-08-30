@@ -91,7 +91,7 @@ class ActivityListView(APIView):
     """
     API to return a list of dummy activities
     """
-    def get(self, request):
+    def get(self, request, respond_id):
         # Dummy activity data
         dummy_activities = [
             {"id": 1002, "user": "Zisan Islam", "action": "Created a request", "timestamp": datetime.now()},
