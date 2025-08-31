@@ -125,26 +125,24 @@ class SolutionCreateSerializer(serializers.ModelSerializer):
 
 
 class SolutionVoteSerializer(serializers.ModelSerializer):
+    solution_id = serializers.SerializerMethodField()
+    solution_description = serializers.SerializerMethodField()
+    solution_request_title = serializers.SerializerMethodField()
+
     class Meta:
         model = SolutionVote
-        fields = ['id', 'solution', 'voted_by', 'value', 'created_at']
+        fields = ['id', 'solution', 'solution_id', 'solution_description', 'solution_request_title', 'voted_by', 'value', 'created_at']
         read_only_fields = ['voted_by', 'solution']
 
+    def get_solution_id(self, obj):
+        return obj.solution.id if getattr(obj, 'solution', None) else None
 
+    def get_solution_description(self, obj):
+        return obj.solution.description if getattr(obj, 'solution', None) else None
 
-class SolutionSerializer(serializers.ModelSerializer):
-    votes_count = serializers.SerializerMethodField()
-    request_title = serializers.SerializerMethodField()
+    def get_solution_request_title(self, obj):
+        if not getattr(obj, 'solution', None):
+            return None
+        req = getattr(obj.solution, 'request', None)
+        return req.title if req else None
 
-    class Meta:
-        model = Solution
-        fields = ['id', 'request', 'request_title', 'suggested_by', 'description', 'file',
-                  'is_best', 'is_open_for_vote', 'created_at', 'votes_count']
-
-    def get_votes_count(self, obj):
-        upvotes = obj.votes.filter(value=True).count()
-        downvotes = obj.votes.filter(value=False).count()
-        return {"upvotes": upvotes, "downvotes": downvotes}
-
-    def get_request_title(self, obj):
-        return obj.request.title if getattr(obj, 'request', None) else None
