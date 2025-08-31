@@ -1,7 +1,8 @@
 # views.py
 from datetime import date, timedelta
 from rest_framework import generics, permissions
-from rest_framework.exceptions import ValidationError
+from rest_framework.exceptions import ValidationError, AuthenticationFailed
+from engage.utils.jwt_token import decode_jwt
 from .models import Solution, SolutionVote
 from .serializers import SolutionSerializer, SolutionCreateSerializer, SolutionVoteSerializer
 
@@ -63,9 +64,19 @@ class SolutionVoteListCreateView(generics.ListCreateAPIView):
 
 class SolutionFilterListView(generics.ListAPIView):
     serializer_class = SolutionSerializer
-    permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
+        # If Authorization header contains a Bearer token, decode and validate it
+        auth_header = self.request.META.get('HTTP_AUTHORIZATION', '')
+        if auth_header and auth_header.startswith('Bearer '):
+            token = auth_header.split(' ', 1)[1].strip()
+            try:
+                payload = decode_jwt(token)
+            except AuthenticationFailed as e:
+                # Raised when token is invalid or expired
+                raise ValidationError(str(e))
+            # payload is available if needed (e.g. payload.get('nid'))
+
         queryset = Solution.objects.all().order_by("-created_at")
         filter_type = self.request.query_params.get("filter", None)
         today = date.today()
