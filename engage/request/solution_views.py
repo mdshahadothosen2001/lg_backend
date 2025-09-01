@@ -15,7 +15,6 @@ class SolutionListCreateView(generics.ListCreateAPIView):
     - GET: List all solutions for a request
     - POST: Create a new solution
     """
-    permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
         request_id = self.kwargs.get("request_id")
@@ -27,7 +26,17 @@ class SolutionListCreateView(generics.ListCreateAPIView):
         return SolutionSerializer
 
     def perform_create(self, serializer):
-        serializer.save(suggested_by=self.request.user)
+        auth_header = self.request.META.get('HTTP_AUTHORIZATION', '')
+        if auth_header and auth_header.startswith('Bearer '):
+            token = auth_header.split(' ', 1)[1].strip()
+            try:
+                payload = decode_jwt(token)
+            except AuthenticationFailed as e:
+                # Raised when token is invalid or expired
+                raise ValidationError(str(e))
+            # payload is available if needed (e.g. payload.get('nid'))
+        user_id = payload.get('nid')
+        serializer.save(suggested_by=user_id)
 
 
 # -------------------------
@@ -38,7 +47,6 @@ class SolutionVoteListCreateView(generics.ListCreateAPIView):
     - GET: List all votes for a solution
     - POST: User can give a vote (upvote/downvote)
     """
-    permission_classes = [permissions.IsAuthenticated]
     serializer_class = SolutionVoteSerializer
 
     def get_queryset(self):
@@ -47,7 +55,17 @@ class SolutionVoteListCreateView(generics.ListCreateAPIView):
 
     def perform_create(self, serializer):
         solution_id = self.kwargs.get("solution_id")
-        voted_by = self.request.user
+
+        auth_header = self.request.META.get('HTTP_AUTHORIZATION', '')
+        if auth_header and auth_header.startswith('Bearer '):
+            token = auth_header.split(' ', 1)[1].strip()
+            try:
+                payload = decode_jwt(token)
+            except AuthenticationFailed as e:
+                # Raised when token is invalid or expired
+                raise ValidationError(str(e))
+            # payload is available if needed (e.g. payload.get('nid'))
+        voted_by = payload.get('nid')
 
         # Prevent duplicate vote
         if SolutionVote.objects.filter(solution_id=solution_id, voted_by=voted_by).exists():
