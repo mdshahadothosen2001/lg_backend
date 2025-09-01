@@ -27,6 +27,7 @@ class SolutionListCreateView(generics.ListCreateAPIView):
 
     def perform_create(self, serializer):
         auth_header = self.request.META.get('HTTP_AUTHORIZATION', '')
+        payload = None
         if auth_header and auth_header.startswith('Bearer '):
             token = auth_header.split(' ', 1)[1].strip()
             try:
@@ -35,8 +36,11 @@ class SolutionListCreateView(generics.ListCreateAPIView):
                 # Raised when token is invalid or expired
                 raise ValidationError(str(e))
             # payload is available if needed (e.g. payload.get('nid'))
-        user_id = payload.get('nid')
-        serializer.save(suggested_by=user_id)
+        if payload:
+            user_id = payload.get('nid')
+            serializer.save(suggested_by=user_id)
+        else:
+            raise ValidationError("Authentication credentials were not provided or are invalid.")
 
 
 # -------------------------
