@@ -33,14 +33,15 @@ class SolutionListCreateView(generics.ListCreateAPIView):
             try:
                 payload = decode_jwt(token)
             except AuthenticationFailed as e:
-                # Raised when token is invalid or expired
                 raise ValidationError(str(e))
-            # payload is available if needed (e.g. payload.get('nid'))
+
         if payload:
             user_id = payload.get('nid')
-            serializer.save(suggested_by=user_id)
+            request_id = self.kwargs.get("request_id")
+            serializer.save(suggested_by=user_id, request_id=request_id)
         else:
             raise ValidationError("Authentication credentials were not provided or are invalid.")
+
 
 
 # -------------------------
