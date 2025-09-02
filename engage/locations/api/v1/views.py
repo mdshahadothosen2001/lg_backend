@@ -88,9 +88,12 @@ class UnionListView(APIView):
             }
             return Response(data)
         
+        unions = Union.objects.all()
+        serializer = UnionCreateSerializer(unions, many=True)
+
         data = {
                 "success": False,
                 "message": "Union list can't retrieved successfully.",
-                "data": []
+                "data": serializer.data
             }
         return Response(data, status=status.HTTP_400_BAD_REQUEST)
