@@ -70,12 +70,13 @@ class SolutionVoteListCreateView(generics.ListCreateAPIView):
                 raise ValidationError(str(e))
             # payload is available if needed (e.g. payload.get('nid'))
         voted_by = payload.get('nid')
+        user = get_object_or_404(User, id=voted_by)
 
         # Prevent duplicate vote
-        if SolutionVote.objects.filter(solution_id=solution_id, voted_by=voted_by).exists():
+        if SolutionVote.objects.filter(solution_id=solution_id, voted_by=user).exists():
             raise ValidationError("You have already voted for this solution.")
 
-        serializer.save(solution_id=solution_id, voted_by=voted_by)
+        serializer.save(solution_id=solution_id, voted_by=user)
 
 
 
