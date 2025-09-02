@@ -89,34 +89,23 @@ class SolutionFilterListView(generics.ListAPIView):
     serializer_class = SolutionSerializer
 
     def get_queryset(self):
-        # If Authorization header contains a Bearer token, decode and validate it
-        auth_header = self.request.META.get('HTTP_AUTHORIZATION', '')
-        if auth_header and auth_header.startswith('Bearer '):
-            token = auth_header.split(' ', 1)[1].strip()
-            try:
-                payload = decode_jwt(token)
-            except AuthenticationFailed as e:
-                # Raised when token is invalid or expired
-                raise ValidationError(str(e))
-            # payload is available if needed (e.g. payload.get('nid'))
-
         queryset = Solution.objects.all().order_by("-created_at")
-        filter_type = self.request.query_params.get("filter", None)
+        list_type = self.request.query_params.get("list_type", None)
         today = date.today()
 
-        if filter_type == "today":
+        if list_type == "today":
             queryset = queryset.filter(created_at__date=today)
 
-        elif filter_type == "previous_day":
+        elif list_type == "previous_day":
             queryset = queryset.filter(created_at__date=today - timedelta(days=1))
 
-        elif filter_type == "last_week":
+        elif list_type == "last_week":
             queryset = queryset.filter(created_at__date__gte=today - timedelta(days=7))
 
-        elif filter_type == "last_month":
+        elif list_type == "last_month":
             queryset = queryset.filter(created_at__date__gte=today - timedelta(days=30))
 
-        elif filter_type == "voted":
+        elif list_type == "voted":
             user = self.request.user
             solution_ids = SolutionVote.objects.filter(voted_by=user).values_list("solution_id", flat=True)
             queryset = queryset.filter(id__in=solution_ids)
