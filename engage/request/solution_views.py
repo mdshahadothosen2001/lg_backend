@@ -89,6 +89,17 @@ class SolutionFilterListView(generics.ListAPIView):
     serializer_class = SolutionSerializer
 
     def get_queryset(self):
+        # If Authorization header contains a Bearer token, decode and validate it
+        auth_header = self.request.META.get('HTTP_AUTHORIZATION', '')
+        if auth_header and auth_header.startswith('Bearer '):
+            token = auth_header.split(' ', 1)[1].strip()
+            try:
+                payload = decode_jwt(token)
+            except AuthenticationFailed as e:
+                # Raised when token is invalid or expired
+                raise ValidationError(str(e))
+            # payload is available if needed (e.g. payload.get('nid'))
+
         queryset = Solution.objects.all().order_by("-created_at")
         list_type = self.request.query_params.get("list_type", None)
         today = date.today()
@@ -106,7 +117,7 @@ class SolutionFilterListView(generics.ListAPIView):
             queryset = queryset.filter(created_at__date__gte=today - timedelta(days=30))
 
         elif list_type == "voted":
-            user = self.request.user
+            user = get_object_or_404(User, id=payload.get('nid'))
             solution_ids = SolutionVote.objects.filter(voted_by=user).values_list("solution_id", flat=True)
             queryset = queryset.filter(id__in=solution_ids)
 
