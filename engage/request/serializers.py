@@ -106,8 +106,13 @@ class SolutionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Solution
-        fields = ['id', 'request', 'request_title', 'suggested_by', 'description', 'file',
-                  'is_best', 'is_open_for_vote', 'created_at', 'votes_count']
+        fields = [
+            'id', 'request', 'request_title',
+            'suggested_by', 'description', 'file',
+            'is_best', 'is_open_for_vote',
+            'created_at', 'votes_count'
+        ]
+        read_only_fields = ['request', 'suggested_by', 'request_title', 'votes_count']
 
     def get_votes_count(self, obj):
         upvotes = obj.votes.filter(value=True).count()

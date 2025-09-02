@@ -1,9 +1,11 @@
 # views.py
+from django.shortcuts import get_object_or_404
 from datetime import date, timedelta
 from rest_framework import generics, permissions
 from rest_framework.exceptions import ValidationError, AuthenticationFailed
 from engage.utils.jwt_token import decode_jwt
-from .models import Solution, SolutionVote
+from .models import Solution, SolutionVote, Request
+from engage.accounts.models import User
 from .serializers import SolutionSerializer, SolutionCreateSerializer, SolutionVoteSerializer
 
 
@@ -11,36 +13,33 @@ from .serializers import SolutionSerializer, SolutionCreateSerializer, SolutionV
 # Solution List & Create
 # -------------------------
 class SolutionListCreateView(generics.ListCreateAPIView):
-    """
-    - GET: List all solutions for a request
-    - POST: Create a new solution
-    """
+    serializer_class = SolutionSerializer
 
     def get_queryset(self):
         request_id = self.kwargs.get("request_id")
-        return Solution.objects.filter(request_id=request_id).order_by("-created_at")
-
-    def get_serializer_class(self):
-        if self.request.method == "POST":
-            return SolutionCreateSerializer
-        return SolutionSerializer
+        return Solution.objects.filter(request=request_id)
 
     def perform_create(self, serializer):
-        auth_header = self.request.META.get('HTTP_AUTHORIZATION', '')
-        payload = None
-        if auth_header and auth_header.startswith('Bearer '):
-            token = auth_header.split(' ', 1)[1].strip()
-            try:
-                payload = decode_jwt(token)
-            except AuthenticationFailed as e:
-                raise ValidationError(str(e))
+        request_id = self.kwargs.get("request_id")
 
-        if payload:
-            user_id = payload.get('nid')
-            request_id = self.kwargs.get("request_id")
-            serializer.save(suggested_by=user_id, request_id=request_id)
-        else:
-            raise ValidationError("Authentication credentials were not provided or are invalid.")
+        # --- Extract token from header ---
+        auth_header = self.request.META.get('HTTP_AUTHORIZATION', '')
+        if not auth_header or not auth_header.startswith('Bearer '):
+            raise AuthenticationFailed("Authorization token is required.")
+
+        token = auth_header.split(' ', 1)[1].strip()
+        try:
+            payload = decode_jwt(token)
+        except Exception:
+            raise AuthenticationFailed("Invalid or expired token.")
+
+        created_by = payload.get("nid")
+
+        req = get_object_or_404(Request, id=request_id)
+        user = get_object_or_404(User, id=created_by)
+
+        # Save solution with request + user
+        serializer.save(request=req, suggested_by=user)
 
 
 
