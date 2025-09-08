@@ -118,9 +118,14 @@ class SolutionFilterListView(generics.ListAPIView):
 
         elif list_type == "voted":
             # show only voted
+            if not payload:
+                # if no token/payload provided, return empty queryset
+                return Solution.objects.none()
             user = get_object_or_404(User, id=payload.get('nid'))
             solution_ids = SolutionVote.objects.filter(voted_by=user).values_list("solution_id", flat=True)
             queryset = queryset.filter(id__in=solution_ids)
+            # attach user_id to view so we can pass it into serializer context in list view
+            self._list_user_id = user.id
             return queryset
 
         # baki shob filter e "voted solution exclude"
@@ -130,4 +135,12 @@ class SolutionFilterListView(generics.ListAPIView):
             queryset = queryset.exclude(id__in=voted_ids)
 
         return queryset
+
+    def get_serializer(self, *args, **kwargs):
+        # Include user_id in serializer context if set during queryset filtering
+        context = self.get_serializer_context()
+        if hasattr(self, '_list_user_id'):
+            context['user_id'] = self._list_user_id
+        kwargs['context'] = context
+        return super().get_serializer(*args, **kwargs)
 

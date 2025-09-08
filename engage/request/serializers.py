@@ -103,15 +103,12 @@ from .models import Solution, SolutionVote
 class SolutionSerializer(serializers.ModelSerializer):
     votes_count = serializers.SerializerMethodField()
     request_title = serializers.SerializerMethodField()
+    user_vote = serializers.SerializerMethodField()
 
     class Meta:
         model = Solution
-        fields = [
-            'id', 'request', 'request_title',
-            'suggested_by', 'description', 'file',
-            'is_best', 'is_open_for_vote',
-            'created_at', 'votes_count'
-        ]
+        fields = ['id', 'request', 'request_title', 'suggested_by', 'description', 'file',
+                  'is_best', 'is_open_for_vote', 'created_at', 'votes_count', 'user_vote']
         read_only_fields = ['request', 'suggested_by', 'request_title', 'votes_count']
 
     def get_votes_count(self, obj):
@@ -121,6 +118,22 @@ class SolutionSerializer(serializers.ModelSerializer):
 
     def get_request_title(self, obj):
         return obj.request.title if getattr(obj, 'request', None) else None
+
+    def get_user_vote(self, obj):
+        # try explicit user_id from serializer context (set in view), else fall back to request.user
+        user_id = None
+        if 'user_id' in self.context and self.context.get('user_id'):
+            user_id = self.context.get('user_id')
+        else:
+            req = self.context.get('request')
+            if req and hasattr(req, 'user') and getattr(req.user, 'is_authenticated', False):
+                user_id = getattr(req.user, 'id', None)
+
+        if not user_id:
+            return None
+
+        vote = SolutionVote.objects.filter(solution=obj, voted_by_id=user_id).first()
+        return vote.value if vote is not None else None
 
 
 class SolutionCreateSerializer(serializers.ModelSerializer):
