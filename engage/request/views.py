@@ -1,12 +1,17 @@
 import json 
 
+from django.shortcuts import get_object_or_404
+
 from datetime import datetime, timedelta
 
+from rest_framework.exceptions import ValidationError, AuthenticationFailed
 from rest_framework.views import APIView
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework import status
 
+from engage.utils.jwt_token import decode_jwt
+from engage.accounts.models import User
 from engage.request.serializers import RespondCreateSerializer, RespondListSerializer, RespondImageSerializer
 from engage.request.models import Request, RespondImage
 from engage.utils.custom_pagination import StandardResultsSetPagination
@@ -40,7 +45,23 @@ class RespondAPIView(APIView):
     
     def post(self, request):
         union = request.data.get('union')
+        # If Authorization header contains a Bearer token, decode and validate it
+        auth_header = self.request.META.get('HTTP_AUTHORIZATION', '')
+        payload = None
+        if auth_header and auth_header.startswith('Bearer '):
+            token = auth_header.split(' ', 1)[1].strip()
+            try:
+                payload = decode_jwt(token)
+            except AuthenticationFailed as e:
+                # Raised when token is invalid or expired
+                raise ValidationError(str(e))
+        if payload:
+            user = get_object_or_404(User, id=payload.get('nid'))
+        else:
+            raise ValidationError("Authentication credentials were not provided or invalid.")
+
         if union:
+            request.data['requested_citizen'] = user.id
             serializer = RespondCreateSerializer(data=request.data)
             if serializer.is_valid():
                 serializer.save()

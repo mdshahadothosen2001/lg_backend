@@ -77,6 +77,7 @@ class RespondCreateSerializer(serializers.ModelSerializer):
             'requested_citizen',
             'taken_member',
             'title',
+            'category',
             'union',
             'description',
             'file',
