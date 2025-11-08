@@ -15,3 +15,5 @@ PyJWT
 django-filter
 pillow
 pytz
+# mysqlclient
+python-dotenv==1.0.1
