@@ -9,7 +9,8 @@
       "start_at": "2024-01-01",
       "end_at": "2024-06-01",
       "is_active": true,
-      "member": 2001
+      "member": 2001,
+      "Contributor": [1001, 1002, 1003]
     }
   },
   {
@@ -22,7 +23,8 @@
       "start_at": "2024-03-01",
       "end_at": "2024-09-01",
       "is_active": true,
-      "member": 2002
+      "member": 2002,
+      "Contributor": [1002, 1003, 1005, 1006]
     }
   },
   {
@@ -35,7 +37,8 @@
       "start_at": "2024-05-01",
       "end_at": "2024-12-01",
       "is_active": true,
-      "member": 2003
+      "member": 2003,
+      "Contributor": [1001, 1002, 1003, 1004, 1005, 1006]
     }
   }
 ]
