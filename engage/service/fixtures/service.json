@@ -7,7 +7,7 @@
             "title": "নাগরিকত্ব সনদ",
             "description": "নাগরিকত্ব সম্পর্কিত সনদ প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -19,7 +19,7 @@
             "title": "ট্রেড লাইসেন্স",
             "description": "ট্রেড লাইসেন্স প্রদান সংক্রান্ত সেবা।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -31,7 +31,7 @@
             "title": "ওয়ারিশান সনদ",
             "description": "ওয়ারিশান সনদ প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -43,7 +43,7 @@
             "title": "উত্তরাধিকারী সনদ",
             "description": "উত্তরাধিকারী সনদ প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -55,7 +55,7 @@
             "title": "বিবিধ প্রত্যয়নপত্র",
             "description": "বিবিধ প্রত্যয়নপত্র প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -67,7 +67,7 @@
             "title": "চারিত্রিক সনদ",
             "description": "চারিত্রিক সনদ প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -79,7 +79,7 @@
             "title": "ভূমিহীন সনদ",
             "description": "ভূমিহীন সনদ প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -91,7 +91,7 @@
             "title": "পারিবারিক সনদ",
             "description": "পারিবারিক সনদ প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -103,7 +103,7 @@
             "title": "অবিবাহিত সনদ",
             "description": "অবিবাহিত সনদ প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -115,7 +115,7 @@
             "title": "পুনঃ বিবাহ না হওয়া সনদ",
             "description": "পুনঃ বিবাহ না হওয়া সনদ প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -127,7 +127,7 @@
             "title": "বার্ষিক আয়ের প্রত্যয়ন",
             "description": "বার্ষিক আয়ের প্রত্যয়ন প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -139,7 +139,7 @@
             "title": "একই নামের প্রত্যয়ন",
             "description": "একই নামের প্রত্যয়ন প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -151,7 +151,7 @@
             "title": "প্রতিবন্ধী সনদপত্র",
             "description": "প্রতিবন্ধী সনদপত্র প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -163,7 +163,7 @@
             "title": "অনাপত্তি সনদপত্র",
             "description": "অনাপত্তি সনদপত্র প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -175,7 +175,7 @@
             "title": "আর্থিক অস্বচ্ছলতার সনদপত্র",
             "description": "আর্থিক অস্বচ্ছলতার সনদপত্র প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -187,7 +187,7 @@
             "title": "বিবাহিত সনদ",
             "description": "বিবাহিত সনদ প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -199,7 +199,7 @@
             "title": "দ্বিতীয় বিবাহের অনুমতি পত্র",
             "description": "দ্বিতীয় বিবাহের অনুমতি পত্র প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -211,7 +211,7 @@
             "title": "নতুন ভোটারের প্রত্যয়ন পত্র",
             "description": "নতুন ভোটারের প্রত্যয়ন পত্র প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -223,7 +223,7 @@
             "title": "ভোটার স্থানান্তরের প্রত্যয়ন পত্র",
             "description": "ভোটার স্থানান্তরের প্রত্যয়ন পত্র প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -235,7 +235,7 @@
             "title": "বেকারত্বের সনদপত্র",
             "description": "বেকারত্বের সনদপত্র প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -247,7 +247,7 @@
             "title": "অস্থায়ীভাবে বসবাসের প্রত্যয়ন পত্র",
             "description": "অস্থায়ীভাবে বসবাসের প্রত্যয়ন পত্র প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -259,7 +259,7 @@
             "title": "জাতীয়তা সনদ",
             "description": "জাতীয়তা সনদ প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -271,7 +271,7 @@
             "title": "স্থায়ী বাসিন্দা সনদ",
             "description": "স্থায়ী বাসিন্দা সনদ প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     },
@@ -283,7 +283,7 @@
             "title": "এতিম সনদ",
             "description": "এতিম সনদ প্রদান।",
             "link": "https://uniontax.gov.bd/",
-            "icon": "upload/service-icon.png",
+            "icon": "uploads/service-icon.png",
             "is_active": true
         }
     }
