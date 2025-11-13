@@ -78,6 +78,7 @@ class Solution(TimestampModel):
 
     is_best = models.BooleanField(default=False, help_text=_("Marked as best by admin"))
     is_open_for_vote = models.BooleanField(default=False, help_text=_("Admin opened voting for this solution"))
+    voted_users = models.CharField(max_length=500, null=True, blank=True, help_text=_("Comma-separated user IDs who have voted"))
 
     class Meta:
         verbose_name = _("solution")

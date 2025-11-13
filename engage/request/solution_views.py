@@ -1,4 +1,4 @@
-# views.py
+from django.db.models import Q
 from django.shortcuts import get_object_or_404
 from datetime import date, timedelta
 from django.utils import timezone
@@ -73,6 +73,33 @@ class SolutionVoteListCreateView(generics.ListCreateAPIView):
         voted_by = payload.get('nid')
         user = get_object_or_404(User, id=voted_by)
 
+        
+        
+
+        # Update voted_users in Solution model to track who voted
+        try:
+            solution = Solution.objects.get(id=solution_id)
+        except Solution.DoesNotExist:
+            raise ValidationError("Solution does not exist.")
+
+        user_id = self.request.user.id  # current logged-in user
+        solution.voted_users = solution.voted_users or ""
+
+        # Convert comma-separated string -> list of ints
+        voted_user_ids = [int(uid) for uid in solution.voted_users.split(",") if uid.strip().isdigit()]
+
+        # Check if user already voted
+        if user_id in voted_user_ids:
+            raise ValidationError("You have already voted for this solution.")
+
+        # Add the new voter
+        voted_user_ids.append(user_id)
+
+        # Convert list back to comma-separated string
+        solution.voted_users = ",".join(str(uid) for uid in voted_user_ids)
+        solution.save()
+
+
         # Prevent duplicate vote
         if SolutionVote.objects.filter(solution_id=solution_id, voted_by=user).exists():
             raise ValidationError("You have already voted for this solution.")
@@ -108,6 +135,7 @@ class SolutionFilterListView(generics.ListAPIView):
         now = timezone.now()
         today = now.date()
 
+        # Time filters
         if list_type == "today":
             start = timezone.datetime.combine(today, timezone.datetime.min.time(), tzinfo=now.tzinfo)
             end = timezone.datetime.combine(today + timedelta(days=1), timezone.datetime.min.time(), tzinfo=now.tzinfo)
@@ -133,9 +161,10 @@ class SolutionFilterListView(generics.ListAPIView):
             self._list_user_id = user.id
             return queryset
 
-        # For all the date-filters other than “voted”:
-        voted_ids = SolutionVote.objects.filter(voted_by=user).values_list("solution_id", flat=True)
-        queryset = queryset.exclude(id__in=voted_ids)
+        # 🔹 Exclude solutions where current user.id is in voted_users string
+        queryset = queryset.exclude(
+            Q(voted_users__regex=fr'(^|,){user.id}(,|$)')
+        )
 
         self._list_user_id = user.id
         return queryset

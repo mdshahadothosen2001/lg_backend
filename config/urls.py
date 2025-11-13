@@ -4,7 +4,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path("", admin.site.urls),
     path('locations/api/', include('engage.locations.api.urls')),
     path('local-govt/api/', include('engage.local_govt.urls')),
     path('respond/api/', include('engage.request.urls')),
