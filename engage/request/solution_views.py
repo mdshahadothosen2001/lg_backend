@@ -89,7 +89,7 @@ class SolutionFilterListView(generics.ListAPIView):
     serializer_class = SolutionSerializer
 
     def get_queryset(self):
-        # If Authorization header contains a Bearer token, decode and validate it
+        # Decode JWT token from Authorization header
         auth_header = self.request.META.get('HTTP_AUTHORIZATION', '')
         payload = None
         if auth_header and auth_header.startswith('Bearer '):
@@ -97,13 +97,17 @@ class SolutionFilterListView(generics.ListAPIView):
             try:
                 payload = decode_jwt(token)
             except AuthenticationFailed as e:
-                # Raised when token is invalid or expired
                 raise ValidationError(str(e))
 
+        if not payload:
+            return Solution.objects.none()
+
+        user = get_object_or_404(User, id=payload.get('nid'))
         queryset = Solution.objects.all().order_by("-created_at")
         list_type = self.request.query_params.get("list_type", None)
         today = date.today()
 
+        # Filter by date range first
         if list_type == "today":
             queryset = queryset.filter(created_at__date=today)
 
@@ -118,21 +122,15 @@ class SolutionFilterListView(generics.ListAPIView):
 
         elif list_type == "voted":
             # show only voted
-            if not payload:
-                # if no token/payload provided, return empty queryset
-                return Solution.objects.none()
-            user = get_object_or_404(User, id=payload.get('nid'))
             solution_ids = SolutionVote.objects.filter(voted_by=user).values_list("solution_id", flat=True)
             queryset = queryset.filter(id__in=solution_ids)
-            # attach user_id to view so we can pass it into serializer context in list view
             self._list_user_id = user.id
             return queryset
 
-        # baki shob filter e "voted solution exclude"
-        if payload:
-            user = get_object_or_404(User, id=payload.get('nid'))
-            voted_ids = SolutionVote.objects.filter(voted_by=user).values_list("solution_id", flat=True)
-            queryset = queryset.exclude(id__in=voted_ids)
+        # For all other filters (today, previous_day, last_week, last_month)
+        # exclude the solutions the user already voted for
+        voted_ids = SolutionVote.objects.filter(voted_by=user).values_list("solution_id", flat=True)
+        queryset = queryset.exclude(id__in=voted_ids)
 
         return queryset
 
