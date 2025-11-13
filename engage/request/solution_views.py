@@ -1,6 +1,7 @@
 # views.py
 from django.shortcuts import get_object_or_404
 from datetime import date, timedelta
+from django.utils import timezone
 from rest_framework import generics, permissions
 from rest_framework.exceptions import ValidationError, AuthenticationFailed
 from engage.utils.jwt_token import decode_jwt
@@ -89,7 +90,6 @@ class SolutionFilterListView(generics.ListAPIView):
     serializer_class = SolutionSerializer
 
     def get_queryset(self):
-        # Decode JWT token from Authorization header
         auth_header = self.request.META.get('HTTP_AUTHORIZATION', '')
         payload = None
         if auth_header and auth_header.startswith('Bearer '):
@@ -103,35 +103,41 @@ class SolutionFilterListView(generics.ListAPIView):
             return Solution.objects.none()
 
         user = get_object_or_404(User, id=payload.get('nid'))
-        queryset = Solution.objects.all().order_by("-created_at")
-        list_type = self.request.query_params.get("list_type", None)
-        today = date.today()
+        queryset = Solution.objects.filter(is_open_for_vote=True).order_by("-created_at")
+        list_type = self.request.query_params.get("list_type")
+        now = timezone.now()
+        today = now.date()
 
-        # Filter by date range first
         if list_type == "today":
-            queryset = queryset.filter(created_at__date=today)
+            start = timezone.datetime.combine(today, timezone.datetime.min.time(), tzinfo=now.tzinfo)
+            end = timezone.datetime.combine(today + timedelta(days=1), timezone.datetime.min.time(), tzinfo=now.tzinfo)
+            queryset = queryset.filter(created_at__gte=start, created_at__lt=end)
 
         elif list_type == "previous_day":
-            queryset = queryset.filter(created_at__date=today - timedelta(days=1))
+            prev = today - timedelta(days=1)
+            start = timezone.datetime.combine(prev, timezone.datetime.min.time(), tzinfo=now.tzinfo)
+            end = timezone.datetime.combine(prev + timedelta(days=1), timezone.datetime.min.time(), tzinfo=now.tzinfo)
+            queryset = queryset.filter(created_at__gte=start, created_at__lt=end)
 
         elif list_type == "last_week":
-            queryset = queryset.filter(created_at__date__gte=today - timedelta(days=7))
+            start_date = now - timedelta(days=7)
+            queryset = queryset.filter(created_at__gte=start_date)
 
         elif list_type == "last_month":
-            queryset = queryset.filter(created_at__date__gte=today - timedelta(days=30))
+            start_date = now - timedelta(days=30)
+            queryset = queryset.filter(created_at__gte=start_date)
 
         elif list_type == "voted":
-            # show only voted
-            solution_ids = SolutionVote.objects.filter(voted_by=user).values_list("solution_id", flat=True)
-            queryset = queryset.filter(id__in=solution_ids)
+            voted_ids = SolutionVote.objects.filter(voted_by=user).values_list("solution_id", flat=True)
+            queryset = queryset.filter(id__in=voted_ids)
             self._list_user_id = user.id
             return queryset
 
-        # For all other filters (today, previous_day, last_week, last_month)
-        # exclude the solutions the user already voted for
+        # For all the date-filters other than “voted”:
         voted_ids = SolutionVote.objects.filter(voted_by=user).values_list("solution_id", flat=True)
         queryset = queryset.exclude(id__in=voted_ids)
 
+        self._list_user_id = user.id
         return queryset
 
     def get_serializer(self, *args, **kwargs):
