@@ -131,29 +131,28 @@ class SolutionFilterListView(generics.ListAPIView):
 
         user = get_object_or_404(User, id=payload.get('nid'))
         queryset = Solution.objects.filter(is_open_for_vote=True).order_by("-created_at")
+
         list_type = self.request.query_params.get("list_type")
         now = timezone.now()
         today = now.date()
 
-        # Time filters
+        # ========== TIME FILTERS ==========
         if list_type == "today":
             start = timezone.datetime.combine(today, timezone.datetime.min.time(), tzinfo=now.tzinfo)
-            end = timezone.datetime.combine(today + timedelta(days=1), timezone.datetime.min.time(), tzinfo=now.tzinfo)
+            end = start + timedelta(days=1)
             queryset = queryset.filter(created_at__gte=start, created_at__lt=end)
 
         elif list_type == "previous_day":
             prev = today - timedelta(days=1)
             start = timezone.datetime.combine(prev, timezone.datetime.min.time(), tzinfo=now.tzinfo)
-            end = timezone.datetime.combine(prev + timedelta(days=1), timezone.datetime.min.time(), tzinfo=now.tzinfo)
+            end = start + timedelta(days=1)
             queryset = queryset.filter(created_at__gte=start, created_at__lt=end)
 
         elif list_type == "last_week":
-            start_date = now - timedelta(days=7)
-            queryset = queryset.filter(created_at__gte=start_date)
+            queryset = queryset.filter(created_at__gte=now - timedelta(days=7))
 
         elif list_type == "last_month":
-            start_date = now - timedelta(days=30)
-            queryset = queryset.filter(created_at__gte=start_date)
+            queryset = queryset.filter(created_at__gte=now - timedelta(days=30))
 
         elif list_type == "voted":
             voted_ids = SolutionVote.objects.filter(voted_by=user).values_list("solution_id", flat=True)
@@ -161,10 +160,9 @@ class SolutionFilterListView(generics.ListAPIView):
             self._list_user_id = user.id
             return queryset
 
-        # 🔹 Exclude solutions where current user.id is in voted_users string
-        queryset = queryset.exclude(
-            Q(voted_users__regex=fr'(^|,){user.id}(,|$)')
-        )
+        # ========== EXCLUDE USER-VOTED SOLUTIONS ==========
+        voted_ids = SolutionVote.objects.filter(voted_by=user).values_list("solution_id", flat=True)
+        queryset = queryset.exclude(id__in=voted_ids)
 
         self._list_user_id = user.id
         return queryset
