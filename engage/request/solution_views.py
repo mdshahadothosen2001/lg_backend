@@ -73,33 +73,6 @@ class SolutionVoteListCreateView(generics.ListCreateAPIView):
         voted_by = payload.get('nid')
         user = get_object_or_404(User, id=voted_by)
 
-        
-        
-
-        # Update voted_users in Solution model to track who voted
-        try:
-            solution = Solution.objects.get(id=solution_id)
-        except Solution.DoesNotExist:
-            raise ValidationError("Solution does not exist.")
-
-        user_id = self.request.user.id  # current logged-in user
-        solution.voted_users = solution.voted_users or ""
-
-        # Convert comma-separated string -> list of ints
-        voted_user_ids = [int(uid) for uid in solution.voted_users.split(",") if uid.strip().isdigit()]
-
-        # Check if user already voted
-        if user_id in voted_user_ids:
-            raise ValidationError("You have already voted for this solution.")
-
-        # Add the new voter
-        voted_user_ids.append(user_id)
-
-        # Convert list back to comma-separated string
-        solution.voted_users = ",".join(str(uid) for uid in voted_user_ids)
-        solution.save()
-
-
         # Prevent duplicate vote
         if SolutionVote.objects.filter(solution_id=solution_id, voted_by=user).exists():
             raise ValidationError("You have already voted for this solution.")
@@ -127,7 +100,8 @@ class SolutionFilterListView(generics.ListAPIView):
                 raise ValidationError(str(e))
 
         if not payload:
-            return Solution.objects.none()
+            # No token or invalid token: return 401 with message
+            raise AuthenticationFailed("Authorization token is required.")
 
         user = get_object_or_404(User, id=payload.get('nid'))
         queryset = Solution.objects.filter(is_open_for_vote=True).order_by("-created_at")
