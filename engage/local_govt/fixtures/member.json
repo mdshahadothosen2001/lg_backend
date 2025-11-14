@@ -1,0 +1,156 @@
+[
+  {
+    "model": "local_govt.member",
+    "pk": 2001,
+    "fields": {
+      "position": "Chairman",
+      "user": 2001,
+      "union": 1165,
+      "areas": "Ward 1-3",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 2002,
+    "fields": {
+      "position": "Member",
+      "user": 2002,
+      "union": 1165,
+      "areas": "Ward 4-6",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 2003,
+    "fields": {
+      "position": "Member",
+      "user": 2003,
+      "union": 1165,
+      "areas": "Ward 7-9",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 2004,
+    "fields": {
+      "position": "Member",
+      "user": 2004,
+      "union": 1165,
+      "areas": "Ward 10-12",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 2005,
+    "fields": {
+      "position": "Secretary",
+      "user": 2005,
+      "union": 1165,
+      "areas": "Ward 1-3",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 2006,
+    "fields": {
+      "position": "Treasurer",
+      "user": 2006,
+      "union": 1165,
+      "areas": "Ward 4-6",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 2007,
+    "fields": {
+      "position": "Member",
+      "user": 2007,
+      "union": 1165,
+      "areas": "Ward 7-9",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 2008,
+    "fields": {
+      "position": "Member",
+      "user": 2008,
+      "union": 1165,
+      "areas": "Ward 10-12",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 2009,
+    "fields": {
+      "position": "Advisor",
+      "user": 2009,
+      "union": 1165,
+      "areas": "Ward 1-3",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 1010,
+    "fields": {
+      "position": "Vice Chairman",
+      "user": 2010,
+      "union": 1165,
+      "areas": "Ward 4-6",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "local_govt.member",
+    "pk": 1011,
+    "fields": {
+      "position": "Member",
+      "user": 2011,
+      "union": 1165,
+      "areas": "Ward 7-9",
+      "start_at": "2023-01-01",
+      "end_at": "2028-01-01",
+      "is_active": true,
+      "is_verified": true
+    }
+  }
+]

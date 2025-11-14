@@ -1,0 +1,934 @@
+[
+  {
+    "model": "notification.event",
+    "pk": 1,
+    "fields": {
+      "title": "গ্রামীণ উন্নয়ন বিষয়ক সচেতনতামূলক সভা",
+      "description": "2025-08-27, স্থানীয় উন্নয়ন পরিকল্পনা ও নাগরিক সেবার মানোন্নয়ন নিয়ে আলোচনা সভা।",
+      "union": 1165,
+      "members": "2001,2002,2006,2010",
+      "start": "10:00:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 2,
+    "fields": {
+      "title": "বিনামূল্যে স্বাস্থ্য পরীক্ষা ক্যাম্প",
+      "description": "2025-08-27, ইউনিয়ন স্বাস্থ্যকেন্দ্রে স্থানীয় বাসিন্দাদের জন্য বিনামূল্যে স্বাস্থ্য পরীক্ষা ও ঔষধ বিতরণ।",
+      "union": 1165,
+      "members": "2001,2002,2003,2005,2006",
+      "start": "09:30:00",
+      "duration": 180,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 3,
+    "fields": {
+      "title": "কৃষি প্রযুক্তি প্রশিক্ষণ কর্মশালা",
+      "description": "2025-08-27, নতুন কৃষি প্রযুক্তি, সার ব্যবহারের নিয়ম ও সেচ ব্যবস্থাপনা নিয়ে প্রশিক্ষণ।",
+      "union": 1165,
+      "members": "2001,2002,2003,2005,2006",
+      "start": "11:00:00",
+      "duration": 150,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 4,
+    "fields": {
+      "title": "মৌসুমি বন্যা প্রস্তুতি আলোচনা",
+      "description": "2025-08-27, বন্যা মোকাবিলা ও ত্রাণ বিতরণের পরিকল্পনা নিয়ে স্থানীয় প্রশাসনের সাথে আলোচনা।",
+      "union": 1165,
+      "members": "2001,2002,2003,2005,2006,2009",
+      "start": "14:00:00",
+      "duration": 90,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 5,
+    "fields": {
+      "title": "শিক্ষার্থী বৃত্তি প্রদান অনুষ্ঠান",
+      "description": "2025-08-27, মেধাবী শিক্ষার্থীদের মধ্যে বৃত্তি ও শিক্ষা উপকরণ বিতরণ।",
+      "union": 1165,
+      "members": "2001,2002,2003,2005,2006,2007",
+      "start": "10:30:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 6,
+    "fields": {
+      "title": "পরিষ্কার-পরিচ্ছন্নতা অভিযান",
+      "description": "2025-08-27, ইউনিয়ন পরিষদ এলাকায় পরিচ্ছন্নতা বজায় রাখার উদ্দেশ্যে স্বেচ্ছাসেবী কার্যক্রম।",
+      "union": 1165,
+      "members": "2001,2002,2003,2005,2008",
+      "start": "08:00:00",
+      "duration": 240,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 7,
+    "fields": {
+      "title": "নারী উদ্যোক্তা সম্মেলন",
+      "description": "2025-08-27, স্থানীয় নারী উদ্যোক্তাদের উন্নয়ন, প্রশিক্ষণ ও সহায়তা কর্মসূচি।",
+      "union": 1165,
+      "members": "2001,2002,2003,2005,2010",
+      "start": "15:00:00",
+      "duration": 180,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 8,
+    "fields": {
+      "title": "টিকাদান কর্মসূচি",
+      "description": "2025-08-27, ৫ বছরের নিচের শিশুদের জন্য বিনামূল্যে টিকা প্রদান।",
+      "union": 1165,
+      "members": "2001,2002,2003,2005,2011",
+      "start": "09:00:00",
+      "duration": 300,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 9,
+    "fields": {
+      "title": "গ্রাম আদালত সচেতনতা সভা",
+      "description": "2025-08-27, গ্রাম আদালতের ভূমিকা ও সুবিধা সম্পর্কে জনগণকে অবহিতকরণ।",
+      "union": 1165,
+      "members": "2001,2002,2003,2005,2011",
+      "start": "13:00:00",
+      "duration": 90,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 10,
+    "fields": {
+      "title": "পরিবার পরিকল্পনা বিষয়ক সেমিনার",
+      "description": "2025-08-27, পরিবার পরিকল্পনা ও স্বাস্থ্যসেবা বিষয়ে আলোচনা ও পরামর্শ।",
+      "union": 1165,
+      "members": "2001,2003,2005,2008,2010",
+      "start": "10:00:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+
+
+
+  {
+    "model": "notification.event",
+    "pk": 11,
+    "fields": {
+      "title": "গ্রামীণ উন্নয়ন বিষয়ক সচেতনতামূলক সভা",
+      "description": "2025-08-27, স্থানীয় উন্নয়ন পরিকল্পনা ও নাগরিক সেবার মানোন্নয়ন নিয়ে আলোচনা সভা।",
+      "union": 1164,
+      "members": "2001,2002,2006,2010",
+      "start": "10:00:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 12,
+    "fields": {
+      "title": "বিনামূল্যে স্বাস্থ্য পরীক্ষা ক্যাম্প",
+      "description": "2025-08-27, ইউনিয়ন স্বাস্থ্যকেন্দ্রে স্থানীয় বাসিন্দাদের জন্য বিনামূল্যে স্বাস্থ্য পরীক্ষা ও ঔষধ বিতরণ।",
+      "union": 1164,
+      "members": "2001,2002,2003,2005,2006",
+      "start": "09:30:00",
+      "duration": 180,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 13,
+    "fields": {
+      "title": "কৃষি প্রযুক্তি প্রশিক্ষণ কর্মশালা",
+      "description": "2025-08-27, নতুন কৃষি প্রযুক্তি, সার ব্যবহারের নিয়ম ও সেচ ব্যবস্থাপনা নিয়ে প্রশিক্ষণ।",
+      "union": 1164,
+      "members": "2001,2002,2003,2005,2006",
+      "start": "11:00:00",
+      "duration": 150,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 14,
+    "fields": {
+      "title": "মৌসুমি বন্যা প্রস্তুতি আলোচনা",
+      "description": "2025-08-27, বন্যা মোকাবিলা ও ত্রাণ বিতরণের পরিকল্পনা নিয়ে স্থানীয় প্রশাসনের সাথে আলোচনা।",
+      "union": 1164,
+      "members": "2001,2002,2003,2005,2006,2009",
+      "start": "14:00:00",
+      "duration": 90,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 15,
+    "fields": {
+      "title": "শিক্ষার্থী বৃত্তি প্রদান অনুষ্ঠান",
+      "description": "2025-08-27, মেধাবী শিক্ষার্থীদের মধ্যে বৃত্তি ও শিক্ষা উপকরণ বিতরণ।",
+      "union": 1164,
+      "members": "2001,2002,2003,2005,2006,2007",
+      "start": "10:30:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 16,
+    "fields": {
+      "title": "পরিষ্কার-পরিচ্ছন্নতা অভিযান",
+      "description": "2025-08-27, ইউনিয়ন পরিষদ এলাকায় পরিচ্ছন্নতা বজায় রাখার উদ্দেশ্যে স্বেচ্ছাসেবী কার্যক্রম।",
+      "union": 1164,
+      "members": "2001,2002,2003,2005,2008",
+      "start": "08:00:00",
+      "duration": 240,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 17,
+    "fields": {
+      "title": "নারী উদ্যোক্তা সম্মেলন",
+      "description": "2025-08-27, স্থানীয় নারী উদ্যোক্তাদের উন্নয়ন, প্রশিক্ষণ ও সহায়তা কর্মসূচি।",
+      "union": 1164,
+      "members": "2001,2002,2003,2005,2010",
+      "start": "15:00:00",
+      "duration": 180,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 18,
+    "fields": {
+      "title": "টিকাদান কর্মসূচি",
+      "description": "2025-08-27, ৫ বছরের নিচের শিশুদের জন্য বিনামূল্যে টিকা প্রদান।",
+      "union": 1164,
+      "members": "2001,2002,2003,2005,2011",
+      "start": "09:00:00",
+      "duration": 300,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 19,
+    "fields": {
+      "title": "গ্রাম আদালত সচেতনতা সভা",
+      "description": "2025-08-27, গ্রাম আদালতের ভূমিকা ও সুবিধা সম্পর্কে জনগণকে অবহিতকরণ।",
+      "union": 1164,
+      "members": "2001,2002,2003,2005,2011",
+      "start": "13:00:00",
+      "duration": 90,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 20,
+    "fields": {
+      "title": "পরিবার পরিকল্পনা বিষয়ক সেমিনার",
+      "description": "2025-08-27, পরিবার পরিকল্পনা ও স্বাস্থ্যসেবা বিষয়ে আলোচনা ও পরামর্শ।",
+      "union": 1164,
+      "members": "2001,2003,2005,2008,2010",
+      "start": "10:00:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+
+
+
+  {
+    "model": "notification.event",
+    "pk": 21,
+    "fields": {
+      "title": "গ্রামীণ উন্নয়ন বিষয়ক সচেতনতামূলক সভা",
+      "description": "2025-08-27, স্থানীয় উন্নয়ন পরিকল্পনা ও নাগরিক সেবার মানোন্নয়ন নিয়ে আলোচনা সভা।",
+      "union": 1166,
+      "members": "2001,2002,2006,2010",
+      "start": "10:00:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 22,
+    "fields": {
+      "title": "বিনামূল্যে স্বাস্থ্য পরীক্ষা ক্যাম্প",
+      "description": "2025-08-27, ইউনিয়ন স্বাস্থ্যকেন্দ্রে স্থানীয় বাসিন্দাদের জন্য বিনামূল্যে স্বাস্থ্য পরীক্ষা ও ঔষধ বিতরণ।",
+      "union": 1166,
+      "members": "2001,2002,2003,2005,2006",
+      "start": "09:30:00",
+      "duration": 180,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 23,
+    "fields": {
+      "title": "কৃষি প্রযুক্তি প্রশিক্ষণ কর্মশালা",
+      "description": "2025-08-27, নতুন কৃষি প্রযুক্তি, সার ব্যবহারের নিয়ম ও সেচ ব্যবস্থাপনা নিয়ে প্রশিক্ষণ।",
+      "union": 1166,
+      "members": "2001,2002,2003,2005,2006",
+      "start": "11:00:00",
+      "duration": 150,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 24,
+    "fields": {
+      "title": "মৌসুমি বন্যা প্রস্তুতি আলোচনা",
+      "description": "2025-08-27, বন্যা মোকাবিলা ও ত্রাণ বিতরণের পরিকল্পনা নিয়ে স্থানীয় প্রশাসনের সাথে আলোচনা।",
+      "union": 1166,
+      "members": "2001,2002,2003,2005,2006,2009",
+      "start": "14:00:00",
+      "duration": 90,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 25,
+    "fields": {
+      "title": "শিক্ষার্থী বৃত্তি প্রদান অনুষ্ঠান",
+      "description": "2025-08-27, মেধাবী শিক্ষার্থীদের মধ্যে বৃত্তি ও শিক্ষা উপকরণ বিতরণ।",
+      "union": 1166,
+      "members": "2001,2002,2003,2005,2006,2007",
+      "start": "10:30:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 26,
+    "fields": {
+      "title": "পরিষ্কার-পরিচ্ছন্নতা অভিযান",
+      "description": "2025-08-27, ইউনিয়ন পরিষদ এলাকায় পরিচ্ছন্নতা বজায় রাখার উদ্দেশ্যে স্বেচ্ছাসেবী কার্যক্রম।",
+      "union": 1166,
+      "members": "2001,2002,2003,2005,2008",
+      "start": "08:00:00",
+      "duration": 240,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 27,
+    "fields": {
+      "title": "নারী উদ্যোক্তা সম্মেলন",
+      "description": "2025-08-27, স্থানীয় নারী উদ্যোক্তাদের উন্নয়ন, প্রশিক্ষণ ও সহায়তা কর্মসূচি।",
+      "union": 1166,
+      "members": "2001,2002,2003,2005,2010",
+      "start": "15:00:00",
+      "duration": 180,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 28,
+    "fields": {
+      "title": "টিকাদান কর্মসূচি",
+      "description": "2025-08-27, ৫ বছরের নিচের শিশুদের জন্য বিনামূল্যে টিকা প্রদান।",
+      "union": 1166,
+      "members": "2001,2002,2003,2005,2011",
+      "start": "09:00:00",
+      "duration": 300,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 29,
+    "fields": {
+      "title": "গ্রাম আদালত সচেতনতা সভা",
+      "description": "2025-08-27, গ্রাম আদালতের ভূমিকা ও সুবিধা সম্পর্কে জনগণকে অবহিতকরণ।",
+      "union": 1166,
+      "members": "2001,2002,2003,2005,2011",
+      "start": "13:00:00",
+      "duration": 90,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 30,
+    "fields": {
+      "title": "পরিবার পরিকল্পনা বিষয়ক সেমিনার",
+      "description": "2025-08-27, পরিবার পরিকল্পনা ও স্বাস্থ্যসেবা বিষয়ে আলোচনা ও পরামর্শ।",
+      "union": 1166,
+      "members": "2001,2003,2005,2008,2010",
+      "start": "10:00:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+
+
+
+
+  {
+    "model": "notification.event",
+    "pk": 31,
+    "fields": {
+      "title": "গ্রামীণ উন্নয়ন বিষয়ক সচেতনতামূলক সভা",
+      "description": "2025-08-27, স্থানীয় উন্নয়ন পরিকল্পনা ও নাগরিক সেবার মানোন্নয়ন নিয়ে আলোচনা সভা।",
+      "union": 1167,
+      "members": "2001,2002,2006,2010",
+      "start": "10:00:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 32,
+    "fields": {
+      "title": "বিনামূল্যে স্বাস্থ্য পরীক্ষা ক্যাম্প",
+      "description": "2025-08-27, ইউনিয়ন স্বাস্থ্যকেন্দ্রে স্থানীয় বাসিন্দাদের জন্য বিনামূল্যে স্বাস্থ্য পরীক্ষা ও ঔষধ বিতরণ।",
+      "union": 1167,
+      "members": "2001,2002,2003,2005,2006",
+      "start": "09:30:00",
+      "duration": 180,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 33,
+    "fields": {
+      "title": "কৃষি প্রযুক্তি প্রশিক্ষণ কর্মশালা",
+      "description": "2025-08-27, নতুন কৃষি প্রযুক্তি, সার ব্যবহারের নিয়ম ও সেচ ব্যবস্থাপনা নিয়ে প্রশিক্ষণ।",
+      "union": 1167,
+      "members": "2001,2002,2003,2005,2006",
+      "start": "11:00:00",
+      "duration": 150,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 34,
+    "fields": {
+      "title": "মৌসুমি বন্যা প্রস্তুতি আলোচনা",
+      "description": "2025-08-27, বন্যা মোকাবিলা ও ত্রাণ বিতরণের পরিকল্পনা নিয়ে স্থানীয় প্রশাসনের সাথে আলোচনা।",
+      "union": 1167,
+      "members": "2001,2002,2003,2005,2006,2009",
+      "start": "14:00:00",
+      "duration": 90,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 35,
+    "fields": {
+      "title": "শিক্ষার্থী বৃত্তি প্রদান অনুষ্ঠান",
+      "description": "2025-08-27, মেধাবী শিক্ষার্থীদের মধ্যে বৃত্তি ও শিক্ষা উপকরণ বিতরণ।",
+      "union": 1167,
+      "members": "2001,2002,2003,2005,2006,2007",
+      "start": "10:30:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 36,
+    "fields": {
+      "title": "পরিষ্কার-পরিচ্ছন্নতা অভিযান",
+      "description": "2025-08-27, ইউনিয়ন পরিষদ এলাকায় পরিচ্ছন্নতা বজায় রাখার উদ্দেশ্যে স্বেচ্ছাসেবী কার্যক্রম।",
+      "union": 1167,
+      "members": "2001,2002,2003,2005,2008",
+      "start": "08:00:00",
+      "duration": 240,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 37,
+    "fields": {
+      "title": "নারী উদ্যোক্তা সম্মেলন",
+      "description": "2025-08-27, স্থানীয় নারী উদ্যোক্তাদের উন্নয়ন, প্রশিক্ষণ ও সহায়তা কর্মসূচি।",
+      "union": 1167,
+      "members": "2001,2002,2003,2005,2010",
+      "start": "15:00:00",
+      "duration": 180,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 38,
+    "fields": {
+      "title": "টিকাদান কর্মসূচি",
+      "description": "2025-08-27, ৫ বছরের নিচের শিশুদের জন্য বিনামূল্যে টিকা প্রদান।",
+      "union": 1167,
+      "members": "2001,2002,2003,2005,2011",
+      "start": "09:00:00",
+      "duration": 300,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 39,
+    "fields": {
+      "title": "গ্রাম আদালত সচেতনতা সভা",
+      "description": "2025-08-27, গ্রাম আদালতের ভূমিকা ও সুবিধা সম্পর্কে জনগণকে অবহিতকরণ।",
+      "union": 1167,
+      "members": "2001,2002,2003,2005,2011",
+      "start": "13:00:00",
+      "duration": 90,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 40,
+    "fields": {
+      "title": "পরিবার পরিকল্পনা বিষয়ক সেমিনার",
+      "description": "2025-08-27, পরিবার পরিকল্পনা ও স্বাস্থ্যসেবা বিষয়ে আলোচনা ও পরামর্শ।",
+      "union": 1167,
+      "members": "2001,2003,2005,2008,2010",
+      "start": "10:00:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+
+
+
+
+  {
+    "model": "notification.event",
+    "pk": 41,
+    "fields": {
+      "title": "গ্রামীণ উন্নয়ন বিষয়ক সচেতনতামূলক সভা",
+      "description": "2025-08-27, স্থানীয় উন্নয়ন পরিকল্পনা ও নাগরিক সেবার মানোন্নয়ন নিয়ে আলোচনা সভা।",
+      "union": 1168,
+      "members": "2001,2002,2006,2010",
+      "start": "10:00:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 42,
+    "fields": {
+      "title": "বিনামূল্যে স্বাস্থ্য পরীক্ষা ক্যাম্প",
+      "description": "2025-08-27, ইউনিয়ন স্বাস্থ্যকেন্দ্রে স্থানীয় বাসিন্দাদের জন্য বিনামূল্যে স্বাস্থ্য পরীক্ষা ও ঔষধ বিতরণ।",
+      "union": 1168,
+      "members": "2001,2002,2003,2005,2006",
+      "start": "09:30:00",
+      "duration": 180,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 43,
+    "fields": {
+      "title": "কৃষি প্রযুক্তি প্রশিক্ষণ কর্মশালা",
+      "description": "2025-08-27, নতুন কৃষি প্রযুক্তি, সার ব্যবহারের নিয়ম ও সেচ ব্যবস্থাপনা নিয়ে প্রশিক্ষণ।",
+      "union": 1168,
+      "members": "2001,2002,2003,2005,2006",
+      "start": "11:00:00",
+      "duration": 150,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 44,
+    "fields": {
+      "title": "মৌসুমি বন্যা প্রস্তুতি আলোচনা",
+      "description": "2025-08-27, বন্যা মোকাবিলা ও ত্রাণ বিতরণের পরিকল্পনা নিয়ে স্থানীয় প্রশাসনের সাথে আলোচনা।",
+      "union": 1168,
+      "members": "2001,2002,2003,2005,2006,2009",
+      "start": "14:00:00",
+      "duration": 90,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 45,
+    "fields": {
+      "title": "শিক্ষার্থী বৃত্তি প্রদান অনুষ্ঠান",
+      "description": "2025-08-27, মেধাবী শিক্ষার্থীদের মধ্যে বৃত্তি ও শিক্ষা উপকরণ বিতরণ।",
+      "union": 1168,
+      "members": "2001,2002,2003,2005,2006,2007",
+      "start": "10:30:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 46,
+    "fields": {
+      "title": "পরিষ্কার-পরিচ্ছন্নতা অভিযান",
+      "description": "2025-08-27, ইউনিয়ন পরিষদ এলাকায় পরিচ্ছন্নতা বজায় রাখার উদ্দেশ্যে স্বেচ্ছাসেবী কার্যক্রম।",
+      "union": 1168,
+      "members": "2001,2002,2003,2005,2008",
+      "start": "08:00:00",
+      "duration": 240,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 47,
+    "fields": {
+      "title": "নারী উদ্যোক্তা সম্মেলন",
+      "description": "2025-08-27, স্থানীয় নারী উদ্যোক্তাদের উন্নয়ন, প্রশিক্ষণ ও সহায়তা কর্মসূচি।",
+      "union": 1168,
+      "members": "2001,2002,2003,2005,2010",
+      "start": "15:00:00",
+      "duration": 180,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 48,
+    "fields": {
+      "title": "টিকাদান কর্মসূচি",
+      "description": "2025-08-27, ৫ বছরের নিচের শিশুদের জন্য বিনামূল্যে টিকা প্রদান।",
+      "union": 1168,
+      "members": "2001,2002,2003,2005,2011",
+      "start": "09:00:00",
+      "duration": 300,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 49,
+    "fields": {
+      "title": "গ্রাম আদালত সচেতনতা সভা",
+      "description": "2025-08-27, গ্রাম আদালতের ভূমিকা ও সুবিধা সম্পর্কে জনগণকে অবহিতকরণ।",
+      "union": 1168,
+      "members": "2001,2002,2003,2005,2011",
+      "start": "13:00:00",
+      "duration": 90,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 50,
+    "fields": {
+      "title": "পরিবার পরিকল্পনা বিষয়ক সেমিনার",
+      "description": "2025-08-27, পরিবার পরিকল্পনা ও স্বাস্থ্যসেবা বিষয়ে আলোচনা ও পরামর্শ।",
+      "union": 1168,
+      "members": "2001,2003,2005,2008,2010",
+      "start": "10:00:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+
+
+
+
+  {
+    "model": "notification.event",
+    "pk": 51,
+    "fields": {
+      "title": "গ্রামীণ উন্নয়ন বিষয়ক সচেতনতামূলক সভা",
+      "description": "2025-08-27, স্থানীয় উন্নয়ন পরিকল্পনা ও নাগরিক সেবার মানোন্নয়ন নিয়ে আলোচনা সভা।",
+      "union": 1169,
+      "members": "2001,2002,2006,2010",
+      "start": "10:00:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 52,
+    "fields": {
+      "title": "বিনামূল্যে স্বাস্থ্য পরীক্ষা ক্যাম্প",
+      "description": "2025-08-27, ইউনিয়ন স্বাস্থ্যকেন্দ্রে স্থানীয় বাসিন্দাদের জন্য বিনামূল্যে স্বাস্থ্য পরীক্ষা ও ঔষধ বিতরণ।",
+      "union": 1169,
+      "members": "2001,2002,2003,2005,2006",
+      "start": "09:30:00",
+      "duration": 180,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 53,
+    "fields": {
+      "title": "কৃষি প্রযুক্তি প্রশিক্ষণ কর্মশালা",
+      "description": "2025-08-27, নতুন কৃষি প্রযুক্তি, সার ব্যবহারের নিয়ম ও সেচ ব্যবস্থাপনা নিয়ে প্রশিক্ষণ।",
+      "union": 1169,
+      "members": "2001,2002,2003,2005,2006",
+      "start": "11:00:00",
+      "duration": 150,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 54,
+    "fields": {
+      "title": "মৌসুমি বন্যা প্রস্তুতি আলোচনা",
+      "description": "2025-08-27, বন্যা মোকাবিলা ও ত্রাণ বিতরণের পরিকল্পনা নিয়ে স্থানীয় প্রশাসনের সাথে আলোচনা।",
+      "union": 1169,
+      "members": "2001,2002,2003,2005,2006,2009",
+      "start": "14:00:00",
+      "duration": 90,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 55,
+    "fields": {
+      "title": "শিক্ষার্থী বৃত্তি প্রদান অনুষ্ঠান",
+      "description": "2025-08-27, মেধাবী শিক্ষার্থীদের মধ্যে বৃত্তি ও শিক্ষা উপকরণ বিতরণ।",
+      "union": 1169,
+      "members": "2001,2002,2003,2005,2006,2007",
+      "start": "10:30:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 56,
+    "fields": {
+      "title": "পরিষ্কার-পরিচ্ছন্নতা অভিযান",
+      "description": "2025-08-27, ইউনিয়ন পরিষদ এলাকায় পরিচ্ছন্নতা বজায় রাখার উদ্দেশ্যে স্বেচ্ছাসেবী কার্যক্রম।",
+      "union": 1169,
+      "members": "2001,2002,2003,2005,2008",
+      "start": "08:00:00",
+      "duration": 240,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 57,
+    "fields": {
+      "title": "নারী উদ্যোক্তা সম্মেলন",
+      "description": "2025-08-27, স্থানীয় নারী উদ্যোক্তাদের উন্নয়ন, প্রশিক্ষণ ও সহায়তা কর্মসূচি।",
+      "union": 1169,
+      "members": "2001,2002,2003,2005,2010",
+      "start": "15:00:00",
+      "duration": 180,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 58,
+    "fields": {
+      "title": "টিকাদান কর্মসূচি",
+      "description": "2025-08-27, ৫ বছরের নিচের শিশুদের জন্য বিনামূল্যে টিকা প্রদান।",
+      "union": 1169,
+      "members": "2001,2002,2003,2005,2011",
+      "start": "09:00:00",
+      "duration": 300,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 59,
+    "fields": {
+      "title": "গ্রাম আদালত সচেতনতা সভা",
+      "description": "2025-08-27, গ্রাম আদালতের ভূমিকা ও সুবিধা সম্পর্কে জনগণকে অবহিতকরণ।",
+      "union": 1169,
+      "members": "2001,2002,2003,2005,2011",
+      "start": "13:00:00",
+      "duration": 90,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 60,
+    "fields": {
+      "title": "পরিবার পরিকল্পনা বিষয়ক সেমিনার",
+      "description": "2025-08-27, পরিবার পরিকল্পনা ও স্বাস্থ্যসেবা বিষয়ে আলোচনা ও পরামর্শ।",
+      "union": 1169,
+      "members": "2001,2003,2005,2008,2010",
+      "start": "10:00:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+
+
+
+
+  {
+    "model": "notification.event",
+    "pk": 61,
+    "fields": {
+      "title": "গ্রামীণ উন্নয়ন বিষয়ক সচেতনতামূলক সভা",
+      "description": "2025-08-27, স্থানীয় উন্নয়ন পরিকল্পনা ও নাগরিক সেবার মানোন্নয়ন নিয়ে আলোচনা সভা।",
+      "union": 1170,
+      "members": "2001,2002,2006,2010",
+      "start": "10:00:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 62,
+    "fields": {
+      "title": "বিনামূল্যে স্বাস্থ্য পরীক্ষা ক্যাম্প",
+      "description": "2025-08-27, ইউনিয়ন স্বাস্থ্যকেন্দ্রে স্থানীয় বাসিন্দাদের জন্য বিনামূল্যে স্বাস্থ্য পরীক্ষা ও ঔষধ বিতরণ।",
+      "union": 1170,
+      "members": "2001,2002,2003,2005,2006",
+      "start": "09:30:00",
+      "duration": 180,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 63,
+    "fields": {
+      "title": "কৃষি প্রযুক্তি প্রশিক্ষণ কর্মশালা",
+      "description": "2025-08-27, নতুন কৃষি প্রযুক্তি, সার ব্যবহারের নিয়ম ও সেচ ব্যবস্থাপনা নিয়ে প্রশিক্ষণ।",
+      "union": 1170,
+      "members": "2001,2002,2003,2005,2006",
+      "start": "11:00:00",
+      "duration": 150,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 64,
+    "fields": {
+      "title": "মৌসুমি বন্যা প্রস্তুতি আলোচনা",
+      "description": "2025-08-27, বন্যা মোকাবিলা ও ত্রাণ বিতরণের পরিকল্পনা নিয়ে স্থানীয় প্রশাসনের সাথে আলোচনা।",
+      "union": 1170,
+      "members": "2001,2002,2003,2005,2006,2009",
+      "start": "14:00:00",
+      "duration": 90,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 65,
+    "fields": {
+      "title": "শিক্ষার্থী বৃত্তি প্রদান অনুষ্ঠান",
+      "description": "2025-08-27, মেধাবী শিক্ষার্থীদের মধ্যে বৃত্তি ও শিক্ষা উপকরণ বিতরণ।",
+      "union": 1170,
+      "members": "2001,2002,2003,2005,2006,2007",
+      "start": "10:30:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 66,
+    "fields": {
+      "title": "পরিষ্কার-পরিচ্ছন্নতা অভিযান",
+      "description": "2025-08-27, ইউনিয়ন পরিষদ এলাকায় পরিচ্ছন্নতা বজায় রাখার উদ্দেশ্যে স্বেচ্ছাসেবী কার্যক্রম।",
+      "union": 1170,
+      "members": "2001,2002,2003,2005,2008",
+      "start": "08:00:00",
+      "duration": 240,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 67,
+    "fields": {
+      "title": "নারী উদ্যোক্তা সম্মেলন",
+      "description": "2025-08-27, স্থানীয় নারী উদ্যোক্তাদের উন্নয়ন, প্রশিক্ষণ ও সহায়তা কর্মসূচি।",
+      "union": 1170,
+      "members": "2001,2002,2003,2005,2010",
+      "start": "15:00:00",
+      "duration": 180,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 68,
+    "fields": {
+      "title": "টিকাদান কর্মসূচি",
+      "description": "2025-08-27, ৫ বছরের নিচের শিশুদের জন্য বিনামূল্যে টিকা প্রদান।",
+      "union": 1170,
+      "members": "2001,2002,2003,2005,2011",
+      "start": "09:00:00",
+      "duration": 300,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 69,
+    "fields": {
+      "title": "গ্রাম আদালত সচেতনতা সভা",
+      "description": "2025-08-27, গ্রাম আদালতের ভূমিকা ও সুবিধা সম্পর্কে জনগণকে অবহিতকরণ।",
+      "union": 1170,
+      "members": "2001,2002,2003,2005,2011",
+      "start": "13:00:00",
+      "duration": 90,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  },
+  {
+    "model": "notification.event",
+    "pk": 70,
+    "fields": {
+      "title": "পরিবার পরিকল্পনা বিষয়ক সেমিনার",
+      "description": "2025-08-27, পরিবার পরিকল্পনা ও স্বাস্থ্যসেবা বিষয়ে আলোচনা ও পরামর্শ।",
+      "union": 1170,
+      "members": "2001,2003,2005,2008,2010",
+      "start": "10:00:00",
+      "duration": 120,
+      "link": "https://meet.google.com/buh-wcfm-mbq"
+    }
+  }
+]

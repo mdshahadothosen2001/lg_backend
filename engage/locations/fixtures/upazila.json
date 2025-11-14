@@ -1,0 +1,4448 @@
+[
+    {
+        "model": "locations.upazila",
+        "pk": 1,
+         "fields":
+            {
+                "district": 1,
+                "name": "দেবিদ্বার"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 2,
+         "fields":
+            {
+                "district": 1,
+                "name": "বরুড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 3,
+         "fields":
+            {
+                "district": 1,
+                "name": "ব্রাহ্মণপাড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 4,
+         "fields":
+            {
+                "district": 1,
+                "name": "চান্দিনা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 5,
+         "fields":
+            {
+                "district": 1,
+                "name": "চৌদ্দগ্রাম"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 6,
+         "fields":
+            {
+                "district": 1,
+                "name": "দাউদকান্দি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 7,
+         "fields":
+            {
+                "district": 1,
+                "name": "হোমনা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 8,
+         "fields":
+            {
+                "district": 1,
+                "name": "লাকসাম"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 9,
+         "fields":
+            {
+                "district": 1,
+                "name": "মুরাদনগর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 10,
+         "fields":
+            {
+                "district": 1,
+                "name": "নাঙ্গলকোট"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 11,
+         "fields":
+            {
+                "district": 1,
+                "name": "কুমিল্লা সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 12,
+         "fields":
+            {
+                "district": 1,
+                "name": "মেঘনা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 13,
+         "fields":
+            {
+                "district": 1,
+                "name": "মনোহরগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 14,
+         "fields":
+            {
+                "district": 1,
+                "name": "সদর দক্ষিণ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 15,
+         "fields":
+            {
+                "district": 1,
+                "name": "তিতাস"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 16,
+         "fields":
+            {
+                "district": 1,
+                "name": "বুড়িচং"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 17,
+         "fields":
+            {
+                "district": 1,
+                "name": "লালমাই"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 18,
+         "fields":
+            {
+                "district": 2,
+                "name": "ছাগলনাইয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 19,
+         "fields":
+            {
+                "district": 2,
+                "name": "ফেনী সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 20,
+         "fields":
+            {
+                "district": 2,
+                "name": "সোনাগাজী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 21,
+         "fields":
+            {
+                "district": 2,
+                "name": "ফুলগাজী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 22,
+         "fields":
+            {
+                "district": 2,
+                "name": "পরশুরাম"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 23,
+         "fields":
+            {
+                "district": 2,
+                "name": "দাগনভূঞা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 24,
+         "fields":
+            {
+                "district": 3,
+                "name": "ব্রাহ্মণবাড়িয়া সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 25,
+         "fields":
+            {
+                "district": 3,
+                "name": "কসবা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 26,
+         "fields":
+            {
+                "district": 3,
+                "name": "নাসিরনগর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 27,
+         "fields":
+            {
+                "district": 3,
+                "name": "সরাইল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 28,
+         "fields":
+            {
+                "district": 3,
+                "name": "আশুগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 29,
+         "fields":
+            {
+                "district": 3,
+                "name": "আখাউড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 30,
+         "fields":
+            {
+                "district": 3,
+                "name": "নবীনগর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 31,
+         "fields":
+            {
+                "district": 3,
+                "name": "বাঞ্ছারামপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 32,
+         "fields":
+            {
+                "district": 3,
+                "name": "বিজয়নগর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 33,
+         "fields":
+            {
+                "district": 4,
+                "name": "রাঙ্গামাটি সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 34,
+         "fields":
+            {
+                "district": 4,
+                "name": "কাপ্তাই"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 35,
+         "fields":
+            {
+                "district": 4,
+                "name": "কাউখালী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 36,
+         "fields":
+            {
+                "district": 4,
+                "name": "বাঘাইছড়ি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 37,
+         "fields":
+            {
+                "district": 4,
+                "name": "বরকল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 38,
+         "fields":
+            {
+                "district": 4,
+                "name": "লংগদু"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 39,
+         "fields":
+            {
+                "district": 4,
+                "name": "রাজস্থলী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 40,
+         "fields":
+            {
+                "district": 4,
+                "name": "বিলাইছড়ি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 41,
+         "fields":
+            {
+                "district": 4,
+                "name": "জুরাছড়ি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 42,
+         "fields":
+            {
+                "district": 4,
+                "name": "নানিয়ারচর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 43,
+         "fields":
+            {
+                "district": 5,
+                "name": "নোয়াখালী সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 44,
+         "fields":
+            {
+                "district": 5,
+                "name": "কোম্পানীগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 45,
+         "fields":
+            {
+                "district": 5,
+                "name": "বেগমগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 46,
+         "fields":
+            {
+                "district": 5,
+                "name": "হাতিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 47,
+         "fields":
+            {
+                "district": 5,
+                "name": "সুবর্ণচর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 48,
+         "fields":
+            {
+                "district": 5,
+                "name": "কবিরহাট"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 49,
+         "fields":
+            {
+                "district": 5,
+                "name": "সেনবাগ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 50,
+         "fields":
+            {
+                "district": 5,
+                "name": "চাটখিল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 51,
+         "fields":
+            {
+                "district": 5,
+                "name": "সোনাইমুড়ী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 52,
+         "fields":
+            {
+                "district": 6,
+                "name": "হাইমচর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 53,
+         "fields":
+            {
+                "district": 6,
+                "name": "কচুয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 54,
+         "fields":
+            {
+                "district": 6,
+                "name": "শাহরাস্তি\t"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 55,
+         "fields":
+            {
+                "district": 6,
+                "name": "চাঁদপুর সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 56,
+         "fields":
+            {
+                "district": 6,
+                "name": "মতলব দক্ষিণ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 57,
+         "fields":
+            {
+                "district": 6,
+                "name": "হাজীগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 58,
+         "fields":
+            {
+                "district": 6,
+                "name": "মতলব উত্তর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 59,
+         "fields":
+            {
+                "district": 6,
+                "name": "ফরিদগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 60,
+         "fields":
+            {
+                "district": 7,
+                "name": "লক্ষ্মীপুর সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 61,
+         "fields":
+            {
+                "district": 7,
+                "name": "কমলনগর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 62,
+         "fields":
+            {
+                "district": 7,
+                "name": "রায়পুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 63,
+         "fields":
+            {
+                "district": 7,
+                "name": "রামগতি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 64,
+         "fields":
+            {
+                "district": 7,
+                "name": "রামগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 65,
+         "fields":
+            {
+                "district": 8,
+                "name": "রাঙ্গুনিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 66,
+         "fields":
+            {
+                "district": 8,
+                "name": "সীতাকুন্ড"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 67,
+         "fields":
+            {
+                "district": 8,
+                "name": "মীরসরাই"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 68,
+         "fields":
+            {
+                "district": 8,
+                "name": "পটিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 69,
+         "fields":
+            {
+                "district": 8,
+                "name": "সন্দ্বীপ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 70,
+         "fields":
+            {
+                "district": 8,
+                "name": "বাঁশখালী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 71,
+         "fields":
+            {
+                "district": 8,
+                "name": "বোয়ালখালী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 72,
+         "fields":
+            {
+                "district": 8,
+                "name": "আনোয়ারা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 73,
+         "fields":
+            {
+                "district": 8,
+                "name": "চন্দনাইশ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 74,
+         "fields":
+            {
+                "district": 8,
+                "name": "সাতকানিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 75,
+         "fields":
+            {
+                "district": 8,
+                "name": "লোহাগাড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 76,
+         "fields":
+            {
+                "district": 8,
+                "name": "হাটহাজারী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 77,
+         "fields":
+            {
+                "district": 8,
+                "name": "ফটিকছড়ি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 78,
+         "fields":
+            {
+                "district": 8,
+                "name": "রাউজান"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 79,
+         "fields":
+            {
+                "district": 8,
+                "name": "কর্ণফুলী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 80,
+         "fields":
+            {
+                "district": 9,
+                "name": "কক্সবাজার সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 81,
+         "fields":
+            {
+                "district": 9,
+                "name": "চকরিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 82,
+         "fields":
+            {
+                "district": 9,
+                "name": "কুতুবদিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 83,
+         "fields":
+            {
+                "district": 9,
+                "name": "উখিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 84,
+         "fields":
+            {
+                "district": 9,
+                "name": "মহেশখালী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 85,
+         "fields":
+            {
+                "district": 9,
+                "name": "পেকুয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 86,
+         "fields":
+            {
+                "district": 9,
+                "name": "রামু"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 87,
+         "fields":
+            {
+                "district": 9,
+                "name": "টেকনাফ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 88,
+         "fields":
+            {
+                "district": 10,
+                "name": "খাগড়াছড়ি সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 89,
+         "fields":
+            {
+                "district": 10,
+                "name": "দিঘীনালা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 90,
+         "fields":
+            {
+                "district": 10,
+                "name": "পানছড়ি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 91,
+         "fields":
+            {
+                "district": 10,
+                "name": "লক্ষীছড়ি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 92,
+         "fields":
+            {
+                "district": 10,
+                "name": "মহালছড়ি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 93,
+         "fields":
+            {
+                "district": 10,
+                "name": "মানিকছড়ি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 94,
+         "fields":
+            {
+                "district": 10,
+                "name": "রামগড়"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 95,
+         "fields":
+            {
+                "district": 10,
+                "name": "মাটিরাঙ্গা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 96,
+         "fields":
+            {
+                "district": 10,
+                "name": "গুইমারা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 97,
+         "fields":
+            {
+                "district": 11,
+                "name": "বান্দরবান সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 98,
+         "fields":
+            {
+                "district": 11,
+                "name": "আলীকদম"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 99,
+         "fields":
+            {
+                "district": 11,
+                "name": "নাইক্ষ্যংছড়ি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 100,
+         "fields":
+            {
+                "district": 11,
+                "name": "রোয়াংছড়ি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 101,
+         "fields":
+            {
+                "district": 11,
+                "name": "লামা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 102,
+         "fields":
+            {
+                "district": 11,
+                "name": "রুমা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 103,
+         "fields":
+            {
+                "district": 11,
+                "name": "থানচি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 104,
+         "fields":
+            {
+                "district": 12,
+                "name": "বেলকুচি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 105,
+         "fields":
+            {
+                "district": 12,
+                "name": "চৌহালি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 106,
+         "fields":
+            {
+                "district": 12,
+                "name": "কামারখন্দ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 107,
+         "fields":
+            {
+                "district": 12,
+                "name": "কাজীপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 108,
+         "fields":
+            {
+                "district": 12,
+                "name": "রায়গঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 109,
+         "fields":
+            {
+                "district": 12,
+                "name": "শাহজাদপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 110,
+         "fields":
+            {
+                "district": 12,
+                "name": "সিরাজগঞ্জ সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 111,
+         "fields":
+            {
+                "district": 12,
+                "name": "তাড়াশ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 112,
+         "fields":
+            {
+                "district": 12,
+                "name": "উল্লাপাড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 113,
+         "fields":
+            {
+                "district": 13,
+                "name": "সুজানগর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 114,
+         "fields":
+            {
+                "district": 13,
+                "name": "ঈশ্বরদী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 115,
+         "fields":
+            {
+                "district": 13,
+                "name": "ভাঙ্গুড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 116,
+         "fields":
+            {
+                "district": 13,
+                "name": "পাবনা সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 117,
+         "fields":
+            {
+                "district": 13,
+                "name": "বেড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 118,
+         "fields":
+            {
+                "district": 13,
+                "name": "আটঘরিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 119,
+         "fields":
+            {
+                "district": 13,
+                "name": "চাটমোহর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 120,
+         "fields":
+            {
+                "district": 13,
+                "name": "সাঁথিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 121,
+         "fields":
+            {
+                "district": 13,
+                "name": "ফরিদপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 122,
+         "fields":
+            {
+                "district": 14,
+                "name": "কাহালু"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 123,
+         "fields":
+            {
+                "district": 14,
+                "name": "বগুড়া সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 124,
+         "fields":
+            {
+                "district": 14,
+                "name": "সারিয়াকান্দি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 125,
+         "fields":
+            {
+                "district": 14,
+                "name": "শাজাহানপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 126,
+         "fields":
+            {
+                "district": 14,
+                "name": "দুপচাচিঁয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 127,
+         "fields":
+            {
+                "district": 14,
+                "name": "আদমদিঘি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 128,
+         "fields":
+            {
+                "district": 14,
+                "name": "নন্দিগ্রাম"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 129,
+         "fields":
+            {
+                "district": 14,
+                "name": "সোনাতলা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 130,
+         "fields":
+            {
+                "district": 14,
+                "name": "ধুনট"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 131,
+         "fields":
+            {
+                "district": 14,
+                "name": "গাবতলী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 132,
+         "fields":
+            {
+                "district": 14,
+                "name": "শেরপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 133,
+         "fields":
+            {
+                "district": 14,
+                "name": "শিবগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 134,
+         "fields":
+            {
+                "district": 15,
+                "name": "পবা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 135,
+         "fields":
+            {
+                "district": 15,
+                "name": "দুর্গাপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 136,
+         "fields":
+            {
+                "district": 15,
+                "name": "মোহনপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 137,
+         "fields":
+            {
+                "district": 15,
+                "name": "চারঘাট"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 138,
+         "fields":
+            {
+                "district": 15,
+                "name": "পুঠিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 139,
+         "fields":
+            {
+                "district": 15,
+                "name": "বাঘা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 140,
+         "fields":
+            {
+                "district": 15,
+                "name": "গোদাগাড়ী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 141,
+         "fields":
+            {
+                "district": 15,
+                "name": "তানোর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 142,
+         "fields":
+            {
+                "district": 15,
+                "name": "বাগমারা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 143,
+         "fields":
+            {
+                "district": 16,
+                "name": "নাটোর সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 144,
+         "fields":
+            {
+                "district": 16,
+                "name": "সিংড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 145,
+         "fields":
+            {
+                "district": 16,
+                "name": "বড়াইগ্রাম"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 146,
+         "fields":
+            {
+                "district": 16,
+                "name": "বাগাতিপাড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 147,
+         "fields":
+            {
+                "district": 16,
+                "name": "লালপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 148,
+         "fields":
+            {
+                "district": 16,
+                "name": "গুরুদাসপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 149,
+         "fields":
+            {
+                "district": 16,
+                "name": "নলডাঙ্গা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 150,
+         "fields":
+            {
+                "district": 17,
+                "name": "আক্কেলপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 151,
+         "fields":
+            {
+                "district": 17,
+                "name": "কালাই"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 152,
+         "fields":
+            {
+                "district": 17,
+                "name": "ক্ষেতলাল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 153,
+         "fields":
+            {
+                "district": 17,
+                "name": "পাঁচবিবি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 154,
+         "fields":
+            {
+                "district": 17,
+                "name": "জয়পুরহাট সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 155,
+         "fields":
+            {
+                "district": 18,
+                "name": "চাঁপাইনবাবগঞ্জ সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 156,
+         "fields":
+            {
+                "district": 18,
+                "name": "গোমস্তাপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 157,
+         "fields":
+            {
+                "district": 18,
+                "name": "নাচোল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 158,
+         "fields":
+            {
+                "district": 18,
+                "name": "ভোলাহাট"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 159,
+         "fields":
+            {
+                "district": 18,
+                "name": "শিবগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 160,
+         "fields":
+            {
+                "district": 19,
+                "name": "মহাদেবপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 161,
+         "fields":
+            {
+                "district": 19,
+                "name": "বদলগাছী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 162,
+         "fields":
+            {
+                "district": 19,
+                "name": "পত্নিতলা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 163,
+         "fields":
+            {
+                "district": 19,
+                "name": "ধামইরহাট"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 164,
+         "fields":
+            {
+                "district": 19,
+                "name": "নিয়ামতপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 165,
+         "fields":
+            {
+                "district": 19,
+                "name": "মান্দা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 166,
+         "fields":
+            {
+                "district": 19,
+                "name": "আত্রাই"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 167,
+         "fields":
+            {
+                "district": 19,
+                "name": "রাণীনগর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 168,
+         "fields":
+            {
+                "district": 19,
+                "name": "নওগাঁ সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 169,
+         "fields":
+            {
+                "district": 19,
+                "name": "পোরশা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 170,
+         "fields":
+            {
+                "district": 19,
+                "name": "সাপাহার"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 171,
+         "fields":
+            {
+                "district": 20,
+                "name": "মণিরামপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 172,
+         "fields":
+            {
+                "district": 20,
+                "name": "অভয়নগর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 173,
+         "fields":
+            {
+                "district": 20,
+                "name": "বাঘারপাড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 174,
+         "fields":
+            {
+                "district": 20,
+                "name": "চৌগাছা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 175,
+         "fields":
+            {
+                "district": 20,
+                "name": "ঝিকরগাছা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 176,
+         "fields":
+            {
+                "district": 20,
+                "name": "কেশবপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 177,
+         "fields":
+            {
+                "district": 20,
+                "name": "যশোর সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 178,
+         "fields":
+            {
+                "district": 20,
+                "name": "শার্শা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 179,
+         "fields":
+            {
+                "district": 21,
+                "name": "আশাশুনি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 180,
+         "fields":
+            {
+                "district": 21,
+                "name": "দেবহাটা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 181,
+         "fields":
+            {
+                "district": 21,
+                "name": "কলারোয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 182,
+         "fields":
+            {
+                "district": 21,
+                "name": "সাতক্ষীরা সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 183,
+         "fields":
+            {
+                "district": 21,
+                "name": "শ্যামনগর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 184,
+         "fields":
+            {
+                "district": 21,
+                "name": "তালা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 185,
+         "fields":
+            {
+                "district": 21,
+                "name": "কালিগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 186,
+         "fields":
+            {
+                "district": 22,
+                "name": "মুজিবনগর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 187,
+         "fields":
+            {
+                "district": 22,
+                "name": "মেহেরপুর সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 188,
+         "fields":
+            {
+                "district": 22,
+                "name": "গাংনী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 189,
+         "fields":
+            {
+                "district": 23,
+                "name": "নড়াইল সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 190,
+         "fields":
+            {
+                "district": 23,
+                "name": "লোহাগড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 191,
+         "fields":
+            {
+                "district": 23,
+                "name": "কালিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 192,
+         "fields":
+            {
+                "district": 24,
+                "name": "চুয়াডাঙ্গা সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 193,
+         "fields":
+            {
+                "district": 24,
+                "name": "আলমডাঙ্গা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 194,
+         "fields":
+            {
+                "district": 24,
+                "name": "দামুড়হুদা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 195,
+         "fields":
+            {
+                "district": 24,
+                "name": "জীবননগর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 196,
+         "fields":
+            {
+                "district": 25,
+                "name": "কুষ্টিয়া সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 197,
+         "fields":
+            {
+                "district": 25,
+                "name": "কুমারখালী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 198,
+         "fields":
+            {
+                "district": 25,
+                "name": "খোকসা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 199,
+         "fields":
+            {
+                "district": 25,
+                "name": "মিরপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 200,
+         "fields":
+            {
+                "district": 25,
+                "name": "দৌলতপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 201,
+         "fields":
+            {
+                "district": 25,
+                "name": "ভেড়ামারা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 202,
+         "fields":
+            {
+                "district": 26,
+                "name": "শালিখা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 203,
+         "fields":
+            {
+                "district": 26,
+                "name": "শ্রীপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 204,
+         "fields":
+            {
+                "district": 26,
+                "name": "মাগুরা সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 205,
+         "fields":
+            {
+                "district": 26,
+                "name": "মহম্মদপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 206,
+         "fields":
+            {
+                "district": 27,
+                "name": "পাইকগাছা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 207,
+         "fields":
+            {
+                "district": 27,
+                "name": "ফুলতলা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 208,
+         "fields":
+            {
+                "district": 27,
+                "name": "দিঘলিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 209,
+         "fields":
+            {
+                "district": 27,
+                "name": "রূপসা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 210,
+         "fields":
+            {
+                "district": 27,
+                "name": "তেরখাদা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 211,
+         "fields":
+            {
+                "district": 27,
+                "name": "ডুমুরিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 212,
+         "fields":
+            {
+                "district": 27,
+                "name": "বটিয়াঘাটা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 213,
+         "fields":
+            {
+                "district": 27,
+                "name": "দাকোপ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 214,
+         "fields":
+            {
+                "district": 27,
+                "name": "কয়রা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 215,
+         "fields":
+            {
+                "district": 28,
+                "name": "ফকিরহাট"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 216,
+         "fields":
+            {
+                "district": 28,
+                "name": "বাগেরহাট সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 217,
+         "fields":
+            {
+                "district": 28,
+                "name": "মোল্লাহাট"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 218,
+         "fields":
+            {
+                "district": 28,
+                "name": "শরণখোলা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 219,
+         "fields":
+            {
+                "district": 28,
+                "name": "রামপাল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 220,
+         "fields":
+            {
+                "district": 28,
+                "name": "মোড়েলগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 221,
+         "fields":
+            {
+                "district": 28,
+                "name": "কচুয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 222,
+         "fields":
+            {
+                "district": 28,
+                "name": "মোংলা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 223,
+         "fields":
+            {
+                "district": 28,
+                "name": "চিতলমারী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 224,
+         "fields":
+            {
+                "district": 29,
+                "name": "ঝিনাইদহ সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 225,
+         "fields":
+            {
+                "district": 29,
+                "name": "শৈলকুপা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 226,
+         "fields":
+            {
+                "district": 29,
+                "name": "হরিণাকুন্ডু"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 227,
+         "fields":
+            {
+                "district": 29,
+                "name": "কালীগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 228,
+         "fields":
+            {
+                "district": 29,
+                "name": "কোটচাঁদপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 229,
+         "fields":
+            {
+                "district": 29,
+                "name": "মহেশপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 230,
+         "fields":
+            {
+                "district": 30,
+                "name": "ঝালকাঠি সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 231,
+         "fields":
+            {
+                "district": 30,
+                "name": "কাঠালিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 232,
+         "fields":
+            {
+                "district": 30,
+                "name": "নলছিটি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 233,
+         "fields":
+            {
+                "district": 30,
+                "name": "রাজাপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 234,
+         "fields":
+            {
+                "district": 31,
+                "name": "বাউফল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 235,
+         "fields":
+            {
+                "district": 31,
+                "name": "পটুয়াখালী সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 236,
+         "fields":
+            {
+                "district": 31,
+                "name": "দুমকি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 237,
+         "fields":
+            {
+                "district": 31,
+                "name": "দশমিনা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 238,
+         "fields":
+            {
+                "district": 31,
+                "name": "কলাপাড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 239,
+         "fields":
+            {
+                "district": 31,
+                "name": "মির্জাগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 240,
+         "fields":
+            {
+                "district": 31,
+                "name": "গলাচিপা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 241,
+         "fields":
+            {
+                "district": 31,
+                "name": "রাঙ্গাবালী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 242,
+         "fields":
+            {
+                "district": 32,
+                "name": "পিরোজপুর সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 243,
+         "fields":
+            {
+                "district": 32,
+                "name": "নাজিরপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 244,
+         "fields":
+            {
+                "district": 32,
+                "name": "কাউখালী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 245,
+         "fields":
+            {
+                "district": 32,
+                "name": "জিয়ানগর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 246,
+         "fields":
+            {
+                "district": 32,
+                "name": "ভান্ডারিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 247,
+         "fields":
+            {
+                "district": 32,
+                "name": "মঠবাড়ীয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 248,
+         "fields":
+            {
+                "district": 32,
+                "name": "নেছারাবাদ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 249,
+         "fields":
+            {
+                "district": 33,
+                "name": "বরিশাল সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 250,
+         "fields":
+            {
+                "district": 33,
+                "name": "বাকেরগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 251,
+         "fields":
+            {
+                "district": 33,
+                "name": "বাবুগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 252,
+         "fields":
+            {
+                "district": 33,
+                "name": "উজিরপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 253,
+         "fields":
+            {
+                "district": 33,
+                "name": "বানারীপাড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 254,
+         "fields":
+            {
+                "district": 33,
+                "name": "গৌরনদী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 255,
+         "fields":
+            {
+                "district": 33,
+                "name": "আগৈলঝাড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 256,
+         "fields":
+            {
+                "district": 33,
+                "name": "মেহেন্দিগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 257,
+         "fields":
+            {
+                "district": 33,
+                "name": "মুলাদী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 258,
+         "fields":
+            {
+                "district": 33,
+                "name": "হিজলা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 259,
+         "fields":
+            {
+                "district": 34,
+                "name": "ভোলা সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 260,
+         "fields":
+            {
+                "district": 34,
+                "name": "বোরহান উদ্দিন"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 261,
+         "fields":
+            {
+                "district": 34,
+                "name": "চরফ্যাশন"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 262,
+         "fields":
+            {
+                "district": 34,
+                "name": "দৌলতখান"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 263,
+         "fields":
+            {
+                "district": 34,
+                "name": "মনপুরা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 264,
+         "fields":
+            {
+                "district": 34,
+                "name": "তজুমদ্দিন"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 265,
+         "fields":
+            {
+                "district": 34,
+                "name": "লালমোহন"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 266,
+         "fields":
+            {
+                "district": 35,
+                "name": "আমতলী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 267,
+         "fields":
+            {
+                "district": 35,
+                "name": "বরগুনা সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 268,
+         "fields":
+            {
+                "district": 35,
+                "name": "বেতাগী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 269,
+         "fields":
+            {
+                "district": 35,
+                "name": "বামনা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 270,
+         "fields":
+            {
+                "district": 35,
+                "name": "পাথরঘাটা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 271,
+         "fields":
+            {
+                "district": 35,
+                "name": "তালতলি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 272,
+         "fields":
+            {
+                "district": 36,
+                "name": "বালাগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 273,
+         "fields":
+            {
+                "district": 36,
+                "name": "বিয়ানীবাজার"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 274,
+         "fields":
+            {
+                "district": 36,
+                "name": "বিশ্বনাথ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 275,
+         "fields":
+            {
+                "district": 36,
+                "name": "কোম্পানীগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 276,
+         "fields":
+            {
+                "district": 36,
+                "name": "ফেঞ্চুগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 277,
+         "fields":
+            {
+                "district": 36,
+                "name": "গোলাপগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 278,
+         "fields":
+            {
+                "district": 36,
+                "name": "গোয়াইনঘাট"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 279,
+         "fields":
+            {
+                "district": 36,
+                "name": "জৈন্তাপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 280,
+         "fields":
+            {
+                "district": 36,
+                "name": "কানাইঘাট"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 281,
+         "fields":
+            {
+                "district": 36,
+                "name": "সিলেট সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 282,
+         "fields":
+            {
+                "district": 36,
+                "name": "জকিগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 283,
+         "fields":
+            {
+                "district": 36,
+                "name": "দক্ষিণ সুরমা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 284,
+         "fields":
+            {
+                "district": 36,
+                "name": "ওসমানী নগর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 285,
+         "fields":
+            {
+                "district": 37,
+                "name": "বড়লেখা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 286,
+         "fields":
+            {
+                "district": 37,
+                "name": "কমলগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 287,
+         "fields":
+            {
+                "district": 37,
+                "name": "কুলাউড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 288,
+         "fields":
+            {
+                "district": 37,
+                "name": "মৌলভীবাজার সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 289,
+         "fields":
+            {
+                "district": 37,
+                "name": "রাজনগর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 290,
+         "fields":
+            {
+                "district": 37,
+                "name": "শ্রীমঙ্গল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 291,
+         "fields":
+            {
+                "district": 37,
+                "name": "জুড়ী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 292,
+         "fields":
+            {
+                "district": 38,
+                "name": "নবীগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 293,
+         "fields":
+            {
+                "district": 38,
+                "name": "বাহুবল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 294,
+         "fields":
+            {
+                "district": 38,
+                "name": "আজমিরীগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 295,
+         "fields":
+            {
+                "district": 38,
+                "name": "বানিয়াচং"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 296,
+         "fields":
+            {
+                "district": 38,
+                "name": "লাখাই"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 297,
+         "fields":
+            {
+                "district": 38,
+                "name": "চুনারুঘাট"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 298,
+         "fields":
+            {
+                "district": 38,
+                "name": "হবিগঞ্জ সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 299,
+         "fields":
+            {
+                "district": 38,
+                "name": "মাধবপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 300,
+         "fields":
+            {
+                "district": 39,
+                "name": "সুনামগঞ্জ সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 301,
+         "fields":
+            {
+                "district": 39,
+                "name": "দক্ষিণ সুনামগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 302,
+         "fields":
+            {
+                "district": 39,
+                "name": "বিশ্বম্ভরপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 303,
+         "fields":
+            {
+                "district": 39,
+                "name": "ছাতক"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 304,
+         "fields":
+            {
+                "district": 39,
+                "name": "জগন্নাথপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 305,
+         "fields":
+            {
+                "district": 39,
+                "name": "দোয়ারাবাজার"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 306,
+         "fields":
+            {
+                "district": 39,
+                "name": "তাহিরপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 307,
+         "fields":
+            {
+                "district": 39,
+                "name": "ধর্মপাশা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 308,
+         "fields":
+            {
+                "district": 39,
+                "name": "জামালগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 309,
+         "fields":
+            {
+                "district": 39,
+                "name": "শাল্লা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 310,
+         "fields":
+            {
+                "district": 39,
+                "name": "দিরাই"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 311,
+         "fields":
+            {
+                "district": 40,
+                "name": "বেলাবো"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 312,
+         "fields":
+            {
+                "district": 40,
+                "name": "মনোহরদী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 313,
+         "fields":
+            {
+                "district": 40,
+                "name": "নরসিংদী সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 314,
+         "fields":
+            {
+                "district": 40,
+                "name": "পলাশ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 315,
+         "fields":
+            {
+                "district": 40,
+                "name": "রায়পুরা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 316,
+         "fields":
+            {
+                "district": 40,
+                "name": "শিবপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 317,
+         "fields":
+            {
+                "district": 41,
+                "name": "কালীগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 318,
+         "fields":
+            {
+                "district": 41,
+                "name": "কালিয়াকৈর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 319,
+         "fields":
+            {
+                "district": 41,
+                "name": "কাপাসিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 320,
+         "fields":
+            {
+                "district": 41,
+                "name": "গাজীপুর সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 321,
+         "fields":
+            {
+                "district": 41,
+                "name": "শ্রীপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 322,
+         "fields":
+            {
+                "district": 42,
+                "name": "শরিয়তপুর সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 323,
+         "fields":
+            {
+                "district": 42,
+                "name": "নড়িয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 324,
+         "fields":
+            {
+                "district": 42,
+                "name": "জাজিরা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 325,
+         "fields":
+            {
+                "district": 42,
+                "name": "গোসাইরহাট"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 326,
+         "fields":
+            {
+                "district": 42,
+                "name": "ভেদরগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 327,
+         "fields":
+            {
+                "district": 42,
+                "name": "ডামুড্যা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 328,
+         "fields":
+            {
+                "district": 43,
+                "name": "আড়াইহাজার"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 329,
+         "fields":
+            {
+                "district": 43,
+                "name": "বন্দর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 330,
+         "fields":
+            {
+                "district": 43,
+                "name": "নারায়নগঞ্জ সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 331,
+         "fields":
+            {
+                "district": 43,
+                "name": "রূপগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 332,
+         "fields":
+            {
+                "district": 43,
+                "name": "সোনারগাঁ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 333,
+         "fields":
+            {
+                "district": 44,
+                "name": "বাসাইল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 334,
+         "fields":
+            {
+                "district": 44,
+                "name": "ভুয়াপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 335,
+         "fields":
+            {
+                "district": 44,
+                "name": "দেলদুয়ার"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 336,
+         "fields":
+            {
+                "district": 44,
+                "name": "ঘাটাইল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 337,
+         "fields":
+            {
+                "district": 44,
+                "name": "গোপালপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 338,
+         "fields":
+            {
+                "district": 44,
+                "name": "মধুপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 339,
+         "fields":
+            {
+                "district": 44,
+                "name": "মির্জাপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 340,
+         "fields":
+            {
+                "district": 44,
+                "name": "নাগরপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 341,
+         "fields":
+            {
+                "district": 44,
+                "name": "সখিপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 342,
+         "fields":
+            {
+                "district": 44,
+                "name": "টাঙ্গাইল সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 343,
+         "fields":
+            {
+                "district": 44,
+                "name": "কালিহাতী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 344,
+         "fields":
+            {
+                "district": 44,
+                "name": "ধনবাড়ী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 345,
+         "fields":
+            {
+                "district": 45,
+                "name": "ইটনা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 346,
+         "fields":
+            {
+                "district": 45,
+                "name": "কটিয়াদী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 347,
+         "fields":
+            {
+                "district": 45,
+                "name": "ভৈরব"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 348,
+         "fields":
+            {
+                "district": 45,
+                "name": "তাড়াইল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 349,
+         "fields":
+            {
+                "district": 45,
+                "name": "হোসেনপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 350,
+         "fields":
+            {
+                "district": 45,
+                "name": "পাকুন্দিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 351,
+         "fields":
+            {
+                "district": 45,
+                "name": "কুলিয়ারচর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 352,
+         "fields":
+            {
+                "district": 45,
+                "name": "কিশোরগঞ্জ সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 353,
+         "fields":
+            {
+                "district": 45,
+                "name": "করিমগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 354,
+         "fields":
+            {
+                "district": 45,
+                "name": "বাজিতপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 355,
+         "fields":
+            {
+                "district": 45,
+                "name": "অষ্টগ্রাম"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 356,
+         "fields":
+            {
+                "district": 45,
+                "name": "মিঠামইন"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 357,
+         "fields":
+            {
+                "district": 45,
+                "name": "নিকলী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 358,
+         "fields":
+            {
+                "district": 46,
+                "name": "হরিরামপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 359,
+         "fields":
+            {
+                "district": 46,
+                "name": "সাটুরিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 360,
+         "fields":
+            {
+                "district": 46,
+                "name": "মানিকগঞ্জ সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 361,
+         "fields":
+            {
+                "district": 46,
+                "name": "ঘিওর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 362,
+         "fields":
+            {
+                "district": 46,
+                "name": "শিবালয়"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 363,
+         "fields":
+            {
+                "district": 46,
+                "name": "দৌলতপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 364,
+         "fields":
+            {
+                "district": 46,
+                "name": "সিংগাইর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 365,
+         "fields":
+            {
+                "district": 47,
+                "name": "সাভার"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 366,
+         "fields":
+            {
+                "district": 47,
+                "name": "ধামরাই"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 367,
+         "fields":
+            {
+                "district": 47,
+                "name": "কেরাণীগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 368,
+         "fields":
+            {
+                "district": 47,
+                "name": "নবাবগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 369,
+         "fields":
+            {
+                "district": 47,
+                "name": "দোহার"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 370,
+         "fields":
+            {
+                "district": 48,
+                "name": "মুন্সিগঞ্জ সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 371,
+         "fields":
+            {
+                "district": 48,
+                "name": "শ্রীনগর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 372,
+         "fields":
+            {
+                "district": 48,
+                "name": "সিরাজদিখান"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 373,
+         "fields":
+            {
+                "district": 48,
+                "name": "লৌহজং"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 374,
+         "fields":
+            {
+                "district": 48,
+                "name": "গজারিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 375,
+         "fields":
+            {
+                "district": 48,
+                "name": "টংগীবাড়ি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 376,
+         "fields":
+            {
+                "district": 49,
+                "name": "রাজবাড়ী সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 377,
+         "fields":
+            {
+                "district": 49,
+                "name": "গোয়ালন্দ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 378,
+         "fields":
+            {
+                "district": 49,
+                "name": "পাংশা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 379,
+         "fields":
+            {
+                "district": 49,
+                "name": "বালিয়াকান্দি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 380,
+         "fields":
+            {
+                "district": 49,
+                "name": "কালুখালী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 381,
+         "fields":
+            {
+                "district": 50,
+                "name": "মাদারীপুর সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 382,
+         "fields":
+            {
+                "district": 50,
+                "name": "শিবচর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 383,
+         "fields":
+            {
+                "district": 50,
+                "name": "কালকিনি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 384,
+         "fields":
+            {
+                "district": 50,
+                "name": "রাজৈর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 385,
+         "fields":
+            {
+                "district": 51,
+                "name": "গোপালগঞ্জ সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 386,
+         "fields":
+            {
+                "district": 51,
+                "name": "কাশিয়ানী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 387,
+         "fields":
+            {
+                "district": 51,
+                "name": "টুংগীপাড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 388,
+         "fields":
+            {
+                "district": 51,
+                "name": "কোটালীপাড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 389,
+         "fields":
+            {
+                "district": 51,
+                "name": "মুকসুদপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 390,
+         "fields":
+            {
+                "district": 52,
+                "name": "ফরিদপুর সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 391,
+         "fields":
+            {
+                "district": 52,
+                "name": "আলফাডাঙ্গা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 392,
+         "fields":
+            {
+                "district": 52,
+                "name": "বোয়ালমারী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 393,
+         "fields":
+            {
+                "district": 52,
+                "name": "সদরপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 394,
+         "fields":
+            {
+                "district": 52,
+                "name": "নগরকান্দা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 395,
+         "fields":
+            {
+                "district": 52,
+                "name": "ভাঙ্গা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 396,
+         "fields":
+            {
+                "district": 52,
+                "name": "চরভদ্রাসন"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 397,
+         "fields":
+            {
+                "district": 52,
+                "name": "মধুখালী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 398,
+         "fields":
+            {
+                "district": 52,
+                "name": "সালথা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 399,
+         "fields":
+            {
+                "district": 53,
+                "name": "পঞ্চগড় সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 400,
+         "fields":
+            {
+                "district": 53,
+                "name": "দেবীগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 401,
+         "fields":
+            {
+                "district": 53,
+                "name": "বোদা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 402,
+         "fields":
+            {
+                "district": 53,
+                "name": "আটোয়ারী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 403,
+         "fields":
+            {
+                "district": 53,
+                "name": "তেতুলিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 404,
+         "fields":
+            {
+                "district": 54,
+                "name": "নবাবগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 405,
+         "fields":
+            {
+                "district": 54,
+                "name": "বীরগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 406,
+         "fields":
+            {
+                "district": 54,
+                "name": "ঘোড়াঘাট"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 407,
+         "fields":
+            {
+                "district": 54,
+                "name": "বিরামপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 408,
+         "fields":
+            {
+                "district": 54,
+                "name": "পার্বতীপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 409,
+         "fields":
+            {
+                "district": 54,
+                "name": "বোচাগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 410,
+         "fields":
+            {
+                "district": 54,
+                "name": "কাহারোল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 411,
+         "fields":
+            {
+                "district": 54,
+                "name": "ফুলবাড়ী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 412,
+         "fields":
+            {
+                "district": 54,
+                "name": "দিনাজপুর সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 413,
+         "fields":
+            {
+                "district": 54,
+                "name": "হাকিমপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 414,
+         "fields":
+            {
+                "district": 54,
+                "name": "খানসামা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 415,
+         "fields":
+            {
+                "district": 54,
+                "name": "বিরল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 416,
+         "fields":
+            {
+                "district": 54,
+                "name": "চিরিরবন্দর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 417,
+         "fields":
+            {
+                "district": 55,
+                "name": "লালমনিরহাট সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 418,
+         "fields":
+            {
+                "district": 55,
+                "name": "কালীগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 419,
+         "fields":
+            {
+                "district": 55,
+                "name": "হাতীবান্ধা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 420,
+         "fields":
+            {
+                "district": 55,
+                "name": "পাটগ্রাম"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 421,
+         "fields":
+            {
+                "district": 55,
+                "name": "আদিতমারী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 422,
+         "fields":
+            {
+                "district": 56,
+                "name": "সৈয়দপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 423,
+         "fields":
+            {
+                "district": 56,
+                "name": "ডোমার"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 424,
+         "fields":
+            {
+                "district": 56,
+                "name": "ডিমলা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 425,
+         "fields":
+            {
+                "district": 56,
+                "name": "জলঢাকা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 426,
+         "fields":
+            {
+                "district": 56,
+                "name": "কিশোরগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 427,
+         "fields":
+            {
+                "district": 56,
+                "name": "নীলফামারী সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 428,
+         "fields":
+            {
+                "district": 57,
+                "name": "সাদুল্লাপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 429,
+         "fields":
+            {
+                "district": 57,
+                "name": "গাইবান্ধা সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 430,
+         "fields":
+            {
+                "district": 57,
+                "name": "পলাশবাড়ী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 431,
+         "fields":
+            {
+                "district": 57,
+                "name": "সাঘাটা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 432,
+         "fields":
+            {
+                "district": 57,
+                "name": "গোবিন্দগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 433,
+         "fields":
+            {
+                "district": 57,
+                "name": "সুন্দরগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 434,
+         "fields":
+            {
+                "district": 57,
+                "name": "ফুলছড়ি"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 435,
+         "fields":
+            {
+                "district": 58,
+                "name": "ঠাকুরগাঁও সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 436,
+         "fields":
+            {
+                "district": 58,
+                "name": "পীরগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 437,
+         "fields":
+            {
+                "district": 58,
+                "name": "রাণীশংকৈল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 438,
+         "fields":
+            {
+                "district": 58,
+                "name": "হরিপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 439,
+         "fields":
+            {
+                "district": 58,
+                "name": "বালিয়াডাঙ্গী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 440,
+         "fields":
+            {
+                "district": 59,
+                "name": "রংপুর সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 441,
+         "fields":
+            {
+                "district": 59,
+                "name": "গংগাচড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 442,
+         "fields":
+            {
+                "district": 59,
+                "name": "তারাগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 443,
+         "fields":
+            {
+                "district": 59,
+                "name": "বদরগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 444,
+         "fields":
+            {
+                "district": 59,
+                "name": "মিঠাপুকুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 445,
+         "fields":
+            {
+                "district": 59,
+                "name": "পীরগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 446,
+         "fields":
+            {
+                "district": 59,
+                "name": "কাউনিয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 447,
+         "fields":
+            {
+                "district": 59,
+                "name": "পীরগাছা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 448,
+         "fields":
+            {
+                "district": 60,
+                "name": "কুড়িগ্রাম সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 449,
+         "fields":
+            {
+                "district": 60,
+                "name": "নাগেশ্বরী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 450,
+         "fields":
+            {
+                "district": 60,
+                "name": "ভুরুঙ্গামারী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 451,
+         "fields":
+            {
+                "district": 60,
+                "name": "ফুলবাড়ী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 452,
+         "fields":
+            {
+                "district": 60,
+                "name": "রাজারহাট"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 453,
+         "fields":
+            {
+                "district": 60,
+                "name": "উলিপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 454,
+         "fields":
+            {
+                "district": 60,
+                "name": "চিলমারী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 455,
+         "fields":
+            {
+                "district": 60,
+                "name": "রৌমারী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 456,
+         "fields":
+            {
+                "district": 60,
+                "name": "চর রাজিবপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 457,
+         "fields":
+            {
+                "district": 61,
+                "name": "শেরপুর সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 458,
+         "fields":
+            {
+                "district": 61,
+                "name": "নালিতাবাড়ী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 459,
+         "fields":
+            {
+                "district": 61,
+                "name": "শ্রীবরদী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 460,
+         "fields":
+            {
+                "district": 61,
+                "name": "নকলা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 461,
+         "fields":
+            {
+                "district": 61,
+                "name": "ঝিনাইগাতী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 462,
+         "fields":
+            {
+                "district": 62,
+                "name": "ফুলবাড়ীয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 463,
+         "fields":
+            {
+                "district": 62,
+                "name": "ত্রিশাল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 464,
+         "fields":
+            {
+                "district": 62,
+                "name": "ভালুকা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 465,
+         "fields":
+            {
+                "district": 62,
+                "name": "মুক্তাগাছা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 466,
+         "fields":
+            {
+                "district": 62,
+                "name": "ময়মনসিংহ সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 467,
+         "fields":
+            {
+                "district": 62,
+                "name": "ধোবাউড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 468,
+         "fields":
+            {
+                "district": 62,
+                "name": "ফুলপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 469,
+         "fields":
+            {
+                "district": 62,
+                "name": "হালুয়াঘাট"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 470,
+         "fields":
+            {
+                "district": 62,
+                "name": "গৌরীপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 471,
+         "fields":
+            {
+                "district": 62,
+                "name": "গফরগাঁও"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 472,
+         "fields":
+            {
+                "district": 62,
+                "name": "ঈশ্বরগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 473,
+         "fields":
+            {
+                "district": 62,
+                "name": "নান্দাইল"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 474,
+         "fields":
+            {
+                "district": 62,
+                "name": "তারাকান্দা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 475,
+         "fields":
+            {
+                "district": 63,
+                "name": "জামালপুর সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 476,
+         "fields":
+            {
+                "district": 63,
+                "name": "মেলান্দহ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 477,
+         "fields":
+            {
+                "district": 63,
+                "name": "ইসলামপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 478,
+         "fields":
+            {
+                "district": 63,
+                "name": "দেওয়ানগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 479,
+         "fields":
+            {
+                "district": 63,
+                "name": "সরিষাবাড়ী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 480,
+         "fields":
+            {
+                "district": 63,
+                "name": "মাদারগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 481,
+         "fields":
+            {
+                "district": 63,
+                "name": "বকশীগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 482,
+         "fields":
+            {
+                "district": 64,
+                "name": "বারহাট্টা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 483,
+         "fields":
+            {
+                "district": 64,
+                "name": "দুর্গাপুর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 484,
+         "fields":
+            {
+                "district": 64,
+                "name": "কেন্দুয়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 485,
+         "fields":
+            {
+                "district": 64,
+                "name": "আটপাড়া"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 486,
+         "fields":
+            {
+                "district": 64,
+                "name": "মদন"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 487,
+         "fields":
+            {
+                "district": 64,
+                "name": "খালিয়াজুরী"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 488,
+         "fields":
+            {
+                "district": 64,
+                "name": "কলমাকান্দা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 489,
+         "fields":
+            {
+                "district": 64,
+                "name": "মোহনগঞ্জ"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 490,
+         "fields":
+            {
+                "district": 64,
+                "name": "পূর্বধলা"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 491,
+         "fields":
+            {
+                "district": 64,
+                "name": "নেত্রকোণা সদর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 492,
+         "fields":
+            {
+                "district": 9,
+                "name": "ঈদগাঁও"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 493,
+         "fields":
+            {
+                "district": 39,
+                "name": "মধ্যনগর"
+            }
+    },
+    {
+        "model": "locations.upazila",
+        "pk": 494,
+         "fields":
+            {
+                "district": 50,
+                "name": "ডাসার"
+            }
+    }
+]

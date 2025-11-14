@@ -1,0 +1,272 @@
+/* Custom Django admin theme: primary blue background and readable text
+   - Primary background: #5D69F4 (user requested)
+   - Avoid pure white for text; use an off-white for contrast on blue
+   - Distinct link color for readability on white backgrounds
+*/
+
+/* Variables */
+:root{
+  --primary-blue: #615fda; /* requested primary blue */
+  --primary-blue-dark: #615fda; /* slightly darker for accents */
+  --text-on-primary: #1616b4; /* off-white for text on blue backgrounds */
+  --text-default: black; /* dark text for regular content */
+  --link-color: #615fda; /* distinct readable link color */
+  --link-hover: #615fda;
+  --sidebar-width: 220px;
+}
+
+/* Enforce light theme regardless of OS/browser prefers-color-scheme */
+/* This forces the admin UI to remain the designed light theme with blue accents */
+:root { color-scheme: light !important; }
+html, body { background-color: #615fda !important; color: black !important; }
+
+@media (prefers-color-scheme: dark) {
+  /* Override any user-agent or other dark-mode styles */
+  :root { color-scheme: light !important; }
+  html, body, #container, #content-main, .app-list, .module, #sidebar {
+    background-color: #615fda !important;
+    color: black !important;
+  }
+  /* Keep header/sidebar blue with light text */
+  #header, .module caption, .breadcrumbs, #sidebar {
+    background-color: #615fda !important;
+    color: black !important;
+  }
+
+  /* :: BG color of Rows (values, Links and buttons) */
+  input, textarea, select, .readonly, .field-box, table#result_list tbody td, .module .count {
+    color: rgb(10, 10, 10) !important;
+    background-color: #dcdcdd !important;
+  }
+
+
+}
+
+
+
+/* Header */
+#header, .module caption, .breadcrumbs {
+  background-color: var(--primary-blue) !important;
+  color: black !important;
+}
+#user-tools a, #header h1, #header h1 a {
+  color: black !important;
+}
+
+
+/* :: BG color of top left filter box at side bar */
+input[type=search] {
+  background-color: #dcdcdd !important;
+  color: #615fda !important;
+}
+
+
+/* ................................... */
+/* :: BG out of content side :: Custom admin styles start here */
+/* ................................... */
+
+/* :: 12 Sidebar bg style */
+/* Body background */
+body {
+  background: #dcdcdd !important;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+/* :: 12 Content area background */
+
+div, .content{
+  color: black;
+  background: #dcdcdd !important;
+}
+
+/* :: 12 Container bg style */
+/* Main container */
+#container, #content-main, .app-list, .module {
+  background: #b7b6ce !important;
+}
+
+
+
+
+
+/* :: 13 bg of row content where main body to display rows  */
+#sidebar, #content-main .module, .app-list .module {
+  background-color: #dcdcdd !important;
+  color: black !important;
+}
+
+
+/* :: 15 Headings right side filter by defined key (is_active, etc */
+.app-list h2, .module h2 {
+  color: black !important;
+  background: #615fda!important;
+}
+
+
+/* Links and buttons */
+a { color: var(--link-color); }
+a:hover { color: var(--link-hover); text-decoration: underline }
+
+button, .button, input[type=submit] {
+  background-color: #0a0ace ;
+  border-color: var(--primary-blue-dark);
+  color: black !important;
+}
+
+/* Table headers */
+table.admindb th {
+  background: linear-gradient(180deg, var(--primary-blue), var(--primary-blue-dark)) !important;
+  color: black !important;
+}
+
+/* Form labels */
+label {
+  color: black;
+}
+
+/* Adjustments for responsive */
+@media (max-width: 767px) {
+  #sidebar { background-color: var(--primary-blue) !important; }
+}
+
+/* Ensure admin icons contrast */
+.inline-group .module, .inline-related {
+  background: #615fda;
+}
+
+/* Make the logout link stand out */
+#user-tools a.logout { color: black !important; font-weight:600 }
+
+/* Breadcrumbs link styling */
+.breadcrumbs a { color: rgba(14, 56, 207, 0.95) !important }
+
+/* Minor cleanups to blend with theme */
+fieldset.module { border-color: rgba(14, 44, 145, 0.06) }
+
+/* Keep default admin styles mostly intact; be specific to avoid breaking admin */
+
+/* Modern UI improvements */
+/* Make modules look like cards */
+.app-list .module, .module, .change-list, .dashboard-module {
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(148, 84, 11, 0.06);
+  padding: 14px 18px !important;
+  margin-bottom: 18px !important;
+}
+
+/* Content area container to give breathing room */
+#content-main {
+  padding: 28px 24px !important;
+}
+
+/* Sidebar styling: make links clearer and spaced */
+#sidebar {
+  padding: 20px 12px !important;
+  width: var(--sidebar-width);
+}
+#sidebar .app-label a, #sidebar .model-ct a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: black !important;
+  opacity: 0.98;
+}
+#sidebar .app-label a:hover, #sidebar .model-ct a:hover {
+  background: rgba(255,255,255,0.06);
+  text-decoration: none;
+}
+
+/* Active/selected item in sidebar */
+#sidebar .model-ct a.selected, #sidebar .app-label a.selected {
+  background: linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.03);
+}
+
+/* Improve headings */
+.module h2, .app-list h2, h1#site-name {
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+/* Buttons: primary and subtle */
+.button, button, input[type=submit] {
+  border-radius: 8px;
+  padding: 8px 12px;
+  box-shadow: none;
+}
+.button.default, .deletelink {
+  background: transparent;
+  color: var(--link-color);
+  border: 1px solid rgba(15,23,36,0.06);
+}
+.button.default:hover, .deletelink:hover {
+  background: rgba(11,99,229,0.06);
+}
+
+/* Form inputs */
+input[type=text], input[type=email], input[type=password], textarea, select {
+  border: 1px solid rgba(15,23,36,0.12);
+  border-radius: 8px;
+  padding: 8px 10px;
+  box-shadow: none;
+}
+input[type=text]:focus, input[type=email]:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--primary-blue-dark);
+  box-shadow: 0 0 0 3px rgba(91,104,244,0.10);
+}
+
+/* Table rows hover */
+table#result_list tbody tr:hover {
+  background: rgba(93,105,244,0.04) !important;
+}
+
+/* Zebra striping for lists */
+table#result_list tbody tr:nth-child(odd) {
+  background: rgba(0,0,0,0.01);
+}
+
+/* Small utility: subtle muted badges */
+.module .count, .model-count {
+  background: rgba(0,0,0,0.04);
+  color: black !important;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight:600;
+}
+
+/* Improve breadcrumbs visibility */
+.breadcrumbs, .breadcrumbs a {
+  color: black !important;
+}
+
+/* Footer/admin site header small tweak */
+#header { padding: 12px 22px }
+
+/* Ensure high contrast where needed */
+.module caption, .module table th, .module table td { color: black !important }
+
+/* Specific overrides to fix white/too-light values in lists and forms */
+/* Keep headers light to contrast with blue header backgrounds */
+table#result_list thead th,
+table#result_list thead th a {
+  color: black !important;
+}
+
+/* Ensure body cells (actual values) use dark readable color */
+table#result_list tbody td,
+table#result_list tbody td a,
+.change-list .results tbody td {
+  color: black !important;
+}
+
+/* Form field values / readonly fields */
+.readonly, .readonly input, .readonly textarea, .field-box, .form-row .field, .form-row .field * {
+  color: black !important;
+}
+
+/* Inputs that render text values (ensure readable) */
+input, textarea, select, .vTextField, .vLargeTextField {
+  color: black !important;
+}
+
