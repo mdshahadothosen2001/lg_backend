@@ -22,4 +22,4 @@ venv.bak/
 **/migrations/** 
 # media/**
 staticfiles/**
-static/**
+# static/**
