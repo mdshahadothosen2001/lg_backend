@@ -78,14 +78,14 @@ class Solution(TimestampModel):
 
     is_best = models.BooleanField(default=False, help_text=_("Marked as best by admin"))
     is_open_for_vote = models.BooleanField(default=False, help_text=_("Admin opened voting for this solution"))
-    voted_users = models.CharField(max_length=500, null=True, blank=True, help_text=_("Comma-separated user IDs who have voted"))
 
     class Meta:
         verbose_name = _("solution")
         verbose_name_plural = _("solutions")
 
     def __str__(self):
-        return f"Solution by {self.suggested_by} for {self.request}"
+        short_desc = (self.description[:30] + "...") if len(self.description) > 30 else self.description
+        return f"{self.request.title} - {self.suggested_by.username} - {short_desc}"
 
 
 class SolutionVote(TimestampModel):
@@ -112,4 +112,4 @@ class SolutionVote(TimestampModel):
         unique_together = ("solution", "voted_by")  # prevent duplicate vote
 
     def __str__(self):
-        return f"{'Upvote' if self.value else 'Downvote'} by {self.voted_by}"
+        return f"{self.solution} → {self.voted_by.username}"
